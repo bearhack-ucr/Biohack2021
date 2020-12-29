@@ -8,7 +8,7 @@ export default function Footer(){
             target="_blank"
             rel="noopener noreferrer"
           >
-            Powered by love and coffee from the Citrushack team.
+            Powered by love and coffee from the Biohack team.
           </a>
         </footer>
     )

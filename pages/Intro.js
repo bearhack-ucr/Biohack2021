@@ -6,7 +6,7 @@ export default function Intro() {
     <main className={styles.main}>
       <section className={Introstyles.introduction}>
         <div className={Introstyles.introductionCol}>
-          <h1 className={styles.title}>Largest hackathon UCR offers</h1>
+          <h1 className={styles.title}>A Hackathon for Healthcare</h1>
           <p className={styles.description}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             egestas sapien sit amet metus efficitur semper. Integer id luctus
