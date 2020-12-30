@@ -34,14 +34,14 @@ export function Nav() {
           </li>
           <li className={Navstyles.navlistlink}>
             <Link
-              to="About"
+              to="PastWinners"
               spy={true}
               smooth={true}
               duration={500}
               activeClass="active"
               className="link"
             >
-              About
+              Winners
             </Link>
           </li>
           <li className={Navstyles.navlistlink}>

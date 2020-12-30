@@ -3,12 +3,11 @@ import Container, { siteTitle } from "../components/Container";
 import styles from "../styles/Common.module.css";
 
 import Hero from "./Hero";
-import Intro from "./Intro";
+import PastWinners from "./PastWinners";
 import Faq from "./Faq";
 import Sponsors from "./Sponsors";
 import Volunteer from "./Volunteer";
 
-import { Nav } from "../components/Nav";
 import Footer from "../components/Footer";
 
 import {
@@ -28,8 +27,8 @@ export default function Home() {
         <Element name="Home">
           <Hero />
         </Element>
-        <Element name="About">
-          <Intro />
+        <Element name="PastWinners">
+          <PastWinners />
         </Element>
         <Element name="Questions">
           <Faq />
