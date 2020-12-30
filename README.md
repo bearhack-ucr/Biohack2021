@@ -11,12 +11,25 @@
 Install [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab). This is how you will be navigating to your project/repo and getting it up and running.
 
 
-#### Mac/Linux
+#### Mac
 
 Open Terminal or install any other Command Line Interface software such as iTerm2, kitty, etc. This is how you will be navigating to your project/repo and getting it up and running.
 
 If on Mac, install [Homebrew](https://brew.sh) as well. This is an incredibly useful package manager for Mac. If you're on the new M1 Chip, find the Terminal Application in Finder, right click it, and click start as Rosetta before installing Homebrew. You can copy and paste this line in your terminal.
 - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
+### Linux
+
+#### Prerequisites
+
+Install yarn : https://classic.yarnpkg.com/en/docs/install/#debian-stable
+
+Clone project
+- `git clone https://github.com/BioHack-UCR/Biohack2021.git`
+- `cd BioHack2021`
+- `yarn install`
+- `yarn dev`
+- visit http://localhost:3001
 
 #### All OSes
 
