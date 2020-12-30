@@ -5,7 +5,7 @@ import Cardstyles from "../styles/Card.module.css";
 export default function Card({ picture, caption, title, description }) {
   return (
     <div className={Cardstyles.flipContainer}>
-      <div class={Cardstyles.flipper}>
+      <div className={Cardstyles.flipper}>
         <div className={Cardstyles.front}>
           <Image src={picture} alt={caption} width={500} height={500} />
           <h2>{title}</h2>
