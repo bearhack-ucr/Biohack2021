@@ -20,9 +20,7 @@ If on Mac, install [Homebrew](https://brew.sh) as well. This is an incredibly us
 
 ### Linux
 
-#### Prerequisites
-
-Install yarn : https://classic.yarnpkg.com/en/docs/install/#debian-stable
+Install yarn: https://classic.yarnpkg.com/en/docs/install/#debian-stable
 
 Clone project
 - `git clone https://github.com/BioHack-UCR/Biohack2021.git`
@@ -39,7 +37,7 @@ Install [Git Command Line Tools](https://git-scm.com/book/en/v2/Getting-Started-
 
 Install [Node.JS](https://nodejs.org/en/).
 
-Install [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable) (We use Yarn for our web package manager).
+Install [Yarn](https://classic.yarnpkg.com/en/docs/getting-started) (We use Yarn for our web package manager).
 
 Install your code editor of choice. Popular ones include VS Code, Atom, Sublime, etc.
 
