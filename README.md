@@ -61,3 +61,11 @@ Once you've done that:
 4. To upload your commits onto Github, use `git push`. If it's your first time pushing commits from a new branch, use `git push -u origin name-of-branch` to push your entire local branch to Github.
 5. Go to the repo on Github and click on "Pull Requests" at the top. Start a new pull request and compare your branch to master and on the righthand side, assign the webdev leads to review your code. Then finally, click Open Pull Request. **Under no circumstances should you click Merge.**
 
+### Tech Stack
+[NextJS](https://nextjs.org) - The frontend framework used for this project. Highly recommend reading through the docs and going through the tutorial to familiarize yourself with the structure of the project.
+Strapi - Used for the backend
+
+### 3rd Party Packages
+what-input - removes default border when elements are selected such as buttons.
+react-scroll - used to scroll to different sections via navbar
+react-accessible-accordion - used for accordion component
