@@ -1,6 +1,6 @@
 # Biohack 2021
 
-> Author: Rajbir Johar
+> Author: Rajbir Johar and Ajeet Kokatay
 
 ## Getting Started
 
