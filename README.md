@@ -27,7 +27,7 @@ Clone project
 - `cd BioHack2021`
 - `yarn install`
 - `yarn dev`
-- visit http://localhost:3001
+- visit http://localhost:3000
 
 #### All OSes
 
