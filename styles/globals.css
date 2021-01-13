@@ -21,18 +21,31 @@ a {
 }
 
 /*react-scroll classes applied to navbar*/
-.active {
-  border-bottom: 3px solid black !important;
+.active,
+.active::before,
+.active::after {
+  /*border-bottom: 3px solid black !important;*/
+  background: #f5f5f5 !important;
+  z-index: 2;
 }
 
-.link{
+.link {
   margin-right: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 3px solid white;
+  /*border-bottom: 3px solid white;*/
   transition: border-bottom 0.5s ease;
 }
+
 .link:hover,
+.link:hover::before,
+.link:hover::after,
 .link:focus,
-.link:active{
-  border-bottom: 3px solid black;
+.link:focus::before,
+.link:focus::after,
+.link:active
+.link:active::before,
+.link:active::after {
+  /*border-bottom: 3px solid black;*/
+  background: #f5f5f5;
+  z-index: 3;
 }

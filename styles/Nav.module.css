@@ -2,14 +2,47 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-
+  margin-bottom: -.2rem;
 }
+
 .navlistlink {
   list-style: none;
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
-  margin: 0;
+  margin: 0 .3em;
   padding: 0;
 }
 
+.navlistcontainer a {
+  position: relative;
+  background: #ddd;
+  padding: .7em 2em;
+  border-radius: 10px 10px 0 0;
+}
+
+.navlistcontainer a::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -.8em;
+  bottom: 0;
+  width: 2em;
+  background: #ddd;
+  transform: skew(-15deg);
+  border-radius: 10px 0 0 0;
+}
+
+.navlistcontainer a::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -.8em;
+  bottom: 0;
+  width: 2em;
+  background: #ddd;
+  transform: skew(15deg);
+  border-radius: 0 10px 0 0;
+}

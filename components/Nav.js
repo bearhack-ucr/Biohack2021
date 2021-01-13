@@ -11,7 +11,7 @@ const StickyNav = styled.nav`
   top: 0;
   right: 0;
   margin:0;
-  padding: 1.4rem 1rem;
+  padding: 1.4rem 1rem 1rem;
   min-width: 100%;
   background-color:#fff;
 `;
@@ -21,7 +21,7 @@ export function Nav() {
     <StickyNav>
         <ul className={Navstyles.navlistcontainer}>
           <li className={Navstyles.navlistlink}>
-            <Link
+            <Link 
               to="Home"
               spy={true}
               smooth={true}
