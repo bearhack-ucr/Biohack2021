@@ -1,11 +1,12 @@
 import styles from "../styles/Common.module.css";
 import Introstyles from "../styles/Intro.module.css";
+import Winnerstyles from "../styles/PastWinners.module.css";
 
 import Card from "../components/Card";
 
 export default function PastWinners() {
   return (
-    <main className={styles.main}>
+    <main className={Winnerstyles.main}>
       <section>
         <h1 className={styles.title}>Past Winners</h1>
         <div className={Introstyles.cardContainer}>

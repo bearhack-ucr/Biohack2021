@@ -33,7 +33,7 @@ a {
   margin-right: 1rem;
   padding-bottom: 1rem;
   /*border-bottom: 3px solid white;*/
-  transition: border-bottom 0.5s ease;
+  /* transition: border-bottom 0.5s ease; */
 }
 
 .link:hover,
