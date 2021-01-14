@@ -16,7 +16,8 @@
 
 .navlistcontainer a {
   position: relative;
-  background: #ddd;
+  background: #e0e0e0;
+  background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
   padding: .7em 2em;
   border-radius: 10px 10px 0 0;
 }
@@ -29,7 +30,8 @@
   left: -.8em;
   bottom: 0;
   width: 2em;
-  background: #ddd;
+  background: #e0e0e0;
+  background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
   transform: skew(-15deg);
   border-radius: 10px 0 0 0;
 }
@@ -42,7 +44,8 @@
   right: -.8em;
   bottom: 0;
   width: 2em;
-  background: #ddd;
+  background: #e0e0e0;
+  background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
   transform: skew(15deg);
   border-radius: 0 10px 0 0;
 }

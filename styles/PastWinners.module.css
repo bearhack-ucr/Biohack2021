@@ -1,10 +1,32 @@
+/* Theme Colors (Ctrl+F to find and replace)
+    Main background - #c7f464
+*/
+
 .main {
-    min-height: 100vh;
-    margin: 0rem 5rem;
-    max-width: min(90vw, 1200px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 6rem;
-  }
+  position: relative;
+  z-index: 0;
+  min-height: 100vh;
+  margin: 0;
+  padding: 10rem 5rem 2rem 5rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -50rem; /* Arbritrary large value to fill width of screen */
+  bottom: 0;
+  width: 200%; /* Arbritrary large value to fill width of screen */
+  height: 100%;
+  background-color: #c7f464;
+  background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+  transform-origin: center;
+  transform: skewY(2deg);
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.4);
+}

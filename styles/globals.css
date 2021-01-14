@@ -25,7 +25,8 @@ a {
 .active::before,
 .active::after {
   /*border-bottom: 3px solid black !important;*/
-  background: #f5f5f5 !important;
+  background: #ffffff !important;
+  background-image: url("https://www.transparenttextures.com/patterns/cardboard.png") !important;
   z-index: 2;
 }
 
@@ -46,6 +47,7 @@ a {
 .link:active::before,
 .link:active::after {
   /*border-bottom: 3px solid black;*/
-  background: #f5f5f5;
+  background: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
   z-index: 3;
 }
