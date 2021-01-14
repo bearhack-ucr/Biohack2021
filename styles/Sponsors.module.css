@@ -15,18 +15,18 @@
     align-items: flex-start;
   }
   
-  .main::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: -50rem; /* Arbritrary large value to fill width of screen */
-    bottom: 0;
-    width: 400%; /* Arbritrary large value to fill width of screen */
-    height: 100%;
-    background-color: #3fb8af;
-    background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
-    transform-origin: center;
-    transform: skewY(-2deg);
-    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.4);
-  }
+.main::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -50rem; /* Arbritrary large value to fill width of screen */
+  bottom: 0;
+  width: 400%; /* Arbritrary large value to fill width of screen */
+  height: 100%;
+  background-color: #708092;
+  background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+  transform-origin: center;
+  transform: skewY(-2deg);
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.4);
+}

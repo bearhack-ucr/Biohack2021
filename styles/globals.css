@@ -28,6 +28,8 @@ a {
   background: #ffffff !important;
   background-image: url("https://www.transparenttextures.com/patterns/cardboard.png") !important;
   z-index: 2;
+  top: -10px;
+  padding-bottom: 24px !important;
 }
 
 .link {
@@ -51,3 +53,12 @@ a {
   background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
   z-index: 3;
 }
+
+/* To prevent before/after elements going above the main */
+.link:hover,
+.link:focus,
+.link:active {
+  top: -10px;
+  padding-bottom: 24px;
+}
+

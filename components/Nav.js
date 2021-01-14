@@ -20,7 +20,7 @@ export function Nav() {
   return (
     <StickyNav>
         <ul className={Navstyles.navlistcontainer}>
-          <li className={Navstyles.navlistlink}>
+          <li className={Navstyles.navlistlink + ' ' + Navstyles.home}>
             <Link 
               to="Home"
               spy={true}
@@ -32,7 +32,7 @@ export function Nav() {
               Home
             </Link>
           </li>
-          <li className={Navstyles.navlistlink}>
+          <li className={Navstyles.navlistlink + ' ' + Navstyles.winners}>
             <Link
               to="PastWinners"
               spy={true}
@@ -44,7 +44,7 @@ export function Nav() {
               Winners
             </Link>
           </li>
-          <li className={Navstyles.navlistlink}>
+          <li className={Navstyles.navlistlink + ' ' + Navstyles.faq}>
             <Link
               to="Questions"
               spy={true}
@@ -56,7 +56,7 @@ export function Nav() {
               Faq
             </Link>
           </li>
-          <li className={Navstyles.navlistlink}>
+          <li className={Navstyles.navlistlink + ' ' + Navstyles.help}>
             <Link
               to="Help"
               spy={true}
@@ -68,7 +68,7 @@ export function Nav() {
               Help
             </Link>
           </li>
-          <li className={Navstyles.navlistlink}>
+          <li className={Navstyles.navlistlink + ' ' + Navstyles.sponsors}>
             <Link
               to="Sponsors"
               spy={true}
