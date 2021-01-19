@@ -28,5 +28,44 @@
   background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
   transform-origin: center;
   transform: skewY(2deg);
-  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.4);
+}
+
+.cardContainer{
+  display:flex;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  margin: 20px 0 20px 0;
+}
+
+.first{
+  transform: rotate(-5deg);
+}
+.second{
+  transform: rotate(2deg);
+}
+.third{
+  transform: rotate(-5deg) translateY(20px);
+}
+.fourth{
+  transform: rotate(5deg);
+}
+.fifth{
+  transform: rotate(-5deg) translateY(-20px);
+}
+.sixth{
+  transform: rotate(5deg);
+}
+
+@media (max-width: 1068px) {
+  .section{
+    flex-direction: column;
+  }
+  .first,.second,.third,.fourth,.fifth,.sixth{
+    transform: rotate(0deg) translateY(0px);
+  }
+  
 }
