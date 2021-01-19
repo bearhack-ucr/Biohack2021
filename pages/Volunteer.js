@@ -3,7 +3,7 @@ import Volunteerstyles from "../styles/Volunteer.module.css";
 
 export default function Volunteer() {
   return (
-    <main className={styles.main}>
+    <main className={Volunteerstyles.main}>
       <h1 className={styles.title}>Get Involved</h1>
       <p className={styles.description}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas

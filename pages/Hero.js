@@ -1,8 +1,9 @@
 import styles from "../styles/Common.module.css";
+import Herostyles from "../styles/Hero.module.css";
 
 export default function Hero() {
   return (
-    <main className={styles.main}>
+    <main className={Herostyles.main}>
       <h1 className={styles.title}>Biohack 2021</h1>
       <p className={styles.description}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas
