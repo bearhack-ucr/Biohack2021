@@ -1,9 +1,8 @@
 .flipContainer {
   margin: 1rem;
-
   perspective: 400px;
-
   position: relative;
+  
 }
 .flipContainer:hover .flipper,
 .flipContainer.hover .flipper {
@@ -13,19 +12,19 @@
 .flipContainer,
 .front,
 .back {
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
 }
 .front,
 .back {
   backface-visibility: hidden;
   border: 1px solid lightgray;
-  border-radius: 10px;
  background-color: white;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.1);
 }
 .flipper {
   transition: 0.6s;

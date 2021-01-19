@@ -20,7 +20,7 @@
     background-color: #ff6b6b;
     background-image: url("https://www.transparenttextures.com/patterns/arches.png");  
     border-radius: .2rem;
-    box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 20px 3px rgba(0, 0, 0, 0.4);
 }
 
 .main::after {
@@ -37,5 +37,5 @@
     background-color: #57ddd4;
     background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
     border-radius: .2rem;
-    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.4);
 }
