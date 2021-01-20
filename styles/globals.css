@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #ece4d4;
+  overflow-x: hidden;
 }
 a {
   color: inherit;
@@ -21,44 +23,23 @@ a {
 }
 
 /*react-scroll classes applied to navbar*/
-.active,
-.active::before,
-.active::after {
-  /*border-bottom: 3px solid black !important;*/
-  background: #ffffff !important;
-  background-image: url("https://www.transparenttextures.com/patterns/cardboard.png") !important;
-  z-index: 2;
-  top: -10px;
-  padding-bottom: 24px !important;
+.active {
+  transform: translateY(0px) !important;
+  border-bottom: 10px solid #fff;
 }
 
 .link {
-  margin-right: 1rem;
-  padding-bottom: 1rem;
-  /*border-bottom: 3px solid white;*/
-  /* transition: border-bottom 0.5s ease; */
+  padding: 1rem 1.5rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  border-bottom: 10px solid #fff;
+  box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 -4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.link:hover,
-.link:hover::before,
-.link:hover::after,
-.link:focus,
-.link:focus::before,
-.link:focus::after,
-.link:active
-.link:active::before,
-.link:active::after {
-  /*border-bottom: 3px solid black;*/
-  background: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
-  z-index: 3;
+.link:hover {
+  transform: translateY(0px);
+  border-bottom: 10px solid #fff;
 }
-
-/* To prevent before/after elements going above the main */
-.link:hover,
-.link:focus,
-.link:active {
-  top: -10px;
-  padding-bottom: 24px;
-}
-

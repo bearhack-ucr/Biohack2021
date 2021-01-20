@@ -10,10 +10,11 @@ const StickyNav = styled.nav`
   z-index: 5;
   top: 0;
   right: 0;
-  margin:0;
-  padding: 1.4rem 1rem 1rem;
+  margin: 0;
+  padding: 1.5rem 1rem 0 0;
   min-width: 100%;
-  background-color:#fff;
+  background-color:#ECE4D4;
+  border-bottom: 10px solid #fff;
 `;
 
 export function Nav() {

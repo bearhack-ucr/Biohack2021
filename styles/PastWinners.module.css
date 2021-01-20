@@ -24,7 +24,7 @@
   bottom: 0;
   width: 400%; /* Arbritrary large value to fill width of screen */
   height: 100%;
-  background-color: #c7f464;
+  background-color: #FCD369;
   background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
   transform-origin: center;
   transform: skewY(2deg);
