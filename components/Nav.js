@@ -3,20 +3,15 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import styled from "@emotion/styled";
 
 const StickyNav = styled.nav`
-  position: fixed;
-  z-index: 5;
+  position: sticky;
   top: 0;
-  right: 0;
-  margin: 0;
-  padding: 1.5rem 1rem 0 0;
-  min-width: 100%;
-  background-color: #ece4d4;
-  border-bottom: 10px solid #fff;
+  z-index: 5;
 `;
 
 export function Nav() {
   return (
     <StickyNav>
+    <nav className={Navstyles.navigation}>
       <ul className={Navstyles.navlistcontainer}>
         <li className={Navstyles.navlistlink + " " + Navstyles.home}>
           <Link
@@ -79,6 +74,7 @@ export function Nav() {
           </Link>
         </li>
       </ul>
+    </nav>
     </StickyNav>
   );
 }

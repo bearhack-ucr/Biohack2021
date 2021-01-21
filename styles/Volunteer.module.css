@@ -1,5 +1,4 @@
 .main {
-  position: relative;
   z-index: 0;
   min-height: 100vh;
   margin: 0rem 0rem 8rem 0rem;
@@ -9,20 +8,4 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-}
-  
-.main::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: -50rem; /* Arbritrary large value to fill width of screen */
-  bottom: 0;
-  width: 400%; /* Arbritrary large value to fill width of screen */
-  height: 100%;
-  background-color: var(--volunteer-bg-color);
-  background-image: var(--volunteer-texture);
-  transform-origin: center;
-  transform: skewY(3deg);
-  box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.4);
 }

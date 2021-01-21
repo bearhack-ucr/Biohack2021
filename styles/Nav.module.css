@@ -1,7 +1,17 @@
+.navigation{
+  display: flex;
+  margin: 1.5rem 1rem;
+  border: 5px solid #fff;
+  padding: 1rem;
+  justify-content: center;
+}
+
 .navlistcontainer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .navlistlink {
@@ -9,77 +19,6 @@
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
-.navlistlink a {
-  display: inline-block;
-  margin: -1rem 0 !important;
-}
-/* Styling for Home tab */
-.home a,
-.home a::before,
-.home a::after {
-  background: var(--nav-home-color) !important;
-  color: var(--nav-home-text-color);
-}
-
-/* Styling for Winners tab */
-.winners a,
-.winners a::before,
-.winners a::after {
-  background: var(--nav-winners-color) !important;
-  color: var(--nav-winners-text-color);
-}
-
-/* Styling for Faq tab */
-.faq a,
-.faq a::before,
-.faq a::after {
-  background: var(--nav-faq-color) !important;
-  color: var(--nav-faq-text-color);
-}
-
-/* Styling for Help tab */
-.help a,
-.help a::before,
-.help a::after {
-  background: var(--nav-help-color) !important;
-  color: var(--nav-help-text-color);
-}
-
-/* Styling for Sponsors tab */
-.sponsors a,
-.sponsors a::before,
-.sponsors a::after {
-  background: var(--nav-sponsors-color) !important;
-  color: var(--nav-sponsors-text-color);
-}
-
-/* General styling for tabs */
-/* .navlistcontainer a {
-  position: relative;
-  padding: 1em 2em;
-  border-radius: 10px 10px 0 0;
-}
-
-.navlistcontainer a::before {
-  content: '';
-  position: absolute;
-  z-index: -2;
-  top: 0;
-  left: -.8em;
-  bottom: 0;
-  transform: skew(-15deg);
-  border-radius: 10px 0 0 0;
-}
-
-.navlistcontainer a::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: -.8em;
-  bottom: 0;
-  transform: skew(15deg);
-  border-radius: 0 10px 0 0;
-  box-shadow: 8px 3.2px 5px -6px rgba(0, 0, 0, 0.6);
-} */
