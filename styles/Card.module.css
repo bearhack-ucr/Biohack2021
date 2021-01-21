@@ -1,4 +1,4 @@
-.flipContainer {
+-color.flipContainer {
   margin: 1rem;
   perspective: 400px;
   position: relative;
@@ -18,8 +18,8 @@
 .front,
 .back {
   backface-visibility: hidden;
-  border: 1px solid lightgray;
- background-color: white;
+  border: 1px solid var(--card-border-color);
+  background-color: var(--card-bg-color);
   position: absolute;
   top: 0;
   left: 0;

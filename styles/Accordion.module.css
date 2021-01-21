@@ -45,8 +45,8 @@
 .accordionItem:hover,
 .accordionItem:focus,
 .accordionItem:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: var(--accordion-hover-color);
+  border-color: var(--accordion-hover-color);
 }
 
 @keyframes fadein {

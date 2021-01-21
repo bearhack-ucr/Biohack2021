@@ -18,35 +18,40 @@
 .home a,
 .home a::before,
 .home a::after {
-  background: #57ddd4 !important;
+  background: var(--nav-home-color) !important;
+  color: var(--nav-home-text-color);
 }
 
 /* Styling for Winners tab */
 .winners a,
 .winners a::before,
 .winners a::after {
-  background: #FCD369 !important;
+  background: var(--nav-winners-color) !important;
+  color: var(--nav-winners-text-color);
 }
 
 /* Styling for Faq tab */
 .faq a,
 .faq a::before,
 .faq a::after {
-  background: #ff9f80 !important;
+  background: var(--nav-faq-color) !important;
+  color: var(--nav-faq-text-color);
 }
 
 /* Styling for Help tab */
 .help a,
 .help a::before,
 .help a::after {
-  background: #f56991 !important;
+  background: var(--nav-help-color) !important;
+  color: var(--nav-help-text-color);
 }
 
 /* Styling for Sponsors tab */
 .sponsors a,
 .sponsors a::before,
 .sponsors a::after {
-  background: #708092 !important;
+  background: var(--nav-sponsors-color) !important;
+  color: var(--nav-sponsors-text-color);
 }
 
 /* General styling for tabs */
