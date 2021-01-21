@@ -1,10 +1,23 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
 // Removes default focus border because its ugly
-import 'what-input';
+import "what-input";
 import '../styles/themes.css';
+import { AuthProvider } from "react-auth-kit";
+import { Provider } from "react-redux";
+import store from "../store";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <Provider store={store}>
+      <AuthProvider
+        authStorageType={"cookie"}
+        cookieDomain="localhost"
+        cookieSecure="false"
+      >
+        <Component {...pageProps} />
+      </AuthProvider>
+    </Provider>
+  );
 }
 
-export default MyApp
+export default MyApp;

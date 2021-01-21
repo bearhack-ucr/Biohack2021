@@ -10,10 +10,7 @@ import Volunteer from "./Volunteer";
 
 import Footer from "../components/Footer";
 
-import {
-  Element,
-  animateScroll as scroll,
-} from "react-scroll";
+import { Element, animateScroll as scroll } from "react-scroll";
 
 export default function Home() {
   return (
@@ -22,7 +19,7 @@ export default function Home() {
         <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-     
+
       <div className={styles.container}>
         <Element name="Home">
           <Hero />
