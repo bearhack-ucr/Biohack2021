@@ -46,6 +46,15 @@ export default function Hero() {
               Sign Out
             </a>
         )}
+        {authHookValue && (
+            <a
+              href="/account"
+              className={`${styles.card} ${Herostyles.btn}`}
+            >
+              My Application
+            </a>
+        )}
+
       </div>
     </main>
   );
