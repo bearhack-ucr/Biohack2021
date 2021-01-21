@@ -5,13 +5,13 @@
   justify-content: center;
   align-items: center;
   background: var(--container-bg-color);
-  background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+  background-image: url("../public/assets/natural-paper.png");
 }
 /* Container for each section */
 .main {
   min-height: 100vh;
   margin: 0rem 5rem;
-  max-width: min(90vw, 1200px);
+  max-width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: center;

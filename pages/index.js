@@ -2,6 +2,7 @@ import Head from "next/head";
 import Container, { siteTitle } from "../components/Container";
 import styles from "../styles/Common.module.css";
 
+import Landing from "./Landing";
 import Hero from "./Hero";
 import PastWinners from "./PastWinners";
 import Faq from "./Faq";
@@ -22,6 +23,9 @@ export default function Home() {
 
       <div className={styles.container}>
         <Element name="Home">
+          <Landing />
+        </Element>
+        <Element name="Hero">
           <Hero />
         </Element>
         <Element name="PastWinners">
