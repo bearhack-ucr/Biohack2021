@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 // Removes default focus border because its ugly
 import "what-input";
+import '../styles/themes.css';
 import { AuthProvider } from "react-auth-kit";
 import { Provider } from "react-redux";
 import store from "../store";
