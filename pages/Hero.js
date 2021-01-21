@@ -1,7 +1,19 @@
 import styles from "../styles/Common.module.css";
 import Herostyles from "../styles/Hero.module.css";
+import { useRouter } from "next/router";
+import {useEffect, useState} from 'react';
+import { useIsAuthenticated, useSignOut } from "react-auth-kit";
 
 export default function Hero() {
+  const isAuthenticated = useIsAuthenticated();
+  const signOut = useSignOut();
+  const router = useRouter();
+  const [authHookValue, setHookValue] = useState(false);
+
+  useEffect(() => {
+    setHookValue(isAuthenticated());
+  }, []);
+
   return (
     <main className={Herostyles.main}>
       <h1 className={styles.title}>Biohack 2021</h1>
@@ -14,13 +26,26 @@ export default function Hero() {
         euismod leo, ut scelerisque tellus rhoncus sed.
       </p>
       <div className={styles.grid}>
-        <a href="https://nextjs.org/docs" className={styles.card}>
-          <h3>Sign Up! &rarr;</h3>
-        </a>
-
-        <a href="https://nextjs.org/learn" className={styles.card}>
-          <h3>Learn More &rarr;</h3>
-        </a>
+      {!authHookValue && (
+              <a
+                href={`http://localhost:1337/connect/google`}
+                className={styles.card}
+              >
+                Sign Up
+              </a>
+      )}
+      {authHookValue && (
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault;
+                signOut();
+              }}
+              className={styles.card}
+            >
+              Sign Out
+            </a>
+        )}
       </div>
     </main>
   );
