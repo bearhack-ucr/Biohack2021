@@ -1,7 +1,7 @@
 import styles from "../styles/Common.module.css";
 import Herostyles from "../styles/Hero.module.css";
 import { useRouter } from "next/router";
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from "react";
 import { useIsAuthenticated, useSignOut } from "react-auth-kit";
 
 export default function Hero() {
@@ -26,35 +26,31 @@ export default function Hero() {
         euismod leo, ut scelerisque tellus rhoncus sed.
       </p>
       <div className={styles.grid}>
-      {!authHookValue && (
-              <a
-                href={`http://localhost:1337/connect/google`}
-                className={`${styles.card} ${Herostyles.btn}`}
-              >
-                Sign Up
-              </a>
-      )}
-      {authHookValue && (
-            <a
-              href="/"
-              onClick={(e) => {
-                e.preventDefault;
-                signOut();
-              }}
-              className={`${styles.card} ${Herostyles.btn}`}
-            >
-              Sign Out
-            </a>
+        {!authHookValue && (
+          <a
+            href={`http://localhost:1337/connect/google`}
+            className={`${styles.card} ${Herostyles.btn}`}
+          >
+            Sign Up
+          </a>
         )}
         {authHookValue && (
-            <a
-              href="/account"
-              className={`${styles.card} ${Herostyles.btn}`}
-            >
-              My Application
-            </a>
+          <a
+            href="/"
+            onClick={(e) => {
+              e.preventDefault;
+              signOut();
+            }}
+            className={`${styles.card} ${Herostyles.btn}`}
+          >
+            Sign Out
+          </a>
         )}
-
+        {authHookValue && (
+          <a href="/account" className={`${styles.card} ${Herostyles.btn}`}>
+            My Application
+          </a>
+        )}
       </div>
     </main>
   );
