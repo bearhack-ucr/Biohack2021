@@ -29,7 +29,7 @@ export default function Hero() {
       {!authHookValue && (
               <a
                 href={`http://localhost:1337/connect/google`}
-                className={styles.card}
+                className={`${styles.card} ${Herostyles.btn}`}
               >
                 Sign Up
               </a>
@@ -41,7 +41,7 @@ export default function Hero() {
                 e.preventDefault;
                 signOut();
               }}
-              className={styles.card}
+              className={`${styles.card} ${Herostyles.btn}`}
             >
               Sign Out
             </a>
