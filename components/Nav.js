@@ -20,6 +20,18 @@ export function Nav() {
           </li>
           <li className={Navstyles.navlistlink}>
             <Link
+              to="Hero"
+              spy={true}
+              smooth={true}
+              duration={500}
+              activeClass="active"
+              className="link"
+            >
+              About
+            </Link>
+          </li>
+          <li className={Navstyles.navlistlink}>
+            <Link
               to="PastWinners"
               spy={true}
               smooth={true}
