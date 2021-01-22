@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--container-bg-color);
-  background-image: url("../public/assets/natural-paper.png");
+  background: var(--theme-offwhite);
+  background-image: url("../public/assets/light-paper-fibers.png");
 }
 /* Container for each section */
 .main {
@@ -54,8 +54,10 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 15rem;
   color: var(--title-color);
+  font-family: MoonTime;
+  font-weight: bold;
 }
 
 .title,
