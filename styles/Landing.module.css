@@ -8,7 +8,9 @@
 
 .logo{
     background-color: #fff;
+    background-image: url("../public/assets/asfalt-dark.png");
     padding: 3rem 6rem;
+    border-radius: 2px;
     border: 50px solid lightcoral;
     --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
@@ -17,4 +19,20 @@
 }
 .logo:hover{
   transform: rotate(-3deg);
+}
+
+.washitape1, .washitape2{
+  height: 60px;
+  width: 300px;
+  z-index: 2;
+  background-image: url("../public/assets/redwashitape.png");
+  background-size: 100% 100%;
+}
+
+.washitape1{
+  transform: translateY(30px);
+}
+
+.washitape2{
+  transform: translateY(-30px);
 }
