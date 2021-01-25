@@ -3,6 +3,7 @@ import Herostyles from "../styles/Hero.module.css";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { useIsAuthenticated, useSignOut } from "react-auth-kit";
+import Image from "next/image";
 
 export default function Hero() {
   const isAuthenticated = useIsAuthenticated();
@@ -15,17 +16,28 @@ export default function Hero() {
   }, []);
 
   return (
-    <main className={Herostyles.main}>
-      <h1 className={styles.title}>Biohack 2021</h1>
-      <p className={styles.description}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas
-        sapien sit amet metus efficitur semper. Integer id luctus enim.
-        Curabitur a arcu et arcu tincidunt lobortis eget sed risus. Suspendisse
-        vitae libero magna. Pellentesque sodales at urna nec rutrum. Nulla lorem
-        nisl, congue id aliquet vitae, malesuada sed lacus. Phasellus dapibus
-        euismod leo, ut scelerisque tellus rhoncus sed.
-      </p>
-      <div className={styles.grid}>
+    <main className={styles.main}>
+      <div className={Herostyles.wrapper}>
+        <div className={Herostyles.calendar}>
+          <Image
+            src="/assets/calendar.png"
+            alt="Calendar for Biohack"
+            width={1000}
+            height={1000}
+          />
+        </div>
+        <div className={Herostyles.text}>
+          <h1 className={styles.title}>What is Biohack?</h1>
+          <p className={styles.description}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            egestas sapien sit amet metus efficitur semper. Integer id luctus
+            enim. Curabitur a arcu et arcu tincidunt lobortis eget sed risus.
+            Suspendisse vitae libero magna. Pellentesque sodales at urna nec
+            rutrum. Nulla lorem nisl, congue id aliquet vitae, malesuada sed
+            lacus. Phasellus dapibus euismod leo, ut scelerisque tellus rhoncus
+            sed.
+          </p>
+          {/* <div className={styles.grid}>
         {!authHookValue && (
           <a
             href={`http://localhost:1337/connect/google`}
@@ -51,6 +63,8 @@ export default function Hero() {
             My Application
           </a>
         )}
+      </div> */}
+        </div>
       </div>
     </main>
   );

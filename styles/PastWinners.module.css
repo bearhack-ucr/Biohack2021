@@ -39,7 +39,7 @@
   transform: rotate(5deg);
 }
 
-@media (max-width: 1068px) {
+@media (max-width: 1280px) {
   .section{
     flex-direction: column;
   }
