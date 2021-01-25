@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Navstyles from "../styles/Nav.module.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -40,6 +41,23 @@ export function Nav() {
               className="link"
             >
               Winners
+            </Link>
+          </li>
+          <li className={Navstyles.navlogo}>
+          <Link
+              to="Home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              activeClass="logo"
+              className="logo"
+            >
+            <Image
+              src="/logos/black-1-trans.png"
+              alt="Biohack logo"
+              width={50}
+              height={50}
+            />
             </Link>
           </li>
           <li className={Navstyles.navlistlink}>

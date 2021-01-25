@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--theme-offwhite);
+  background: var(--theme-beige-light);
   background-image: url("../public/assets/light-paper-fibers.png");
 }
 /* Container for each section */
