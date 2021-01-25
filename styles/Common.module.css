@@ -10,12 +10,11 @@
 /* Container for each section */
 .main {
   min-height: 100vh;
-  margin: 0rem 5rem;
-  max-width: 90vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 /* Footer CSS */
@@ -53,10 +52,10 @@
 
 .title {
   margin: 0;
-  line-height: 1.15;
-  font-size: 15rem;
+  line-height: 1;
+  font-size: 100px;
   color: var(--title-color);
-  font-family: MoonTime;
+  font-family: Moontime;
   font-weight: bold;
 }
 
@@ -66,8 +65,9 @@
 }
 /* Description Styles */
 .description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .code {
@@ -120,7 +120,7 @@
   height: 1em;
 }
 /* Mobile stuff */
-@media (max-width: 1068px) {
+@media (max-width: 1280px) {
   .main{
     max-width: 100%;
     padding: 0 30px;

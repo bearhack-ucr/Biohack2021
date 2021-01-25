@@ -1,38 +1,21 @@
 .main {
     min-height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+    text-align: center;
+    background-image: url("../public/assets/3.png");
+    background-size: cover;
+    background-position: center;
   }
 
-.logo{
-    background-color: #fff;
-    background-image: url("../public/assets/asfalt-dark.png");
-    padding: 3rem 6rem;
-    border-radius: 2px;
-    border: 50px solid lightcoral;
-    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    transition: all 0.5s ease;
-}
-.logo:hover{
-  transform: rotate(-3deg);
-}
+  .title{
+    font-size: 96px;
+  }
+  .subtitle{
+    font-size: 40px;
+  }
 
-.washitape1, .washitape2{
-  height: 60px;
-  width: 300px;
-  z-index: 2;
-  background-image: url("../public/assets/redwashitape.png");
-  background-size: 100% 100%;
-}
-
-.washitape1{
-  transform: translateY(30px);
-}
-
-.washitape2{
-  transform: translateY(-30px);
-}
