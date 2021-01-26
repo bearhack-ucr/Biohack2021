@@ -103,6 +103,7 @@
 .card:active {
   color: var(--common-card-hover-color);
   border-color: var(--common-card-hover-color);
+  cursor: pointer;
 }
 
 .card h3 {
