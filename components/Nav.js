@@ -97,6 +97,20 @@ export function Nav() {
             </Link>
           </li>
         </ul>
+        <ul className={Navstyles.navlistcontainer}>
+          <li className={Navstyles.navsignup}>
+            <Link
+              to=""
+              spy={true}
+              smooth={true}
+              duration={500}
+              activeClass="active"
+              className="link"
+            >
+              Sign Up
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );
