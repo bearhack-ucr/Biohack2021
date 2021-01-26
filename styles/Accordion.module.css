@@ -24,24 +24,34 @@
 .accordionItemButton {
   position: relative;
   z-index: 2;
-  padding: 1.5rem 0;
+  padding: 1.5rem 3.0rem 1.5rem 3.0rem;
   min-width: 100%;
   border: none;
   box-shadow: transparent;
   cursor: pointer;
-  background-image: var(--accordion-header-bg);
-  background-size: contain;
+  background-size: 90% 100%;
   background-repeat: no-repeat;
   background-position: center center; 
   text-align: center;
-  color: var(--theme-blue-dark);
 }
 
-.accordionItemButton:hover,
-.accordionItemButton:focus,
-.accordionItemButton:active {
-  background-image: var(--accordion-header-alt-bg);
+@screen lg {
+  .accordionItemButton {
+    background-size: contain;
+  }
+}
+
+.accordionItem:nth-of-type(3n-2) .accordionItemButton {
+  background-image: var(--accordion-header-red-bg);
   color: var(--theme-red-light);
+}
+.accordionItem:nth-of-type(3n-1) .accordionItemButton {
+  background-image: var(--accordion-header-blue-bg);
+  color: var(--theme-blue-dark);
+}
+.accordionItem:nth-of-type(3n) .accordionItemButton {
+  background-image: var(--accordion-header-yellow-bg);
+  color: var(--theme-yellow-dark);
 }
 
 .accordionItemPanel {
