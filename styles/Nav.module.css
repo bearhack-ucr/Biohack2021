@@ -6,7 +6,7 @@
   --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  background-image: url(../public/assets/wrinkled.png);
+  background-image: var(--nav-bg);
   background-size: cover;
   background-position: bottom;
   font-family: var(--nav-font);

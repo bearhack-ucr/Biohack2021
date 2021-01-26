@@ -11,10 +11,8 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid #eaeaea;
   transition: color 0.15s ease, border-color 0.15s ease;
   min-width: 100%;
-
 }
 
 .accordionItemHeading {
@@ -24,17 +22,46 @@
 }
 
 .accordionItemButton {
-  padding: 1.5rem 0;
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem 3.0rem 1.5rem 3.0rem;
   min-width: 100%;
   border: none;
   box-shadow: transparent;
   cursor: pointer;
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  background-position: center center; 
+  text-align: center;
+}
+
+@screen lg {
+  .accordionItemButton {
+    background-size: contain;
+  }
+}
+
+.accordionItem:nth-of-type(3n-2) .accordionItemButton {
+  background-image: var(--accordion-header-red-bg);
+  color: var(--theme-red-light);
+}
+.accordionItem:nth-of-type(3n-1) .accordionItemButton {
+  background-image: var(--accordion-header-blue-bg);
+  color: var(--theme-blue-dark);
+}
+.accordionItem:nth-of-type(3n) .accordionItemButton {
+  background-image: var(--accordion-header-yellow-bg);
+  color: var(--theme-yellow-dark);
 }
 
 .accordionItemPanel {
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 3em 1.5rem 1.5rem 1.5rem;
+  margin-bottom: -1.5rem;
   line-height: 1.5;
   font-size: 1.2rem;
+  background-color: rgba(226, 226, 226, 0.9);
+  background-image: var(--accordion-panel-bg);
+  transform: translateY(-40px);
   -webkit-animation: fadein 0.5s ease initial; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 0.5s ease; /* Firefox < 16 */
         -ms-animation: fadein 0.5s ease; /* Internet Explorer */
@@ -42,36 +69,25 @@
             animation: fadein 0.5s ease;
 }
 
-.accordionItem:hover,
-.accordionItem:focus,
-.accordionItem:active {
-  color: var(--accordion-hover-color);
-  border-color: var(--accordion-hover-color);
-}
-
 @keyframes fadein {
-  from {transform:translateY(-20px); opacity: 0;}
-  to {transform:translateY(0); opacity: 1;}
-}
-@keyframes fadein {
-  from {transform:translateY(-20px); opacity: 0;}
-  to {transform:translateY(0); opacity: 1;}
+  from {transform:translateY(-70px); opacity: 0;}
+  to {transform:translateY(-40px); opacity: 1;}
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-  from {transform:translateY(-20px); opacity: 0;}
-  to {transform:translateY(0); opacity: 1;}
+  from {transform:translateY(-70px); opacity: 0;}
+  to {transform:translateY(-40px); opacity: 1;}
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-  from {transform:translateY(-20px); opacity: 0;}
-  to {transform:translateY(0); opacity: 1;}
+  from {transform:translateY(-70px); opacity: 0;}
+  to {transform:translateY(-40px); opacity: 1;}
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-  from {transform:translateY(-20px); opacity: 0;}
-  to {transform:translateY(0); opacity: 1;}
+  from {transform:translateY(-70px); opacity: 0;}
+  to {transform:translateY(-40px); opacity: 1;}
 }
