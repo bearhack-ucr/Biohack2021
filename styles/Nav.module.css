@@ -9,7 +9,7 @@
   background-image: url(../public/assets/wrinkled.png);
   background-size: cover;
   background-position: bottom;
-  font-family: "Anon";
+  font-family: var(--nav-font);
 }
 
 .navigation {

@@ -28,7 +28,7 @@ body {
   overflow-x: hidden;
 }
 p{
-  font-family: "Montesserat";
+  font-family: var(--p-font);
 }
 a {
   color: inherit;

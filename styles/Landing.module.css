@@ -7,7 +7,7 @@
     align-items: center;
     overflow-x: hidden;
     text-align: center;
-    background-image: url("../public/assets/3.png");
+    background-image: var(--landing-bg);
     background-size: cover;
     background-position: center;
   }
