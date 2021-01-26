@@ -42,6 +42,10 @@ export default function AccordionComponent() {
         question="How do I register?"
         answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque varius morbi enim nunc faucibus a pellentesque. Arcu risus quis varius quam."
       />
+      <Faq
+        question="Does this event cost money?"
+        answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque varius morbi enim nunc faucibus a pellentesque. Arcu risus quis varius quam."
+      />
     </Accordion>
   );
 }
