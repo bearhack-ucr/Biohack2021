@@ -8,41 +8,40 @@ import {
 
 import styles from "../styles/Accordion.module.css";
 
+const Faq = ({ question, answer }) => {
+  return (
+    <AccordionItem className={styles.accordionItem}>
+      <AccordionItemHeading className={styles.accordionItemHeading}>
+        <AccordionItemButton className={styles.accordionItemButton}>
+          {question}
+        </AccordionItemButton>
+      </AccordionItemHeading>
+      <AccordionItemPanel className={styles.accordionItemPanel}>
+        <p>{answer}</p>
+      </AccordionItemPanel>
+    </AccordionItem>
+  );
+};
+
 export default function AccordionComponent() {
   return (
-    <Accordion
-      allowMultipleExpanded
-      allowZeroExpanded
-      className={styles.accordion}
-    >
-      <AccordionItem className={styles.accordionItem}>
-        <AccordionItemHeading className={styles.accordionItemHeading}>
-          <AccordionItemButton className={styles.accordionItemButton}>
-            What harsh truths do you prefer to ignore?
-          </AccordionItemButton>
-        </AccordionItemHeading>
-        <AccordionItemPanel className={styles.accordionItemPanel}>
-          <p>
-            Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat
-            occaecat ut occaecat consequat est minim minim esse tempor laborum
-            consequat esse adipisicing eu reprehenderit enim.
-          </p>
-        </AccordionItemPanel>
-      </AccordionItem>
-      <AccordionItem className={styles.accordionItem}>
-        <AccordionItemHeading className={styles.accordionItemHeading}>
-          <AccordionItemButton className={styles.accordionItemButton}>
-            Is free will real or just an illusion?
-          </AccordionItemButton>
-        </AccordionItemHeading>
-        <AccordionItemPanel className={styles.accordionItemPanel}>
-          <p>
-            In ad velit in ex nostrud dolore cupidatat consectetur ea in ut
-            nostrud velit in irure cillum tempor laboris sed adipisicing eu esse
-            duis nulla non.
-          </p>
-        </AccordionItemPanel>
-      </AccordionItem>
+    <Accordion className={styles.accordion}>
+      <Faq
+        question="What is a hackathon?"
+        answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque varius morbi enim nunc faucibus a pellentesque. Arcu risus quis varius quam."
+      />
+      <Faq
+        question="Who can join?"
+        answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque varius morbi enim nunc faucibus a pellentesque. Arcu risus quis varius quam."
+      />
+      <Faq
+        question="Do I need to be a CS major or minor to join?"
+        answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque varius morbi enim nunc faucibus a pellentesque. Arcu risus quis varius quam."
+      />
+      <Faq
+        question="How do I register?"
+        answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque varius morbi enim nunc faucibus a pellentesque. Arcu risus quis varius quam."
+      />
     </Accordion>
   );
 }
