@@ -9,6 +9,17 @@
     --theme-beige: #f1d2ab;
     --theme-beige-light: #deb88a;
 
+    /* background images */
+    --container-bg: url("../public/assets/light-paper-fibers.png");
+    --footer-bg: url("../public/assets/light-paper-fibers.png");
+    --landing-bg: url("../public/assets/3.png");
+    --faq-bg: url("../public/assets/9.png");
+    --volunteer-bg: url("../public/assets/12.png");
+    
+    /* font families */
+    --p-font: "Montesserat";
+    --nav-font: "Anon";
+
     /* globals */
     --html-body-bg: var(--theme-offwhite);
     --globals-active-color: white;
@@ -32,41 +43,4 @@
     --code-color: #fafafa;
     --common-card-border-color: #eaeaea;
     --common-card-hover-color: #0070f3;
-
-    /* nav module */
-    --nav-home-color: var(--theme-blue);
-    --nav-home-text-color: var(--theme-offwhite);
-
-    --nav-winners-color: var(--theme-yellow);
-    --nav-winners-text-color: var(--theme-black);
-
-    --nav-faq-color: var(--theme-red);
-    --nav-faq-text-color: var(--theme-offwhite);
-
-    --nav-help-color: var(--theme-offwhite);
-    --nav-help-text-color: var(--theme-black);
-
-    --nav-sponsors-color: var(--theme-black);
-    --nav-sponsors-text-color: var(--theme-offwhite);
-
-    /* hero module */
-    --hero-top-color: var(--nav-home-color);
-    --hero-bottom-color: var(--theme-red);
-    --hero-texture: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
-
-    /* past winners module */
-    --past-winners-bg-color: var(--nav-winners-color);
-    --past-winners-texture: url("https://www.transparenttextures.com/patterns/az-subtle.png");
-
-    /* faq module */
-    --faq-bg-color: var(--nav-faq-color);
-    --faq-texture: url("https://www.transparenttextures.com/patterns/clean-textile.png");
-
-    /* volunteer module */
-    --volunteer-bg-color: var(--nav-help-color);
-    --volunteer-texture: url("https://www.transparenttextures.com/patterns/groovepaper.png");
-
-    /* sponsors module */
-    --sponsors-bg-color: var(--nav-sponsors-color);
-    --sponsors-texture: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
 }
