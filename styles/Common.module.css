@@ -122,12 +122,12 @@
 .grid {
   display: flex;
   flex-direction: row;
-
+  justify-content: center;
 }
 
 .card {
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  /*margin-right: 1rem;
+  margin-bottom: 1rem;*/
   padding: 0 2rem 2rem 0;
   width: 25rem;
   height: 10rem;
