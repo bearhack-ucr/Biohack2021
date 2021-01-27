@@ -60,7 +60,7 @@
   font-family: var(--card-description-font);
 }
 
-@screen xl {
+@screen lg {
   .flipContainer,
   .front,
   .back {

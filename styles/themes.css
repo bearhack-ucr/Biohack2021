@@ -23,6 +23,7 @@
     --landing-bg: url("../public/assets/3.png");
     --faq-bg: url("../public/assets/9.png");
     --volunteer-bg: url("../public/assets/12.png");
+    --team-bg:  url("../public/assets/14.png");
 
     --accordion-header-red-bg: url("../public/assets/Faq\ tapes/red\ thick.png");
     --accordion-header-blue-bg: url("../public/assets/Faq\ tapes/blue\ thick.png");
@@ -38,7 +39,7 @@
     --p-font: "Montesserat";
     --nav-font: "Anon";
     --button-font: "Anon";
-    
+
     --card-front-font: "Caveat";
     --card-caption-font: "Anon";
     --card-back-font: "Anon";
@@ -52,6 +53,12 @@
 
     --faq-question-font: "Anon";
     --faq-answer-font: "Montesserat";
+
+    --team-name-font: "Montesserat-Bold";
+    --team-position-font: "Montesserat";
+
+    --committee-title-font: "Montesserat-Bold";
+    --committee-member-font: "Montesserat";
 
     /* globals */
     --html-body-bg: var(--theme-offwhite);

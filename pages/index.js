@@ -8,6 +8,7 @@ import PastWinners from "./PastWinners";
 import Faq from "./Faq";
 import Sponsors from "./Sponsors";
 import Volunteer from "./Volunteer";
+import Team from "./Team";
 
 import Footer from "../components/Footer";
 
@@ -39,6 +40,9 @@ export default function Home() {
         </Element>
         <Element name="Sponsors">
           <Sponsors />
+        </Element>
+        <Element name="Team">
+          <Team />
         </Element>
       </div>
       <Footer />

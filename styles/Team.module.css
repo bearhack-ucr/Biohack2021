@@ -1,0 +1,102 @@
+.main {
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: var(--team-bg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: auto 0;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.profile {
+  margin: 1rem 2rem;
+  text-align: center;
+}
+
+.profile:hover {
+  color: var(--theme-red);
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.nameText {
+  font-family: var(--team-name-font);
+  font-size: 12px;
+  margin-bottom: -10px;
+}
+
+.positionText {
+  font-family: var(--team-position-font);
+  font-size: 12px;
+}
+
+.contactWrapper {
+  margin: 3rem 0;
+}
+/* CSS for committee lists */
+.credits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  font-size: 16px;
+}
+
+.col ul {
+  list-style: none;
+  margin: 0 1rem;
+  padding: 0;
+  text-align: left;
+}
+
+.col ul li {
+  font-family: var(--committee-member-font);
+}
+
+.committeeTitle {
+  font-family: var(--committee-title-font);
+}
+
+@screen sm {
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .nameText {
+    font-size: 16px;
+    margin-bottom: -10px;
+  }
+  
+  .positionText {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .wrapper {
+    max-width: 75%;
+  }
+}
