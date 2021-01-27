@@ -6,8 +6,23 @@ import { Link, animateScroll as scroll } from "react-scroll";
 export default function Landing() {
   return (
     <main className={Landingstyles.main}>
-      <h2 className={Landingstyles.subtitle}>Welcome to</h2>
-      <h1 className={Landingstyles.title}>Biohack 2021</h1>
+
+      <div className={Landingstyles.mainTitle}>
+        <div className={Landingstyles.left}>
+          <Image
+            src="/logos/black-1-trans.png"
+            alt="Biohack logo"
+            width={150}
+            height={150}
+          />
+        </div>
+        <div className={Landingstyles.right}>
+          <h2 className={Landingstyles.subtitle}>Welcome to</h2>
+          <h1 className={Landingstyles.title}>BIOHACK 2021</h1>
+          <p className={Landingstyles.caption}>Healthcare Hackathon</p>
+          <p className={Landingstyles.date}>May 15-16, 2021</p>
+        </div>
+      </div>
       <div className={styles.grid}>
         <a href="https://nextjs.org/docs" className={styles.card}>
           <h3>Sign Up! &rarr;</h3>
