@@ -140,10 +140,22 @@
   /*border: 1px solid var(--common-card-border-color);
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;*/
+  background-image: var(--button-red-bg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  color: var(--theme-red-light);
   font-family: var(--button-font);
+}
+
+.card:nth-of-type(2) {
+  background-image: var(--button-blue-bg);
+  color: var(--theme-blue-light);
+}
+
+.card:nth-of-type(3) {
+  background-image: var(--button-yellow-bg);
+  color: var(--theme-yellow-dark);
 }
 /*
 .card:hover,
