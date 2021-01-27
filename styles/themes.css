@@ -33,9 +33,13 @@
     /* font families */
     --p-font: "Montesserat";
     --nav-font: "Anon";
+    --button-font: "Anon";
     --heading-font: "Caveat";
+    --footer-font: "Montesserat";
     --landing-title-font: "Caveat";
     --landing-subtitle-font: "Anon";
+    --faq-question-font: "Anon";
+    --faq-answer-font: "Montesserat";
 
     /* globals */
     --html-body-bg: var(--theme-offwhite);
