@@ -1,21 +1,32 @@
 .main {
-    min-height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-    text-align: center;
-    background-image: var(--landing-bg);
-    background-size: cover;
-    background-position: center;
-  }
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-align: center;
+  background-image: var(--landing-bg);
+  background-size: cover;
+  background-position: center;
+}
 
-  .title{
+.title {
+  margin-top: 0;
+  font-size: 64px;
+}
+.subtitle {
+  margin-top: 150px;
+  font-size: 30px;
+}
+
+@screen sm {
+  .title {
     font-size: 96px;
   }
-  .subtitle{
+
+  .subtitle {
     font-size: 40px;
   }
-
+}
