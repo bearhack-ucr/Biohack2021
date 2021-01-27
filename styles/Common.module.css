@@ -27,6 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: var(--footer-font);
 }
 
 .footer img {
@@ -55,7 +56,7 @@
   line-height: 1;
   font-size: 100px;
   color: var(--title-color);
-  font-family: Moontime;
+  font-family: var(--heading-font);
   font-weight: bold;
 }
 
@@ -88,21 +89,39 @@
 .card {
   margin-right: 1rem;
   margin-bottom: 1rem;
-  padding: 2rem;
-  width: 400px;
+  padding: 0 2rem 2rem 0;
+  width: 25rem;
+  height: 10rem;
+  line-height: 10rem;
   text-align: center;
-  color: inherit;
+  vertical-align: middle;
   text-decoration: none;
-  border: 1px solid var(--common-card-border-color);
+  /*border: 1px solid var(--common-card-border-color);
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: color 0.15s ease, border-color 0.15s ease;*/
+  background-image: var(--button-red-bg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: var(--theme-red-dark);
+  font-family: var(--button-font);
+}
+
+.card:nth-of-type(2) {
+  background-image: var(--button-blue-bg);
+  color: var(--theme-blue-dark);
+}
+
+.card:nth-of-type(3) {
+  background-image: var(--button-yellow-bg);
+  color: var(--theme-yellow-dark);
 }
 
 .card:hover,
 .card:focus,
 .card:active {
   color: var(--common-card-hover-color);
-  border-color: var(--common-card-hover-color);
+  /*border-color: var(--common-card-hover-color);*/
   cursor: pointer;
 }
 

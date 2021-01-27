@@ -1,21 +1,87 @@
 .main {
-    min-height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-    text-align: center;
-    background-image: var(--landing-bg);
-    background-size: cover;
-    background-position: center;
+  min-height: 100vh;
+  width: 100vw;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-align: center;
+  background-image: var(--landing-bg);
+  background-size: cover;
+  background-position: right 50% bottom 120px;
+  background-repeat: no-repeat;
+}
+
+.mainTitle {
+  display: flex;
+}
+
+.left {
+  margin: 30% 0 0 0;
+  display: none;
+}
+
+.right {
+  text-align: left;
+}
+
+.title {
+  margin-top: -10px;
+  margin-bottom: -32px;
+  font-size: 54px;
+  font-family: var(--landing-title-font);
+}
+
+.subtitle {
+  font-size: 72px;
+  font-family: var(--landing-subtitle-font);
+}
+
+.caption {
+  margin-bottom: -8px;
+  font-size: 32px;
+}
+
+.caption:after {
+  content: ""; 
+  display: block; 
+  width: 50%; 
+  padding-top: 20px;
+  border-bottom: 2px solid black; 
+}
+
+.date {
+  font-size: 24px;
+}
+
+@screen sm {
+  .title {
+    margin-top: -10px;
+    font-size: 72px;
   }
 
-  .title{
-    font-size: 96px;
+  .subtitle {
+    margin-top: 50px;
+    font-size: 84px;
   }
-  .subtitle{
-    font-size: 40px;
-  }
+}
 
+@screen md {
+  .left {
+    display: block;
+  }
+}
+
+@screen xl {
+  .main {
+    background-position: right 50% bottom 40%;
+  }
+}
+
+@screen 2xl {
+  .main {
+    background-position: right 50% bottom 45%;
+  }
+}
