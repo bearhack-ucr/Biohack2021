@@ -55,7 +55,7 @@
   line-height: 1;
   font-size: 100px;
   color: var(--title-color);
-  font-family: Moontime;
+  font-family: var(--heading-font);
   font-weight: bold;
 }
 

@@ -14,16 +14,20 @@
 
 .title {
   margin-top: 0;
-  font-size: 64px;
+  margin-bottom: 20px;
+  font-size: 92px;
+  font-family: var(--landing-title-font);
 }
 .subtitle {
   margin-top: 150px;
   font-size: 30px;
+  font-family: var(--landing-subtitle-font);
 }
 
 @screen sm {
   .title {
-    font-size: 96px;
+    margin-top: -20px;
+    font-size: 112px;
   }
 
   .subtitle {
