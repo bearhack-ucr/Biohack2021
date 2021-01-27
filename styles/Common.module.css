@@ -142,28 +142,28 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  color: var(--theme-red-dark);
+  color: var(--theme-red-light);
   font-family: var(--button-font);
 }
 
 .card:nth-of-type(2) {
   background-image: var(--button-blue-bg);
-  color: var(--theme-blue-dark);
+  color: var(--theme-blue-light);
 }
 
 .card:nth-of-type(3) {
   background-image: var(--button-yellow-bg);
   color: var(--theme-yellow-dark);
 }
-
+/*
 .card:hover,
 .card:focus,
 .card:active {
   color: var(--common-card-hover-color);
-  /*border-color: var(--common-card-hover-color);*/
+  border-color: var(--common-card-hover-color);
   cursor: pointer;
 }
-
+*/
 .card h3 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;

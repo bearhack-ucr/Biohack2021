@@ -14,16 +14,16 @@
   background-repeat: no-repeat;
 }
 
-.mainTitle {
+.wrapper {
   display: flex;
 }
 
-.left {
+.logo {
   margin: 30% 0 0 0;
   display: none;
 }
 
-.right {
+.text {
   text-align: left;
   color: var(--theme-black);
 }
@@ -70,7 +70,7 @@
 }
 
 @screen md {
-  .left {
+  .logo {
     display: block;
   }
 }
