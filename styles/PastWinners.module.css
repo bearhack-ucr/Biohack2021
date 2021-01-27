@@ -10,78 +10,68 @@
   align-items: flex-start;
 }
 
-.cardContainer{
+.grid{
   display: flex;
-  flex-direction: column;
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cell {
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
 }
 /* First image */
-.section:nth-of-type(1) .cell:nth-of-type(1){
+.cell:nth-of-type(1){
   display: none;
   margin: auto 0;
 }
 /* Last image */
-.section:nth-of-type(2) .cell:nth-of-type(4){
+.cell:nth-of-type(8){
   display: none;
   margin: auto 0;
 }
 
-@screen xl {
-  .section{
-    flex-direction: row;
-  }
-
-  .section:nth-of-type(1) .cell:nth-of-type(2){
-    transform: rotate(4deg);
-  }
-  .section:nth-of-type(1) .cell:nth-of-type(3){
-    transform: rotate(-6deg);
-  }
-  .section:nth-of-type(1) .cell:nth-of-type(4){
-    transform: rotate(2deg);
-  }
-  .section:nth-of-type(2) .cell:nth-of-type(1){
-    transform: rotate(-4deg);
-  }
-  .section:nth-of-type(2) .cell:nth-of-type(2){
-    transform: rotate(3deg);
-  }
-  .section:nth-of-type(2) .cell:nth-of-type(3){
-    transform: rotate(-5deg);
-  }
+.cell:nth-of-type(2){
+  transform: rotate(4deg);
+}
+.cell:nth-of-type(3){
+  transform: rotate(-6deg);
+}
+.cell:nth-of-type(4){
+  transform: rotate(2deg);
+}
+.cell:nth-of-type(5){
+  transform: rotate(-4deg);
+}
+.cell:nth-of-type(6){
+  transform: rotate(3deg);
+}
+.cell:nth-of-type(7){
+  transform: rotate(-5deg);
 }
 
 @screen 2xl {
-  .section:nth-of-type(1) .cell:nth-of-type(1){
+  .cell:nth-of-type(1){
     display: block;
   }
-  .section:nth-of-type(2) .cell:nth-of-type(4){
+  .cell:nth-of-type(8){
     display: block;
   }
-  .section:nth-of-type(1) .cell:nth-of-type(2){
+  .cell:nth-of-type(2){
     transform: rotate(4deg);
   }
-  .section:nth-of-type(1) .cell:nth-of-type(3){
+  .cell:nth-of-type(3){
     transform: rotate(-6deg) translateY(10px);
   }
-  .section:nth-of-type(1) .cell:nth-of-type(4){
+  .cell:nth-of-type(4){
     transform: rotate(2deg);
   }
-  .section:nth-of-type(2) .cell:nth-of-type(1){
+  .cell:nth-of-type(5){
     transform: rotate(4deg);
   }
-  .section:nth-of-type(2) .cell:nth-of-type(2){
+  .cell:nth-of-type(6){
     transform: rotate(-5deg) translateY(-10px);
   }
-  .section:nth-of-type(2) .cell:nth-of-type(3){
+  .cell:nth-of-type(7){
     transform: rotate(2deg);
   }
 }

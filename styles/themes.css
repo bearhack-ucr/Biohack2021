@@ -57,6 +57,9 @@
     --team-name-font: "Montesserat-Bold";
     --team-position-font: "Montesserat";
 
+    --committee-title-font: "Montesserat-Bold";
+    --committee-member-font: "Montesserat";
+
     /* globals */
     --html-body-bg: var(--theme-offwhite);
     --globals-active-color: white;

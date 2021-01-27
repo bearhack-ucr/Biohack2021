@@ -10,7 +10,7 @@ return (
 	<Link href={link} target="_blank" rel="noreferrer noopener">
 		<a className={Teamstyles.link}>
 		<div className={Teamstyles.profile}>
-			<img className={Teamstyles.image} src={image} alt="Profile picture" width={220} height={220} />
+			<img className={Teamstyles.image} src={image} alt="Profile picture" width={120} height={120} />
 			<h3 className={Teamstyles.nameText}>{name}</h3>
 			<p className={Teamstyles.positionText}>{position}</p>
 		</div>
@@ -86,6 +86,78 @@ export default function Team() {
             position="Web Dev Lead"
           />
         </div>
+
+        <div className={Teamstyles.credits}>
+          <div className={Teamstyles.col}>
+            <ul>
+              <h3 className={Teamstyles.committeeTitle}>Committee</h3>
+              <li>
+                John Doe
+              </li>
+              <li>
+                John Doe
+              </li>
+              <li>
+                John Doe
+              </li>
+              <li>
+                John Doe
+              </li>
+            </ul>
+          </div>
+          <div className={Teamstyles.col}>
+            <ul>
+              <h3 className={Teamstyles.committeeTitle}>Committee</h3>
+              <li>
+                John Doe
+              </li>
+              <li>
+                John Doe
+              </li>
+              <li>
+                John Doe
+              </li>
+              <li>
+                John Doe
+              </li>
+            </ul>
+          </div>
+          <div className={Teamstyles.col}>
+            <ul>
+              <h3 className={Teamstyles.committeeTitle}>Committee</h3>
+              <li>
+                John Doe
+              </li>
+              <li>
+                John Doe
+              </li>
+              <li>
+                John Doe
+              </li>
+              <li>
+                John Doe
+              </li>
+            </ul>
+          </div>
+          <div className={Teamstyles.col}>
+            <ul>
+              <h3 className={Teamstyles.committeeTitle}>Committee</h3>
+              <li>
+                John Doe
+              </li>
+              <li>
+                John Doe
+              </li>
+              <li>
+                John Doe
+              </li>
+              <li>
+                John Doe
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div className={Teamstyles.contactWrapper}>
           <div className={styles.contact}>
             <a href="https://www.facebook.com/UCRBioHack/"><FaFacebookSquare/></a>
