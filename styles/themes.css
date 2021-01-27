@@ -38,10 +38,18 @@
     --p-font: "Montesserat";
     --nav-font: "Anon";
     --button-font: "Anon";
+    
+    --card-front-font: "Caveat";
+    --card-caption-font: "Anon";
+    --card-back-font: "Anon";
+    --card-description-font: "Montesserat";
+
     --heading-font: "Caveat";
     --footer-font: "Montesserat";
+
     --landing-title-font: "Montesserat";
     --landing-subtitle-font: "Caveat";
+
     --faq-question-font: "Anon";
     --faq-answer-font: "Montesserat";
 
