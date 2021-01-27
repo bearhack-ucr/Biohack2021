@@ -7,8 +7,8 @@ export default function Landing() {
   return (
     <main className={Landingstyles.main}>
 
-      <div className={Landingstyles.mainTitle}>
-        <div className={Landingstyles.left}>
+      <div className={Landingstyles.wrapper}>
+        <div className={Landingstyles.logo}>
           <Image
             src="/logos/black-1-trans.png"
             alt="Biohack logo"
@@ -16,7 +16,7 @@ export default function Landing() {
             height={150}
           />
         </div>
-        <div className={Landingstyles.right}>
+        <div className={Landingstyles.text}>
           <h2 className={Landingstyles.subtitle}>Welcome to</h2>
           <h1 className={Landingstyles.title}>BIOHACK 2021</h1>
           <p className={Landingstyles.caption}>Healthcare Hackathon</p>

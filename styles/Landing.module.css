@@ -14,17 +14,18 @@
   background-repeat: no-repeat;
 }
 
-.mainTitle {
+.wrapper {
   display: flex;
 }
 
-.left {
+.logo {
   margin: 30% 0 0 0;
   display: none;
 }
 
-.right {
+.text {
   text-align: left;
+  color: var(--theme-black);
 }
 
 .title {
@@ -49,7 +50,7 @@
   display: block; 
   width: 50%; 
   padding-top: 20px;
-  border-bottom: 2px solid black; 
+  border-bottom: 2px solid var(--theme-black); 
 }
 
 .date {
@@ -69,7 +70,7 @@
 }
 
 @screen md {
-  .left {
+  .logo {
     display: block;
   }
 }

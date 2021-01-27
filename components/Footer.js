@@ -1,15 +1,22 @@
 import styles from "../styles/Common.module.css";
+import {FaFacebookSquare, FaInstagramSquare, FaLinkedin} from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+    <div className={styles.footer}>
+      <div className ={styles.contact}>
+        <a href="https://www.facebook.com/UCRBioHack/"><FaFacebookSquare/></a>
+        <a href="https://www.instagram.com/biohack_ucr/?hl=en"><FaInstagramSquare/></a>
+        <a href="https://www.linkedin.com/company/biohackucr/"><FaLinkedin/></a>
+      </div>
+      <div className={styles.contactlink}>
+        <a href="mailto:biohack.ucr@gmail.com">
+          biohack.ucr@gmail.com
+        </a>
+      </div>
+      <div className={styles.teamlink}>
         Powered by love and coffee from the Biohack team.
-      </a>
-    </footer>
+      </div>
+    </div>
   );
 }
