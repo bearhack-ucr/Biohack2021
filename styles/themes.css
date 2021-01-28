@@ -39,6 +39,7 @@
     --team-red-bg: url(../public/assets/redwashitape-2.png);
     --team-blue-bg: url(../public/assets/bluewashitape-2.png);
     --team-yellow-bg: url(../public/assets/yellowwashitape-2.png);
+    --team-black-bg: url(../public/assets/blackwashitape-2.png);
 
     /* font families */
     --p-font: "Montesserat";
@@ -62,7 +63,7 @@
     --team-name-font: "Montesserat-Bold";
     --team-position-font: "Montesserat";
 
-    --committee-title-font: "Montesserat-Bold";
+    --committee-title-font: "Caveat";
     --committee-member-font: "Montesserat";
 
     /* globals */
