@@ -8,6 +8,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  background-image: var(--winners-bg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .grid{
@@ -28,6 +32,7 @@
 .cell:nth-of-type(8){
   display: none;
   margin: auto 0;
+  opacity: 0;
 }
 
 .cell:nth-of-type(2){

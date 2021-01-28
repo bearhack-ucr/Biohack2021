@@ -10,10 +10,12 @@ return (
 	<Link href={link} target="_blank" rel="noreferrer noopener">
 		<a className={Teamstyles.link}>
 		<div className={Teamstyles.profile}>
-			<img className={Teamstyles.image} src={image} alt="Profile picture" width={120} height={120} />
-			<h3 className={Teamstyles.nameText}>{name}</h3>
-			<p className={Teamstyles.positionText}>{position}</p>
-		</div>
+			<img className={Teamstyles.image} src={image} alt="Profile picture" width={130} height={130} />
+      <div className={Teamstyles.text}>
+        <h3 className={Teamstyles.nameText}>{name}</h3>
+        <p className={Teamstyles.positionText}>{position}</p>
+      </div>
+    </div>
 		</a>
 	</Link>
 	</div>
