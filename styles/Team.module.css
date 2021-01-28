@@ -42,7 +42,6 @@
 }
 
 .text {
-  margin-top: -10px;
   padding: 0.5rem 1.5rem;
   background-image: var(--team-blue-bg);
   background-size: cover;
@@ -51,6 +50,19 @@
   background-size: 100% 80%;
   text-align: center;
   color: var(--theme-white);
+}
+
+.red {
+  background-image: var(--team-red-bg);
+}
+
+.blue {
+  background-image: var(--team-blue-bg);
+}
+
+.yellow {
+  background-image: var(--team-yellow-bg);
+  color: var(--theme-black);
 }
 
 .nameText {
