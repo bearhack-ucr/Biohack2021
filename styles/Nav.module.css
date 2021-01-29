@@ -14,7 +14,7 @@
 
 .navigation {
   display: flex;
-  margin: 1.5rem 1rem;
+  margin: 0.8rem 1rem;
   padding: 1rem;
   justify-content: space-between;
 }
@@ -37,7 +37,7 @@
   display: none;
 }  
 
-.navlogo{
+.navlogo {
   list-style: none;
   cursor: pointer;
   margin: 0;
@@ -62,9 +62,21 @@
 
   .navlistlink {
     display: block;
+    font-size: 14px;
   }  
 
   .navsignup {
     display: none;
   }
+}
+
+@media (min-width: 720px) {
+  .navigation {
+    margin: 1.5rem 1rem;
+    justify-content: center;
+  }
+
+  .navlistlink {
+    font-size: 18px;
+  }  
 }

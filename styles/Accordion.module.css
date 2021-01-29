@@ -34,6 +34,7 @@
   background-repeat: no-repeat;
   background-position: center center; 
   text-align: center;
+  font-size: 16px;
 }
 
 .accordionItem:nth-of-type(3n-2) .accordionItemButton {
@@ -53,7 +54,7 @@
   padding: 3rem 1.5rem 1.5rem 1.5rem;
   margin-bottom: -1.5rem;
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 14px;
   font-family: var(--faq-answer-font);
   background-color: rgba(226, 226, 226, 0.9);
   background-image: var(--accordion-panel-bg);
@@ -64,6 +65,15 @@
         -ms-animation: fadein 0.5s ease; /* Internet Explorer */
          -o-animation: fadein 0.5s ease; /* Opera < 12.1 */
             animation: fadein 0.5s ease;
+}
+
+@media (min-width: 480px) {
+  .accordionItemButton {
+    font-size: 20px;
+  }
+  .accordionItemPanel {
+    font-size: 16px;
+  }
 }
 
 @keyframes fadein {

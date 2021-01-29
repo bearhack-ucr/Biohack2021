@@ -31,18 +31,19 @@
 .title {
   margin-top: -10px;
   margin-bottom: -32px;
-  font-size: 54px;
+  font-size: 36px;
   font-family: var(--landing-title-font);
 }
 
 .subtitle {
-  font-size: 72px;
+  font-size: 40px;
   font-family: var(--landing-subtitle-font);
 }
 
 .caption {
+  margin-top: 36px;
   margin-bottom: -8px;
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .caption:after {
@@ -54,17 +55,29 @@
 }
 
 .date {
-  font-size: 24px;
+  font-size: 20px;
+}
+
+@media (min-width: 420px) {
+  .title {
+    font-size: 54px;
+  }
+  .subtitle {
+    font-size: 64px;
+  }
+  .caption {
+    font-size: 32px;
+  }
+  .date {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 640px) {
   .title {
-    margin-top: -10px;
     font-size: 72px;
   }
-
   .subtitle {
-    margin-top: 50px;
     font-size: 84px;
   }
 }
