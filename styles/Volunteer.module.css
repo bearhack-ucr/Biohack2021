@@ -44,7 +44,7 @@
   color: var(--theme-yellow-dark);
 }
 
-@screen lg {
+@media (min-width: 1024px) {
   .images {
     display: block;
   }
@@ -64,7 +64,7 @@
   }
 }
 
-@screen xl {
+@media (min-width: 1280px) {
   .main {
     background-position: right 50% top 10%;
   }

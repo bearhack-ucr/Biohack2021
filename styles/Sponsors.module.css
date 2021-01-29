@@ -8,6 +8,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  background-image: var(--sponsors-bg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .card:nth-of-type(1) {
