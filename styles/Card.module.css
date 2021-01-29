@@ -4,6 +4,7 @@
   position: relative;
   
 }
+
 .flipContainer:hover .flipper,
 .flipContainer.hover .flipper {
   transform: rotateY(180deg);
@@ -32,6 +33,7 @@
 
   position: relative;
 }
+
 .front {
   z-index: 2;
   /* for firefox 31 */
@@ -40,4 +42,65 @@
 
 .back {
   transform: rotateY(180deg);
+}
+
+.frontTitle {
+  margin-top: 10px;
+  margin-bottom: -16px;
+  font-size: 40px;
+  font-family: var(--card-front-font);
+}
+.caption {
+  font-family: var(--card-caption-font);
+}
+.backTitle {
+  font-family: var(--card-back-font);
+}
+.description {
+  font-family: var(--card-description-font);
+}
+
+@media (min-width: 1280px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 280px;
+    height: 360px;
+  }
+
+  .frontTitle {
+    margin-top: 10px;
+    margin-bottom: -16px;
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 300px;
+    height: 380px;
+  }
+
+  .frontTitle {
+    margin-top: 10px;
+    margin-bottom: -16px;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 400px;
+    height: 510px;
+  }
+
+  .frontTitle {
+    margin-top: 10px;
+    margin-bottom: -16px;
+    font-size: 44px;
+  }
 }

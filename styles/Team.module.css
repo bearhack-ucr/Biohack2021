@@ -1,0 +1,160 @@
+.main {
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: var(--team-bg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: auto 0;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.profile {
+  margin: 1rem 2rem;
+  text-align: center;
+}
+
+.image {
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.6);
+  transition-duration: 0.2s;
+}
+
+.image:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.5);
+  transition-duration: 0.2s;
+}
+
+.text {
+  padding: 0.5rem 1.5rem;
+  background-image: var(--team-blue-bg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  text-align: center;
+  color: var(--theme-white);
+}
+
+.red {
+  background-image: var(--team-red-bg);
+}
+
+.blue {
+  background-image: var(--team-blue-bg);
+}
+
+.yellow {
+  background-image: var(--team-yellow-bg);
+  color: var(--theme-black);
+}
+
+.nameText {
+  font-family: var(--team-name-font);
+  font-size: 12px;
+  margin-bottom: -10px;
+}
+
+.positionText {
+  font-family: var(--team-position-font);
+  font-size: 12px;
+}
+
+.contactWrapper {
+  margin: 3rem 0;
+}
+/* CSS for committee lists */
+.credits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: default;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  font-size: 14px;
+}
+
+.col ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.col ul li {
+  font-family: var(--committee-member-font);
+  background-color: rgba(226, 226, 226, 0.9);
+  background-image: var(--accordion-panel-bg);
+  padding: 0 2rem;
+}
+
+.col ul li:nth-of-type(1) {
+  margin-top: -4rem;
+  padding-top: 3rem;
+}
+
+.col li:last-of-type {
+  padding-bottom: 2rem;
+}
+
+.committeeTitle {
+  position: relative;
+  padding: 1.5rem 2rem;
+  font-family: var(--committee-title-font);
+  font-size: 24px;
+  color: var(--theme-white);
+  background-image: var(--team-black-bg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 90% 80%;
+}
+
+@media (min-width: 640px) {
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .nameText {
+    font-size: 14px;
+    margin-bottom: -10px;
+  }
+  
+  .positionText {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .image {
+    width: 230px;
+    height: 220px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .wrapper {
+    max-width: 75%;
+  }
+}

@@ -8,12 +8,12 @@ export default function Card({ picture, caption, title, description }) {
       <div className={Cardstyles.flipper}>
         <div className={Cardstyles.front}>
           <Image src={picture} alt={caption} width={500} height={500} />
-          <h2>{title}</h2>
-          <h3>{caption}</h3>
+          <h2 className={Cardstyles.frontTitle}>{title}</h2>
+          <h3 className={Cardstyles.caption}>{caption}</h3>
         </div>
         <div className={Cardstyles.back}>
-          <h3>{title}</h3>
-          <p>{description}</p>
+          <h3 className={Cardstyles.backTitle}>{title}</h3>
+          <p className={Cardstyles.description}>{description}</p>
         </div>
       </div>
     </div>

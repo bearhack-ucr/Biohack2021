@@ -1,13 +1,71 @@
 :root {
     /* main theme colors */
     --theme-red: #AB3030;
+    --theme-red-light: #ee8f8f;
+    --theme-red-dark: #2e0000;
+    --theme-pink-dark: #d16b6b;
     --theme-blue: #1A6C82;
+    --theme-blue-light: #86bac9;
+    --theme-blue-dark: #071b30;
     --theme-yellow: #FCD369;
+    --theme-yellow-dark: #af690d;
     --theme-offwhite: #ECE4D4;
+    --theme-white: #fff;
     --theme-black: #2F3132;
     --phage-color: #9CC8C0;
     --theme-beige: #f1d2ab;
     --theme-beige-light: #deb88a;
+
+    /* background images */
+    --nav-bg: url(../public/assets/wrinkled.png);
+    --container-bg: url("../public/assets/natural-paper.png");
+    --footer-bg: url("../public/assets/natural-paper.png");
+    --landing-bg: url("../public/assets/3.png");
+    --winners-bg: url("../public/assets/4-noborder.png");
+    --faq-bg: url("../public/assets/9.png");
+    --volunteer-bg: url("../public/assets/12.png");
+    --sponsors-bg: url("../public/assets/11.png");
+    --team-bg: url("../public/assets/14.png");
+
+    --accordion-header-red-bg: url("../public/assets/Faq\ tapes/red\ thick.png");
+    --accordion-header-blue-bg: url("../public/assets/Faq\ tapes/blue\ thick.png");
+    --accordion-header-yellow-bg: url("../public/assets/Faq\ tapes/yellow\ thick.png");
+    --accordion-panel-bg: url("../public/assets/natural-paper.png");
+    
+    --button-blue-bg: url(../public/assets/button\ backgrounds/square_filled_blue.png);
+    --button-pink-bg: url(../public/assets/button\ backgrounds/square_filled_pink.png);
+    --button-red-bg: url(../public/assets/button\ backgrounds/square_filled_red.png);
+    --button-yellow-bg: url(../public/assets/button\ backgrounds/square_filled_yellow.png);
+
+    --team-red-bg: url(../public/assets/redwashitape-2.png);
+    --team-blue-bg: url(../public/assets/bluewashitape-2.png);
+    --team-yellow-bg: url(../public/assets/yellowwashitape-2.png);
+    --team-black-bg: url(../public/assets/blackwashitape-2.png);
+
+    /* font families */
+    --p-font: "Montesserat";
+    --nav-font: "Anon";
+    --button-font: "Anon";
+
+    --card-front-font: "Caveat";
+    --card-caption-font: "Anon";
+    --card-back-font: "Anon";
+    --card-description-font: "Montesserat";
+
+    --heading-font: "Caveat";
+    --footer-font: "Montesserat";
+
+    --landing-title-font: "Montesserat";
+    --landing-subtitle-font: "Caveat";
+
+    --faq-question-font: "Anon";
+    --faq-answer-font: "Montesserat";
+
+    --team-name-font: "Montesserat-Bold";
+    --team-position-font: "Montesserat";
+
+    --committee-title-font: "Caveat";
+    --committee-member-font: "Montesserat";
 
     /* globals */
     --html-body-bg: var(--theme-offwhite);
@@ -26,47 +84,10 @@
     --container-bg-color: var(--theme-offwhite);
     --footer-bg-color: var(--theme-offwhite);
 
-    --title-color: white;
+    --title-color: var(--theme-black);
     --title-a-color: #0070f3;
 
     --code-color: #fafafa;
     --common-card-border-color: #eaeaea;
-    --common-card-hover-color: #0070f3;
-
-    /* nav module */
-    --nav-home-color: var(--theme-blue);
-    --nav-home-text-color: var(--theme-offwhite);
-
-    --nav-winners-color: var(--theme-yellow);
-    --nav-winners-text-color: var(--theme-black);
-
-    --nav-faq-color: var(--theme-red);
-    --nav-faq-text-color: var(--theme-offwhite);
-
-    --nav-help-color: var(--theme-offwhite);
-    --nav-help-text-color: var(--theme-black);
-
-    --nav-sponsors-color: var(--theme-black);
-    --nav-sponsors-text-color: var(--theme-offwhite);
-
-    /* hero module */
-    --hero-top-color: var(--nav-home-color);
-    --hero-bottom-color: var(--theme-red);
-    --hero-texture: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
-
-    /* past winners module */
-    --past-winners-bg-color: var(--nav-winners-color);
-    --past-winners-texture: url("https://www.transparenttextures.com/patterns/az-subtle.png");
-
-    /* faq module */
-    --faq-bg-color: var(--nav-faq-color);
-    --faq-texture: url("https://www.transparenttextures.com/patterns/clean-textile.png");
-
-    /* volunteer module */
-    --volunteer-bg-color: var(--nav-help-color);
-    --volunteer-texture: url("https://www.transparenttextures.com/patterns/groovepaper.png");
-
-    /* sponsors module */
-    --sponsors-bg-color: var(--nav-sponsors-color);
-    --sponsors-texture: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+    --common-card-hover-color: #fff;
 }

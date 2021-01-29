@@ -7,11 +7,7 @@ export default function Faq() {
   return (
     <main className={Faqstyles.main}>
       <div className={Faqstyles.wrapper}>
-        <h1 className={styles.title}>Questions?</h1>
-        <p className={styles.description}>
-          Here are the most commonly asked questions! Feel free to ask us any
-          question you don't see on here.
-        </p>
+        <h1 className={styles.title}>FAQs</h1>
         <AccordionComponent />
       </div>
     </main>
