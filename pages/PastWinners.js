@@ -11,12 +11,9 @@ export default function PastWinners() {
         <h1 className={styles.title}>Past Winners</h1>
         <div className={Winnerstyles.grid}>
           <div className={Winnerstyles.cell}>
-            <Image
-              src="/placeholder.jpg"
-              alt="Filler"
-              width={200}
-              height={200}
-            />
+            <p className={Winnerstyles.text}>
+              <b>Here are the 2019 BioHack Winners!</b> Hover over the polaroids to learn more about their project!
+            </p>
           </div>
           <div className={Winnerstyles.cell}>
             <Card

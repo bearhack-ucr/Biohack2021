@@ -25,10 +25,23 @@
 }
 /* First image */
 .cell:nth-of-type(1){
-  display: none;
-  margin: auto 0;
+  max-width: 80%;
+  background-image: url("../public/assets/paper.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: rotate(-12deg);
 }
-/* Last image */
+
+.text {
+  padding: 35% 10%;
+  font-family: "Caveat";
+  font-size: 24px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Last image (filler) */
 .cell:nth-of-type(8){
   display: none;
   margin: auto 0;
@@ -54,12 +67,53 @@
   transform: rotate(-5deg);
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 720px) {
+  .text {
+    padding: 30% 15%;
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 840px) {
+  .text {
+    padding: 30% 15%;
+    font-size: 28px;
+  }
   .cell:nth-of-type(1){
-    display: block;
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text {
+    padding: 40% 15%;
+    font-size: 28px;
+  }
+  .cell:nth-of-type(1){
+    max-width: 45%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .text {
+    padding: 25% 15%;
+    font-size: 26px;
+  }
+  .cell:nth-of-type(1){
+    max-width: 35%;
   }
   .cell:nth-of-type(8){
     display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .text {
+    padding: 35% 15%;
+    font-size: 22px;
+  }
+  .cell:nth-of-type(1){
+    max-width: 25%;
   }
   .cell:nth-of-type(2){
     transform: rotate(4deg);
@@ -78,5 +132,22 @@
   }
   .cell:nth-of-type(7){
     transform: rotate(2deg);
+  }
+}
+
+@media (min-width: 1920px) {
+  .text {
+    padding: 25% 15%;
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .text {
+    padding: 20% 10%;
+    font-size: 40px;
+  }
+  .cell {
+    padding: 3rem 3rem;
   }
 }
