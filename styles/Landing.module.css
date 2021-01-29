@@ -57,7 +57,7 @@
   font-size: 24px;
 }
 
-@screen sm {
+@media (min-width: 640px) {
   .title {
     margin-top: -10px;
     font-size: 72px;
@@ -69,19 +69,19 @@
   }
 }
 
-@screen md {
+@media (min-width: 768px) {
   .logo {
     display: block;
   }
 }
 
-@screen xl {
+@media (min-width: 1280px) {
   .main {
     background-position: right 50% bottom 40%;
   }
 }
 
-@screen 2xl {
+@media (min-width: 1536px) {
   .main {
     background-position: right 50% bottom 45%;
   }

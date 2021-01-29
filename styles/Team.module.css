@@ -130,7 +130,7 @@
   background-size: 90% 80%;
 }
 
-@screen sm {
+@media (min-width: 640px) {
   .image {
     width: 200px;
     height: 200px;
@@ -146,7 +146,7 @@
   }
 }
 
-@screen xl {
+@media (min-width: 1280px) {
   .image {
     width: 230px;
     height: 220px;
