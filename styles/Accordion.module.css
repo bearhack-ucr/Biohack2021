@@ -57,6 +57,7 @@
   font-family: var(--faq-answer-font);
   background-color: rgba(226, 226, 226, 0.9);
   background-image: var(--accordion-panel-bg);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.4);
   transform: translateY(-40px);
   -webkit-animation: fadein 0.5s ease initial; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 0.5s ease; /* Firefox < 16 */
