@@ -21,28 +21,28 @@
   justify-content: center;
 }
 
-@screen sm {
+@media (min-width: 640px) {
   .wrapper {
     width: 70%;
     margin-left: 10%;
   }
 }
 
-@screen md {
+@media (min-width: 768px) {
   .wrapper {
     width: 60%;
     margin-left: 10%;
   }
 }
 
-@screen lg {
+@media (min-width: 1024px) {
   .wrapper {
     width: 55%;
     margin-left: 12%;
   }
 }
 
-@screen xl {
+@media (min-width: 1280px) {
   .wrapper {
     width: 50%;
     margin-left: 15%;

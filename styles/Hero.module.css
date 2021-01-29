@@ -18,20 +18,20 @@
     margin-right: auto;
 }
 
-@screen lg {
+@media (min-width: 1024px) {
     .wrapper {
         margin-top: 0;
         flex-direction: row;
     }
 }
 
-@screen xl {
+@media (min-width: 1280px) {
     .wrapper {
         max-width: 90%;
     }
 }
 
-@screen 2xl {
+@media (min-width: 1536px) {
     .calendar {
         min-width: 45%;
         margin-left: auto;

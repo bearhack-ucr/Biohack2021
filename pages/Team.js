@@ -102,7 +102,7 @@ export default function Team() {
         <div className={Teamstyles.credits}>
           <div className={Teamstyles.col}>
             <ul>
-              <h3 className={Teamstyles.committeeTitle}>Committee</h3>
+              <h3 className={Teamstyles.committeeTitle}>Operations Committee</h3>
               <li>
                 John Doe
               </li>
@@ -119,7 +119,7 @@ export default function Team() {
           </div>
           <div className={Teamstyles.col}>
             <ul>
-              <h3 className={Teamstyles.committeeTitle}>Committee</h3>
+              <h3 className={Teamstyles.committeeTitle}>Marketing Committee</h3>
               <li>
                 John Doe
               </li>
@@ -136,7 +136,7 @@ export default function Team() {
           </div>
           <div className={Teamstyles.col}>
             <ul>
-              <h3 className={Teamstyles.committeeTitle}>Committee</h3>
+              <h3 className={Teamstyles.committeeTitle}>Sponsorship Committee</h3>
               <li>
                 John Doe
               </li>
@@ -153,7 +153,7 @@ export default function Team() {
           </div>
           <div className={Teamstyles.col}>
             <ul>
-              <h3 className={Teamstyles.committeeTitle}>Committee</h3>
+              <h3 className={Teamstyles.committeeTitle}>Web Dev Committee</h3>
               <li>
                 John Doe
               </li>

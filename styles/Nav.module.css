@@ -55,7 +55,7 @@
 }
 
 /* CSS for responsive layout */
-@screen sm {
+@media (min-width: 640px) {
   .navigation {
     justify-content: center;
   }
