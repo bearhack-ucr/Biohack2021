@@ -13,8 +13,8 @@
 .flipContainer,
 .front,
 .back {
-  width: 400px;
-  height: 500px;
+  width: 240px;
+  height: 300px;
 }
 .front,
 .back {
@@ -47,17 +47,54 @@
 .frontTitle {
   margin-top: 10px;
   margin-bottom: -16px;
-  font-size: 40px;
+  font-size: 24px;
   font-family: var(--card-front-font);
 }
 .caption {
   font-family: var(--card-caption-font);
+  font-size: 16px;
 }
 .backTitle {
   font-family: var(--card-back-font);
+  font-size: 16px;
 }
 .description {
   font-family: var(--card-description-font);
+  font-size: 12px;
+}
+
+@media (min-width: 360px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 240px;
+    height: 310px;
+  }
+  .frontTitle {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 480px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 400px;
+    height: 500px;
+  }
+
+  .frontTitle {
+    font-size: 36px;
+  }
+  .caption {
+    font-size: 24px;
+  }
+  .backTitle {
+    font-size: 28px;
+  }
+  .description {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -69,9 +106,28 @@
   }
 
   .frontTitle {
-    margin-top: 10px;
-    margin-bottom: -16px;
     font-size: 28px;
+  }
+  .caption {
+    font-size: 18px;
+  }
+  .backTitle {
+    font-size: 18px;
+  }
+  .description {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 300px;
+    height: 380px;
+  }
+  .backTitle {
+    font-size: 22px;
   }
 }
 
@@ -79,28 +135,42 @@
   .flipContainer,
   .front,
   .back {
-    width: 300px;
-    height: 380px;
+    width: 360px;
+    height: 450px;
   }
 
   .frontTitle {
-    margin-top: 10px;
-    margin-bottom: -16px;
     font-size: 32px;
+  }
+  .caption {
+    font-size: 22px;
+  }
+  .backTitle {
+    font-size: 26px;
+  }
+  .description {
+    font-size: 18px;
   }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 2100px) {
   .flipContainer,
   .front,
   .back {
     width: 400px;
-    height: 510px;
+    height: 520px;
   }
 
   .frontTitle {
-    margin-top: 10px;
-    margin-bottom: -16px;
-    font-size: 44px;
+    font-size: 42px;
+  }
+  .caption {
+    font-size: 26px;
+  }
+  .backTitle {
+    font-size: 30px;
+  }
+  .description {
+    font-size: 20px;
   }
 }
