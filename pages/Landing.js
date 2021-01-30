@@ -23,8 +23,8 @@ export default function Landing() {
           <p className={Landingstyles.date}>May 15-16, 2021</p>
         </div>
       </div>
-      <div className={styles.grid}>
-        <a href="https://nextjs.org/docs" className={styles.card}>
+      <div className={`${styles.grid} ${Landingstyles.grid}`}>
+        <a href="https://nextjs.org/docs" className={`${styles.card} ${Landingstyles.card}`}>
           <h3>Sign Up! &rarr;</h3>
         </a>
 
@@ -33,7 +33,7 @@ export default function Landing() {
             smooth={true}
             duration={500}
             activeClass="active"
-            className={styles.card}
+            className={`${styles.card} ${Landingstyles.card}`}
         >
           <h3>Learn More &rarr;</h3>
         </Link>

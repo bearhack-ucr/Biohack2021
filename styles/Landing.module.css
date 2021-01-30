@@ -18,6 +18,22 @@
   display: flex;
 }
 
+.grid {
+  flex-direction: column;
+}
+
+.card {
+  margin: 0 0.5rem;
+  width: 15rem;
+  height: 8rem;
+  line-height: 8rem;
+  align-self: center;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+}
+
 .logo {
   margin: 30% 0 0 0;
   display: none;
@@ -29,20 +45,21 @@
 }
 
 .title {
-  margin-top: -10px;
+  margin-top: -22px;
   margin-bottom: -32px;
-  font-size: 54px;
+  font-size: 36px;
   font-family: var(--landing-title-font);
 }
 
 .subtitle {
-  font-size: 72px;
+  font-size: 42px;
   font-family: var(--landing-subtitle-font);
 }
 
 .caption {
+  margin-top: 36px;
   margin-bottom: -8px;
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .caption:after {
@@ -54,24 +71,93 @@
 }
 
 .date {
-  font-size: 24px;
+  font-size: 20px;
+}
+
+@media (min-width: 420px) {
+  .title {
+    margin-top: -32px;
+    font-size: 50px;
+  }
+  .subtitle {
+    font-size: 60px;
+  }
+  .caption {
+    font-size: 28px;
+  }
+  .date {
+    font-size: 22px;
+  }
+  .card {
+    width: 20rem;
+    height: 10rem;
+    line-height: 10rem;
+  }
+  .card h3 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 640px) {
+  .grid {
+    flex-direction: row;
+  }
+  .logo {
+    display: block;
+  }
   .title {
     margin-top: -10px;
+  }
+  .card {
+    width: 17rem;
+    height: 10rem;
+    line-height: 10rem;
+  }
+  .card h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 720px) {
+  .title {
+    font-size: 64px;
+  }
+  .subtitle {
     font-size: 72px;
   }
-
-  .subtitle {
-    margin-top: 50px;
-    font-size: 84px;
+  .caption {
+    font-size: 34px;
+  }
+  .card {
+    width: 20rem;
+    height: 10rem;
+    line-height: 10rem;
+  }
+  .card h3 {
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 768px) {
-  .logo {
-    display: block;
+  .title {
+    font-size: 72px;
+  }
+  .subtitle {
+    font-size: 84px;
+  }
+  .card {
+    width: 22rem;
+    height: 10rem;
+    line-height: 10rem;
+  }
+  .card h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 840px) {
+  .card {
+    width: 25rem;
   }
 }
 

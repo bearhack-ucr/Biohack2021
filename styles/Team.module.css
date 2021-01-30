@@ -106,6 +106,7 @@
   background-color: rgba(226, 226, 226, 0.9);
   background-image: var(--accordion-panel-bg);
   padding: 0 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
 }
 
 .col ul li:nth-of-type(1) {
@@ -130,17 +131,61 @@
   background-size: 90% 80%;
 }
 
+.committeeList {
+  margin-top: -4rem;
+  font-family: var(--committee-member-font);
+  background-color: rgba(226, 226, 226, 0.9);
+  background-image: var(--accordion-panel-bg);
+  padding: 0 2rem;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+  text-align: left;
+  line-height: 1;
+}
+
+.committeeList p:first-of-type {
+  padding-top: 2rem;
+}
+.committeeList p:last-of-type {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 420px) {
+  .image {
+    width: 170px;
+    height: 170px;
+  }
+  .nameText {
+    font-size: 14px;
+    margin-bottom: -10px;
+  }
+  .positionText {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 560px) {
+  .image {
+    width: 130px;
+    height: 130px;
+  }
+  .nameText {
+    font-size: 12px;
+    margin-bottom: -10px;
+  }
+  .positionText {
+    font-size: 12px;
+  }
+}
+
 @media (min-width: 640px) {
   .image {
     width: 200px;
     height: 200px;
   }
-  
   .nameText {
     font-size: 14px;
     margin-bottom: -10px;
   }
-  
   .positionText {
     font-size: 14px;
   }

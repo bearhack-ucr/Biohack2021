@@ -13,8 +13,8 @@
 .flipContainer,
 .front,
 .back {
-  width: 400px;
-  height: 500px;
+  width: 240px;
+  height: 300px;
 }
 .front,
 .back {
@@ -47,50 +47,35 @@
 .frontTitle {
   margin-top: 10px;
   margin-bottom: -16px;
-  font-size: 40px;
+  font-size: 24px;
   font-family: var(--card-front-font);
 }
 .caption {
   font-family: var(--card-caption-font);
+  font-size: 16px;
 }
 .backTitle {
   font-family: var(--card-back-font);
+  font-size: 16px;
 }
 .description {
   font-family: var(--card-description-font);
+  font-size: 12px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 360px) {
   .flipContainer,
   .front,
   .back {
-    width: 280px;
-    height: 360px;
+    width: 240px;
+    height: 310px;
   }
-
   .frontTitle {
-    margin-top: 10px;
-    margin-bottom: -16px;
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 
-@media (min-width: 1920px) {
-  .flipContainer,
-  .front,
-  .back {
-    width: 300px;
-    height: 380px;
-  }
-
-  .frontTitle {
-    margin-top: 10px;
-    margin-bottom: -16px;
-    font-size: 32px;
-  }
-}
-
-@media (min-width: 2560px) {
+@media (min-width: 480px) {
   .flipContainer,
   .front,
   .back {
@@ -99,8 +84,203 @@
   }
 
   .frontTitle {
-    margin-top: 10px;
-    margin-bottom: -16px;
+    font-size: 36px;
+  }
+  .caption {
+    font-size: 24px;
+  }
+  .backTitle {
+    font-size: 28px;
+  }
+  .description {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 720px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 480px;
+    height: 610px;
+  }
+
+  .frontTitle {
     font-size: 44px;
+  }
+  .caption {
+    font-size: 28px;
+  }
+  .backTitle {
+    font-size: 32px;
+  }
+  .description {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 920px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 320px;
+    height: 420px;
+  }
+
+  .frontTitle {
+    font-size: 34px;
+  }
+  .caption {
+    font-size: 22px;
+  }
+  .backTitle {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 340px;
+    height: 450px;
+  }
+
+  .frontTitle {
+    font-size: 38px;
+  }
+  .caption {
+    font-size: 24px;
+  }
+  .backTitle {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 360px;
+    height: 480px;
+  }
+
+  .frontTitle {
+    font-size: 40px;
+  }
+  .caption {
+    font-size: 24px;
+  }
+  .backTitle {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 220px;
+    height: 280px;
+  }
+
+  .frontTitle {
+    font-size: 20px;
+  }
+  .caption {
+    font-size: 14px;
+  }
+  .backTitle {
+    font-size: 14px;
+  }
+  .description {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 240px;
+    height: 300px;
+  }
+
+  .frontTitle {
+    font-size: 24px;
+  }
+  .caption {
+    font-size: 16px;
+  }
+  .backTitle {
+    font-size: 18px;
+  }
+  .description {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 300px;
+    height: 380px;
+  }
+  .backTitle {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 340px;
+    height: 440px;
+  }
+
+  .frontTitle {
+    font-size: 32px;
+  }
+  .caption {
+    font-size: 22px;
+  }
+  .backTitle {
+    font-size: 26px;
+  }
+  .description {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 2100px) {
+  .flipContainer,
+  .front,
+  .back {
+    width: 400px;
+    height: 520px;
+  }
+
+  .frontTitle {
+    font-size: 42px;
+  }
+  .caption {
+    font-size: 26px;
+  }
+  .backTitle {
+    font-size: 30px;
+  }
+  .description {
+    font-size: 20px;
   }
 }

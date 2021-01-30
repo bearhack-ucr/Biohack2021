@@ -10,7 +10,7 @@ return (
 	<Link href={link} target="_blank" rel="noreferrer noopener">
 		<a className={Teamstyles.link}>
 		<div className={Teamstyles.profile}>
-			<img className={Teamstyles.image} src={image} alt="Profile picture" width={130} height={130} />
+			<img className={Teamstyles.image} src={image} alt="Profile picture" width={150} height={150} />
       <div className={textClass}>
         <h3 className={Teamstyles.nameText}>{name}</h3>
         <p className={Teamstyles.positionText}>{position}</p>
@@ -101,72 +101,72 @@ export default function Team() {
 
         <div className={Teamstyles.credits}>
           <div className={Teamstyles.col}>
-            <ul>
-              <h3 className={Teamstyles.committeeTitle}>Operations Committee</h3>
-              <li>
-                John Doe
-              </li>
-              <li>
-                John Doe
-              </li>
-              <li>
-                John Doe
-              </li>
-              <li>
-                John Doe
-              </li>
-            </ul>
+            <h3 className={Teamstyles.committeeTitle}>Operations Committee</h3>
+            <div className={Teamstyles.committeeList}>
+            <p>
+              John Doe
+            </p>
+            <p>
+              John Doe
+            </p>
+            <p>
+              John Doe
+            </p>
+            <p>
+              John Doe
+            </p>
+          </div>
           </div>
           <div className={Teamstyles.col}>
-            <ul>
-              <h3 className={Teamstyles.committeeTitle}>Marketing Committee</h3>
-              <li>
-                John Doe
-              </li>
-              <li>
-                John Doe
-              </li>
-              <li>
-                John Doe
-              </li>
-              <li>
-                John Doe
-              </li>
-            </ul>
+            <h3 className={Teamstyles.committeeTitle}>Marketing Committee</h3>
+            <div className={Teamstyles.committeeList}>
+            <p>
+              John Doe
+            </p>
+            <p>
+              John Doe
+            </p>
+            <p>
+              John Doe
+            </p>
+            <p>
+              John Doe
+            </p>
+          </div>
           </div>
           <div className={Teamstyles.col}>
-            <ul>
-              <h3 className={Teamstyles.committeeTitle}>Sponsorship Committee</h3>
-              <li>
-                John Doe
-              </li>
-              <li>
-                John Doe
-              </li>
-              <li>
-                John Doe
-              </li>
-              <li>
-                John Doe
-              </li>
-            </ul>
+            <h3 className={Teamstyles.committeeTitle}>Sponsorship Committee</h3>
+            <div className={Teamstyles.committeeList}>
+            <p>
+              John Doe
+            </p>
+            <p>
+              John Doe
+            </p>
+            <p>
+              John Doe
+            </p>
+            <p>
+              John Doe
+            </p>
+            </div>
           </div>
           <div className={Teamstyles.col}>
-            <ul>
-              <h3 className={Teamstyles.committeeTitle}>Web Dev Committee</h3>
-              <li>
+            <h3 className={Teamstyles.committeeTitle}>Web Dev Committee</h3>
+            <div className={Teamstyles.committeeList}>
+              <p>
                 John Doe
-              </li>
-              <li>
+              </p>
+              <p>
                 John Doe
-              </li>
-              <li>
+              </p>
+              <p>
                 John Doe
-              </li>
-              <li>
+              </p>
+              <p>
                 John Doe
-              </li>
-            </ul>
+              </p>
+            </div>
           </div>
         </div>
 
