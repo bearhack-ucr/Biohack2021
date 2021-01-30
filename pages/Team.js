@@ -10,7 +10,7 @@ return (
 	<Link href={link} target="_blank" rel="noreferrer noopener">
 		<a className={Teamstyles.link}>
 		<div className={Teamstyles.profile}>
-			<img className={Teamstyles.image} src={image} alt="Profile picture" width={130} height={130} />
+			<img className={Teamstyles.image} src={image} alt="Profile picture" width={150} height={150} />
       <div className={textClass}>
         <h3 className={Teamstyles.nameText}>{name}</h3>
         <p className={Teamstyles.positionText}>{position}</p>
