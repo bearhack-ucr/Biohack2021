@@ -25,7 +25,7 @@ export default function Volunteer() {
             lacus. Phasellus dapibus euismod leo, ut scelerisque tellus rhoncus
             sed.
           </p>
-          <div className={styles.grid}>
+          <div className={`${styles.grid} ${Volunteerstyles.grid}`}>
             <a href="https://nextjs.org/docs" className={`${styles.card} ${Volunteerstyles.card}`}>
               <h3>Join Here &rarr;</h3>
             </a>
