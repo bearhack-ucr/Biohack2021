@@ -1,6 +1,5 @@
 import styles from "../styles/Common.module.css";
 import Teamstyles from "../styles/Team.module.css";
-import {FaFacebookSquare, FaInstagramSquare, FaLinkedin} from 'react-icons/fa';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -167,19 +166,6 @@ export default function Team() {
                 John Doe
               </p>
             </div>
-          </div>
-        </div>
-
-        <div className={Teamstyles.contactWrapper}>
-          <div className={styles.contact}>
-            <a href="https://www.facebook.com/UCRBioHack/"><FaFacebookSquare/></a>
-            <a href="https://www.instagram.com/biohack_ucr/?hl=en"><FaInstagramSquare/></a>
-            <a href="https://www.linkedin.com/company/biohackucr/"><FaLinkedin/></a>
-          </div>
-          <div className={styles.contactlink}>
-            <a href="mailto:biohack.ucr@gmail.com">
-              biohack.ucr@gmail.com
-            </a>
           </div>
         </div>
       </div>
