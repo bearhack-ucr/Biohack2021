@@ -27,70 +27,70 @@ export default function Team() {
       <div className={Teamstyles.wrapper}>
         <div className={Teamstyles.grid}>
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/dwarak.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Dwaraknath Ravichandran"
             position="Director"
             textClass={`${Teamstyles.text} ${Teamstyles.red}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/david.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="David Villafuerte"
             position="Director"
             textClass={`${Teamstyles.text} ${Teamstyles.blue}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/joshua.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Joshua Bermudez"
             position="Operations Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.yellow}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/aneesh.jpg"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Aneesh Sharma"
             position="Operations Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.red}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/carissa.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Carissa Lo"
             position="Marketing Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.blue}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/queenie.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Queenie Xu"
             position="Marketing Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.yellow}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/brandon.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Brandon To"
             position="Sponsorship Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.red}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/cammy.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Cammy Ngo"
             position="Sponsorship Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.blue}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/ajeet.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Ajeet Kokatay"
             position="Web Dev Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.yellow}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/rajbir.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Rajbir Johar"
             position="Web Dev Lead"
