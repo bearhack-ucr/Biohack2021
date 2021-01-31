@@ -1,6 +1,7 @@
 .main {
   z-index: 0;
   min-height: 100vh;
+  min-width: 100vw;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
@@ -8,7 +9,7 @@
   text-align: center;
   background-image: var(--sponsors-bg);
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
 }
 

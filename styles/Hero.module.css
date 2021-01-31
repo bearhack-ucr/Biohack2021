@@ -6,6 +6,10 @@
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    background-image: var(--hero-bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .calendar {
