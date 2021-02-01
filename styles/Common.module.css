@@ -20,30 +20,17 @@
 /* Footer CSS */
 .footer {
   width: 100%;
-  height: 100px;
   display: flex;
-  padding: 0 1.5rem;
+  padding: 2rem 1.5rem;
   flex-direction: column;
-  /*border-top: 1px solid #eaeaea;*/
   background: var(--theme-white);
   background-image: var(--footer-bg);
-  display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--footer-font);
   cursor: default;
   text-align: center;
-}
-
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
+  font-size: 16px;
 }
 
 .footer div {
@@ -51,7 +38,6 @@
 }
 
 /* Social Media CSS */
-
 .contact a {
   margin: 0 10px;
   font-size: 64px;
@@ -74,7 +60,7 @@
 
 .contactlink a {
   font-family: var(--footer-font);
-  font-size: 16px;
+  padding-bottom: 1rem;
 }
 
 .contactlink a:hover {

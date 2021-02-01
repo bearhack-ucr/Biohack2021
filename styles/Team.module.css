@@ -1,6 +1,7 @@
 .main {
   min-height: 100vh;
   max-width: 100%;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,9 +77,6 @@
   font-size: 12px;
 }
 
-.contactWrapper {
-  margin: 3rem 0;
-}
 /* CSS for committee lists */
 .credits {
   display: flex;

@@ -1,6 +1,5 @@
 import styles from "../styles/Common.module.css";
 import Teamstyles from "../styles/Team.module.css";
-import {FaFacebookSquare, FaInstagramSquare, FaLinkedin} from 'react-icons/fa';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -28,70 +27,70 @@ export default function Team() {
       <div className={Teamstyles.wrapper}>
         <div className={Teamstyles.grid}>
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/dwarak.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Dwaraknath Ravichandran"
             position="Director"
             textClass={`${Teamstyles.text} ${Teamstyles.red}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/david.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="David Villafuerte"
             position="Director"
             textClass={`${Teamstyles.text} ${Teamstyles.blue}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/joshua.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Joshua Bermudez"
             position="Operations Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.yellow}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/aneesh.jpg"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Aneesh Sharma"
             position="Operations Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.red}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/carissa.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Carissa Lo"
             position="Marketing Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.blue}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/queenie.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Queenie Xu"
             position="Marketing Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.yellow}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/brandon.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Brandon To"
             position="Sponsorship Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.red}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/cammy.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Cammy Ngo"
             position="Sponsorship Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.blue}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/ajeet.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Ajeet Kokatay"
             position="Web Dev Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.yellow}`}
           />
           <Profile
-            image="/placeholder.jpg"
+            image="/team_pictures/rajbir.JPG"
             link="https://en.wikipedia.org/wiki/The_Mandalorian"
             name="Rajbir Johar"
             position="Web Dev Lead"
@@ -167,19 +166,6 @@ export default function Team() {
                 John Doe
               </p>
             </div>
-          </div>
-        </div>
-
-        <div className={Teamstyles.contactWrapper}>
-          <div className={styles.contact}>
-            <a href="https://www.facebook.com/UCRBioHack/"><FaFacebookSquare/></a>
-            <a href="https://www.instagram.com/biohack_ucr/?hl=en"><FaInstagramSquare/></a>
-            <a href="https://www.linkedin.com/company/biohackucr/"><FaLinkedin/></a>
-          </div>
-          <div className={styles.contactlink}>
-            <a href="mailto:biohack.ucr@gmail.com">
-              biohack.ucr@gmail.com
-            </a>
           </div>
         </div>
       </div>

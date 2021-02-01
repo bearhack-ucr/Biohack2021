@@ -1,7 +1,7 @@
 .main {
   min-height: 100vh;
   width: 100vw;
-  margin-top: 100px;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,13 +25,13 @@
 .card {
   margin: 0 0.5rem;
   width: 15rem;
-  height: 8rem;
-  line-height: 8rem;
+  height: 6rem;
+  line-height: 6rem;
   align-self: center;
 }
 
 .card h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .logo {
@@ -72,6 +72,17 @@
 
 .date {
   font-size: 20px;
+}
+
+@media (min-width: 370px) {
+  .card {
+    width: 15rem;
+    height: 7rem;
+    line-height: 7rem;
+  }
+  .card h3 {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 420px) {

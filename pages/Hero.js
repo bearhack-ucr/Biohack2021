@@ -16,7 +16,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <main className={styles.main}>
+    <main className={Herostyles.main}>
       <div className={Herostyles.wrapper}>
         <div className={Herostyles.calendar}>
           <Image
