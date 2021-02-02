@@ -54,6 +54,7 @@
   box-shadow: 0 3px 12px rgba(0,0,0,0.2);
   transform: translateY(-40px);
   transition: 0.25s ease;
+  font-size: 14px;
 }
 
 .open .accordionItemPanel {
