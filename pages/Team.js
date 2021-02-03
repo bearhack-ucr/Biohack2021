@@ -153,18 +153,7 @@ export default function Team() {
           <div className={Teamstyles.col}>
             <h3 className={Teamstyles.committeeTitle}>Web Dev Committee</h3>
             <div className={Teamstyles.committeeList}>
-              <p>
-                John Doe
-              </p>
-              <p>
-                John Doe
-              </p>
-              <p>
-                John Doe
-              </p>
-              <p>
-                John Doe
-              </p>
+              <p>J.S. Pescasio</p>
             </div>
           </div>
         </div>
