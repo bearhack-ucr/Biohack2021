@@ -1,6 +1,7 @@
 .main {
   min-height: 100vh;
   max-width: 100%;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +12,7 @@
 }
 
 .wrapper {
-  max-width: 80%;
+  max-width: 90%;
   margin: auto 0;
   text-align: center;
 }
@@ -20,11 +21,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 3rem;
 }
 
 .profile {
-  margin: 1rem 2rem;
+  margin: 1rem 0.5rem;
   text-align: center;
 }
 
@@ -42,7 +42,8 @@
 }
 
 .text {
-  padding: 0.5rem 1.5rem;
+  width: 130px;
+  padding: 0.5rem 1rem;
   background-image: var(--team-blue-bg);
   background-size: cover;
   background-position: center center;
@@ -50,6 +51,7 @@
   background-size: 100% 80%;
   text-align: center;
   color: var(--theme-white);
+  word-wrap: break-word;
 }
 
 .red {
@@ -67,18 +69,15 @@
 
 .nameText {
   font-family: var(--team-name-font);
-  font-size: 12px;
-  margin-bottom: -10px;
+  font-size: 10px;
+  margin-bottom: -8px;
 }
 
 .positionText {
   font-family: var(--team-position-font);
-  font-size: 12px;
+  font-size: 9px;
 }
 
-.contactWrapper {
-  margin: 3rem 0;
-}
 /* CSS for committee lists */
 .credits {
   display: flex;
@@ -106,6 +105,7 @@
   background-color: rgba(226, 226, 226, 0.9);
   background-image: var(--accordion-panel-bg);
   padding: 0 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
 }
 
 .col ul li:nth-of-type(1) {
@@ -130,23 +130,106 @@
   background-size: 90% 80%;
 }
 
-@media (min-width: 640px) {
-  .image {
-    width: 200px;
-    height: 200px;
+.committeeList {
+  width: 270px;
+  margin-top: -4rem;
+  font-family: var(--committee-member-font);
+  background-color: rgba(226, 226, 226, 0.9);
+  background-image: var(--accordion-panel-bg);
+  padding: 0 2rem;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+  text-align: left;
+  line-height: 1;
+  font-size: 10px;
+}
+
+.committeeList p:first-of-type {
+  padding-top: 2rem;
+}
+.committeeList p:last-of-type {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 375px) {
+  .text {
+    width: 140px;
   }
-  
+  .image {
+    width: 130px;
+    height: 130px;
+  }
   .nameText {
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: -10px;
   }
-  
   .positionText {
+    font-size: 11px;
+  }
+  .committeeList {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 400px) {
+  .text {
+    width: 130px;
+  }
+  .image {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media (min-width: 420px) {
+  .profile {
+    margin: 1rem 1.2rem;
+  }
+  .text {
+    width: 150px;
+  }
+  .image {
+    width: 140px;
+    height: 140px;
+  }
+  .nameText {
+    font-size: 13px;
+    margin-bottom: -11px;
+  }
+  .positionText {
+    font-size: 12px;
+  }
+  .committeeList {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 640px) {
+  .profile {
+    margin: 1rem 1.5rem;
+  }
+  .text {
+    width: 160px;
+  }
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+  .nameText {
+    font-size: 14px;
+    margin-bottom: -12px;
+  }
+  .positionText {
+    font-size: 13px;
+  }
+  .committeeList {
     font-size: 14px;
   }
 }
 
 @media (min-width: 1280px) {
+  .text {
+    width: 250px;
+  }
   .image {
     width: 230px;
     height: 220px;
