@@ -42,6 +42,10 @@
 
 .back {
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .frontTitle {
@@ -54,13 +58,17 @@
   font-family: var(--card-caption-font);
   font-size: 16px;
 }
+.doodle{
+  height: 100px;
+  width: 100px;
+}
 .backTitle {
   font-family: var(--card-back-font);
   font-size: 16px;
 }
 .description {
   font-family: var(--card-description-font);
-  font-size: 12px;
+  font-size: 16px;
 }
 
 @media (min-width: 360px) {
