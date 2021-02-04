@@ -13,7 +13,7 @@ export default function PastWinners() {
           <div className={Winnerstyles.cell}>
             <p className={Winnerstyles.text}>
               <b>Here are the 2019 BioHack Winners!</b> Hover over the polaroids
-              to learn more about their project!
+              to learn more about each project!
             </p>
           </div>
           <div className={Winnerstyles.cell}>
@@ -71,12 +71,7 @@ export default function PastWinners() {
             />
           </div>
           <div className={Winnerstyles.cell}>
-            <Image
-              src="/placeholder.jpg"
-              alt="Filler"
-              width={200}
-              height={200}
-            />
+            <div className={Winnerstyles.phage}></div>
           </div>
         </div>
       </section>
