@@ -19,18 +19,19 @@
     /* background images */
     --nav-bg: url(../public/assets/wrinkled.png);
     --container-bg: url("../public/assets/natural-paper.png");
-    --footer-bg: url("../public/assets/natural-paper.png");
+    --footer-bg: url("../public/assets/wrinkled.png");
     --landing-bg: url("../public/assets/3.png");
     --hero-bg: url("../public/assets/4.png");
-    --winners-bg: url("../public/assets/4-noborder.png");
-    --faq-bg: url("../public/assets/9.png");
-    --volunteer-bg: url("../public/assets/12.png");
-    --sponsors-bg: url("../public/assets/11.png");
-    --team-bg: url("../public/assets/14.png");
+    --winners-bg: url("../public/assets/winners.png");
+    --faq-bg: url("../public/assets/faq.png");
+    --volunteer-bg: url("../public/assets/get\ involved.png");
+    --sponsors-bg: url("../public/assets/sponsors.png");
+    --team-bg: url("../public/assets/people.png");
 
     --accordion-header-red-bg: url("../public/assets/Faq\ tapes/red\ thick.png");
     --accordion-header-blue-bg: url("../public/assets/Faq\ tapes/blue\ thick.png");
     --accordion-header-yellow-bg: url("../public/assets/Faq\ tapes/yellow\ thick.png");
+    --accordion-header-green-bg: url("../public/assets/Faq\ tapes/green\ thick.png");
     --accordion-panel-bg: url("../public/assets/natural-paper.png");
     
     --button-blue-bg: url(../public/assets/button\ backgrounds/square_filled_blue.png);
