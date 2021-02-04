@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--theme-white);
+  background: var(--theme-offwhite);
   background-image: var(--container-bg);
 }
 /* Container for each section */
