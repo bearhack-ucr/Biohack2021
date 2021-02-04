@@ -7,8 +7,14 @@ export default function Faq() {
   return (
     <main className={Faqstyles.main}>
       <div className={Faqstyles.wrapper}>
-        <h1 className={styles.title}>FAQs</h1>
-        <AccordionComponent />
+        <div>
+          <h1 className={styles.title}>FAQs</h1>
+          <AccordionComponent />
+        </div>
+      </div>
+      <div className={Faqstyles.strips}>
+        <div className={Faqstyles.image}></div>
+      {/* <Image src="/assets/strips.png" alt="Strips" height={800} width={600}/> */}
       </div>
     </main>
   );

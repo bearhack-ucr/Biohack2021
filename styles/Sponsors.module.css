@@ -40,7 +40,12 @@
   background-image: var(--button-pink-bg);
   color: var(--theme-pink-dark);
 }
-
+.images{
+  width: 100%;
+  min-height: 500px;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 7px;
+}
 @media (min-width: 370px) {
   .card {
     width: 15rem;

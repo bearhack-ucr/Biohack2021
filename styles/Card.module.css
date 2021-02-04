@@ -50,7 +50,7 @@
 
 .frontTitle {
   margin-top: 10px;
-  margin-bottom: -16px;
+  line-height: 1;
   font-size: 24px;
   font-family: var(--card-front-font);
 }

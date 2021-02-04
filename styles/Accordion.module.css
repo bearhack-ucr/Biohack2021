@@ -43,6 +43,10 @@
   background-image: var(--accordion-header-yellow-bg);
   color: var(--theme-yellow-dark);
 }
+.accordionItem:nth-of-type(4n) .accordionItemButton {
+  background-image: var(--accordion-header-green-bg);
+  color: var(--theme-yellow-dark);
+}
 
 .accordionItemPanel {
   max-height: 0;
