@@ -14,7 +14,7 @@ export default function Footer() {
           biohack.ucr@gmail.com
         </a>
       </div>
-      Scrapbooked with love from the Biohack team.
+      Scrapbooked with ❤️ from the Biohack team.
     </div>
   );
 }

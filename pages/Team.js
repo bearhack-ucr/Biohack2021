@@ -4,21 +4,27 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Profile = ({ image, link, name, position, textClass }) => {
-return (
-	<div>
-	<Link href={link} target="_blank" rel="noreferrer noopener">
-		<a className={Teamstyles.link}>
-		<div className={Teamstyles.profile}>
-			<img className={Teamstyles.image} src={image} alt="Profile picture" width={110} height={110} />
-      <div className={textClass}>
-        <h3 className={Teamstyles.nameText}>{name}</h3>
-        <p className={Teamstyles.positionText}>{position}</p>
-      </div>
+  return (
+    <div>
+      <Link href={link} target="_blank" rel="noreferrer noopener">
+        <a className={Teamstyles.link}>
+          <div className={Teamstyles.profile}>
+            <img
+              className={Teamstyles.image}
+              src={image}
+              alt="Profile picture"
+              width={110}
+              height={110}
+            />
+            <div className={textClass}>
+              <h3 className={Teamstyles.nameText}>{name}</h3>
+              <p className={Teamstyles.positionText}>{position}</p>
+            </div>
+          </div>
+        </a>
+      </Link>
     </div>
-		</a>
-	</Link>
-	</div>
-);
+  );
 };
 
 export default function Team() {
@@ -102,58 +108,32 @@ export default function Team() {
           <div className={Teamstyles.col}>
             <h3 className={Teamstyles.committeeTitle}>Operations Committee</h3>
             <div className={Teamstyles.committeeList}>
-            <p>
-              John Doe
-            </p>
-            <p>
-              John Doe
-            </p>
-            <p>
-              John Doe
-            </p>
-            <p>
-              John Doe
-            </p>
-          </div>
+              <p>John Doe</p>
+              <p>John Doe</p>
+              <p>John Doe</p>
+              <p>John Doe</p>
+            </div>
           </div>
           <div className={Teamstyles.col}>
             <h3 className={Teamstyles.committeeTitle}>Marketing Committee</h3>
             <div className={Teamstyles.committeeList}>
-            <p>
-              John Doe
-            </p>
-            <p>
-              John Doe
-            </p>
-            <p>
-              John Doe
-            </p>
-            <p>
-              John Doe
-            </p>
-          </div>
-          </div>
-          <div className={Teamstyles.col}>
-            <h3 className={Teamstyles.committeeTitle}>Sponsorship Committee</h3>
-            <div className={Teamstyles.committeeList}>
-            <p>
-              John Doe
-            </p>
-            <p>
-              John Doe
-            </p>
-            <p>
-              John Doe
-            </p>
-            <p>
-              John Doe
-            </p>
+              <p>Dev Bhatt</p>
+              <p>Yisi He</p>
+              <p>Rachel Itow</p>
+              <p>Paula Lau</p>
+              <p>Poala Ong</p>
+              <p>Khadijeh Sudqi</p>
+              <p>Nicky Xu</p>
             </div>
           </div>
           <div className={Teamstyles.col}>
             <h3 className={Teamstyles.committeeTitle}>Web Dev Committee</h3>
             <div className={Teamstyles.committeeList}>
               <p>J.S. Pescasio</p>
+              <p>Edgar Melendrez</p>
+              <p>Ann-Marina Miyaguchi</p>
+              <p>Diane Shan</p>
+              <p>Andre Tran</p>
             </div>
           </div>
         </div>
