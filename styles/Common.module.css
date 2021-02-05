@@ -100,6 +100,10 @@
   line-height: 30px;
   font-weight: 500;
   font-size: 14px;
+  background-color: rgba(226, 226, 226, 0.9);
+  background-image: var(--accordion-panel-bg);
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 .code {
@@ -202,12 +206,12 @@
 }
 
 @media (max-width: 1280px) {
-  .main{
+  .main {
     max-width: 100%;
     padding: 0 30px;
     margin: 0;
   }
-  .introduction{
+  .introduction {
     flex-direction: column;
     align-items: unset;
   }
@@ -215,11 +219,10 @@
     min-width: 100%;
     flex-direction: column;
   }
-  .card{
+  .card {
     width: 100%;
   }
-  .infogrid
-  {
+  .infogrid {
     margin-left: 0;
   }
 }
