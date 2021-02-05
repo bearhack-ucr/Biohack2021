@@ -190,16 +190,6 @@
   }
 }
 
-@media (min-width: 1540px) {
-  .text {
-    padding: 35% 15%;
-    font-size: 20px;
-  }
-  .cell:nth-of-type(1){
-    max-width: 23%;
-  }
-}
-
 @media (min-width: 1680px) {
   .text {
     padding: 35% 15%;
@@ -215,24 +205,21 @@
 
 @media (min-width: 1800px) {
   .text {
-    padding: 35% 15%;
-    font-size: 22px;
-  }
-  .cell:nth-of-type(1){
-    max-width: 20%;
+    padding: 30% 15%;
+    font-size: 26px;
   }
 }
 
 @media (min-width: 1920px) {
   .text {
     padding: 30% 15%;
-    font-size: 28px;
+    font-size: 32px;
   }
   .cell {
     padding: 2rem;
   }
   .cell:nth-of-type(1){
-    max-width: 23%;
+    max-width: 28%;
   }
 }
 
@@ -245,7 +232,7 @@
     padding: 2.5rem;
   }
   .cell:nth-of-type(1){
-    max-width: 22%;
+    max-width: 25%;
   }
 }
 
