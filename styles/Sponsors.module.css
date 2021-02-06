@@ -45,7 +45,31 @@
   min-height: 500px;
   background-color: rgba(255,255,255,0.7);
   border-radius: 7px;
+  padding: 20px;
 }
+
+.logoflex{
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.acm, .linode, .xyz, .wolfram, .twilio, .echoAR, .digitalocean, .launchpad  {
+  width: min(400px, 80vw);
+  height: auto;
+}
+.wolfram, .balsamiq, .sketch {
+  width: min(320px, 80vw);
+}
+.kgi{
+  width: min(150px, 80vw);
+}
+
 @media (min-width: 370px) {
   .card {
     width: 15rem;
