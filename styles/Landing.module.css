@@ -28,6 +28,7 @@
   height: 6rem;
   line-height: 6rem;
   align-self: center;
+  cursor: pointer;
 }
 
 .card h3 {
