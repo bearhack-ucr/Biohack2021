@@ -34,70 +34,70 @@ export default function Team() {
         <div className={Teamstyles.grid}>
           <Profile
             image="/team_pictures/dwarak.JPG"
-            link="https://en.wikipedia.org/wiki/The_Mandalorian"
+            link="https://www.linkedin.com/in/dwarak-ravi/"
             name="Dwaraknath Ravichandran"
             position="Director"
             textClass={`${Teamstyles.text} ${Teamstyles.red}`}
           />
           <Profile
             image="/team_pictures/david.JPG"
-            link="https://en.wikipedia.org/wiki/The_Mandalorian"
+            link="https://www.linkedin.com/in/davidpaulmvillafuerte/"
             name="David Villafuerte"
             position="Director"
             textClass={`${Teamstyles.text} ${Teamstyles.blue}`}
           />
           <Profile
             image="/team_pictures/joshua.JPG"
-            link="https://en.wikipedia.org/wiki/The_Mandalorian"
+            link="http://linkedin.com/in/joshua-thomas-bermudez"
             name="Joshua Bermudez"
             position="Operations Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.yellow}`}
           />
           <Profile
             image="/team_pictures/aneesh.jpg"
-            link="https://en.wikipedia.org/wiki/The_Mandalorian"
+            link="https://www.linkedin.com/in/aneesh-sharma/"
             name="Aneesh Sharma"
             position="Operations Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.red}`}
           />
           <Profile
             image="/team_pictures/carissa.JPG"
-            link="https://en.wikipedia.org/wiki/The_Mandalorian"
+            link="https://www.linkedin.com/in/carissa-lo/"
             name="Carissa Lo"
             position="Marketing Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.blue}`}
           />
           <Profile
             image="/team_pictures/queenie.JPG"
-            link="https://en.wikipedia.org/wiki/The_Mandalorian"
+            link="https://www.linkedin.com/in/queeniexu/"
             name="Queenie Xu"
             position="Marketing Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.yellow}`}
           />
           <Profile
             image="/team_pictures/brandon.JPG"
-            link="https://en.wikipedia.org/wiki/The_Mandalorian"
+            link="https://www.linkedin.com/in/to-brandon/"
             name="Brandon To"
             position="Sponsorship Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.red}`}
           />
           <Profile
             image="/team_pictures/cammy.JPG"
-            link="https://en.wikipedia.org/wiki/The_Mandalorian"
+            link="https://www.linkedin.com/in/cammy-ngo/"
             name="Cammy Ngo"
             position="Sponsorship Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.blue}`}
           />
           <Profile
             image="/team_pictures/ajeet.JPG"
-            link="https://en.wikipedia.org/wiki/The_Mandalorian"
+            link="https://www.linkedin.com/in/ajeet-kokatay-25470b195/"
             name="Ajeet Kokatay"
             position="Web Dev Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.yellow}`}
           />
           <Profile
             image="/team_pictures/rajbir.JPG"
-            link="https://en.wikipedia.org/wiki/The_Mandalorian"
+            link="https://www.linkedin.com/in/rajbirjohar/"
             name="Rajbir Johar"
             position="Web Dev Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.red}`}
@@ -108,10 +108,12 @@ export default function Team() {
           <div className={Teamstyles.col}>
             <h3 className={Teamstyles.committeeTitle}>Operations Committee</h3>
             <div className={Teamstyles.committeeList}>
-              <p>John Doe</p>
-              <p>John Doe</p>
-              <p>John Doe</p>
-              <p>John Doe</p>
+              <p>Jimmy Ho</p>
+              <p>Gagan Mannur</p>
+              <p>Allexa Ortiz</p>
+              <p>Jannette Siahon</p>
+              <p>Serena Solis</p>
+              <p>Minh-Huy Tran</p>
             </div>
           </div>
           <div className={Teamstyles.col}>

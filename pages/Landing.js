@@ -6,7 +6,6 @@ import { Link, animateScroll as scroll } from "react-scroll";
 export default function Landing() {
   return (
     <main className={Landingstyles.main}>
-
       <div className={Landingstyles.wrapper}>
         <div className={Landingstyles.logo}>
           <Image
@@ -24,16 +23,18 @@ export default function Landing() {
         </div>
       </div>
       <div className={`${styles.grid} ${Landingstyles.grid}`}>
-        <a href="https://nextjs.org/docs" className={`${styles.card} ${Landingstyles.card}`}>
+        {/* Uncomment when applications go live est. Feb 22 */}
+        {/* <a href="https://nextjs.org/docs" className={`${styles.card} ${Landingstyles.card}`}>
           <h3>Sign Up! &rarr;</h3>
-        </a>
+        </a> */}
 
-        <Link to="Hero"
-            spy={true}
-            smooth={true}
-            duration={500}
-            activeClass="active"
-            className={`${styles.card} ${Landingstyles.card}`}
+        <Link
+          to="Hero"
+          spy={true}
+          smooth={true}
+          duration={500}
+          activeClass="active"
+          className={`${styles.card} ${Landingstyles.card}`}
         >
           <h3>Learn More &rarr;</h3>
         </Link>
