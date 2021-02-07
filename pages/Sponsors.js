@@ -20,7 +20,7 @@ export default function Sponsors() {
         </a>
         <div className={Sponsorstyles.images}>
           <div className={`${Sponsorstyles.logoflex}`}>
-            <motion.a href="https://acmucr.org">
+            <motion.a href="https://bmesucr.weebly.com/">
               <motion.img
                 whileHover={{
                   scale: 1.1,
