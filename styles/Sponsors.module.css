@@ -59,15 +59,18 @@
   margin: auto;
 }
 
-.acm, .linode, .xyz, .wolfram, .twilio, .echoAR, .digitalocean, .launchpad  {
+.acm, .linode, .xyz, .wolfram, .twilio, .echoAR, .digitalocean, .launchpad {
   width: min(400px, 80vw);
   height: auto;
+  padding: 10px;
 }
-.wolfram, .balsamiq, .sketch {
+.wolfram, .balsamiq, .sketch, .acm  {
   width: min(320px, 80vw);
+  padding: 10px;
 }
 .kgi{
   width: min(150px, 80vw);
+  padding: 10px;
 }
 
 @media (min-width: 370px) {

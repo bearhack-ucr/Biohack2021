@@ -16,7 +16,7 @@ export default function Landing() {
           />
         </div>
         <div className={Landingstyles.text}>
-          <h2 className={Landingstyles.subtitle}>Welcome to</h2>
+          <h2 className={Landingstyles.subtitle}>Welcome to ~</h2>
           <h1 className={Landingstyles.title}>BIOHACK 2021</h1>
           <p className={Landingstyles.caption}>Healthcare Hackathon</p>
           <p className={Landingstyles.date}>May 15-16, 2021</p>
