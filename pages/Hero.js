@@ -29,13 +29,22 @@ export default function Hero() {
         <div className={Herostyles.text}>
           <h1 className={styles.title}>What is Biohack?</h1>
           <p className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            egestas sapien sit amet metus efficitur semper. Integer id luctus
-            enim. Curabitur a arcu et arcu tincidunt lobortis eget sed risus.
-            Suspendisse vitae libero magna. Pellentesque sodales at urna nec
-            rutrum. Nulla lorem nisl, congue id aliquet vitae, malesuada sed
-            lacus. Phasellus dapibus euismod leo, ut scelerisque tellus rhoncus
-            sed.
+            BioHack is a 24-hour bioengineering focused, health and medicine
+            themed, virtual hackathon at the University of California,
+            Riverside. <br />
+            <br /> Our mission is to encourage new hackers to collaborate with
+            students and sponsors throughout computer science and
+            bioengineering. We encourage students of any race and/or ethnicity,
+            gender, and orientation, as well as any field of study, engineering
+            or non-engineering, to participate in our event, to learn and
+            develop valuable technical and teamwork skills in a safe and
+            intellectual environment. We also encourage our participants to
+            foster strong, professional relationships with industrial and
+            academic sponsors. <br />
+            <br /> And by hosting BioHack within the Inland Empire, our goal is
+            to have sponsors and students spawn connections with engineers
+            throughout the bioengineering and computer science community across
+            California.
           </p>
           {/* <div className={styles.grid}>
         {!authHookValue && (

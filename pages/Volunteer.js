@@ -15,22 +15,26 @@ export default function Volunteer() {
           />
         </div>
         <div className={Volunteerstyles.text}>
-          <h1 className={`${styles.title} ${Volunteerstyles.title}`}>Get Involved</h1>
+          <h1 className={`${styles.title} ${Volunteerstyles.title}`}>
+            Get Involved
+          </h1>
           <p className={`${styles.description} ${Volunteerstyles.description}`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas
-            sapien sit amet metus efficitur semper. Integer id luctus enim.
-            Curabitur a arcu et arcu tincidunt lobortis eget sed risus.
-            Suspendisse vitae libero magna. Pellentesque sodales at urna nec
-            rutrum. Nulla lorem nisl, congue id aliquet vitae, malesuada sed
-            lacus. Phasellus dapibus euismod leo, ut scelerisque tellus rhoncus
-            sed.
+            Interested in the behind-the-scenes of BioHack? Join our committees
+            or be a volunteer during the day! Click on the speech bubbles to get
+            to the sign-up forms.
           </p>
           <div className={`${styles.grid} ${Volunteerstyles.grid}`}>
-            <a href="https://nextjs.org/docs" className={`${styles.card} ${Volunteerstyles.card}`}>
+            <a
+              href="https://nextjs.org/docs"
+              className={`${styles.card} ${Volunteerstyles.card}`}
+            >
               <h3>Join Here &rarr;</h3>
             </a>
 
-            <a href="https://nextjs.org/docs" className={`${styles.card} ${Volunteerstyles.card}`}>
+            <a
+              href="https://nextjs.org/docs"
+              className={`${styles.card} ${Volunteerstyles.card}`}
+            >
               <h3>Join Here &rarr;</h3>
             </a>
           </div>
