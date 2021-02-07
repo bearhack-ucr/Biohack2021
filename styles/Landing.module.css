@@ -50,11 +50,16 @@
   margin-bottom: -32px;
   font-size: 36px;
   font-family: var(--landing-title-font);
+  
 }
 
 .subtitle {
   font-size: 42px;
   font-family: var(--landing-subtitle-font);
+  color: var(--title-color);
+  -webkit-text-fill-color: var(--title-color);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--title-color);
 }
 
 .caption {
