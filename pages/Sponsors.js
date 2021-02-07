@@ -12,12 +12,26 @@ export default function Sponsors() {
         <h1 className={`${styles.title} ${Sponsorstyles.title}`}>
           Thank you to our Sponsors!
         </h1>
-        <a href="https://tinyurl.com/biohack2021-Sponsorship-Packet" className={`${styles.card} ${Sponsorstyles.card}`}>
+        <a
+          href="https://tinyurl.com/biohack2021-Sponsorship-Packet"
+          className={`${styles.card} ${Sponsorstyles.card}`}
+        >
           <h3>Sponsor us!&rarr;</h3>
         </a>
         <div className={Sponsorstyles.images}>
           <div className={`${Sponsorstyles.logoflex}`}>
-          <motion.a href="https://www.kgi.edu">
+            <motion.a href="https://acmucr.org">
+              <motion.img
+                whileHover={{
+                  scale: 1.1,
+                }}
+                transition={hoverTrans}
+                src="/sponsors/bmes.png"
+                className={`${Sponsorstyles.bmes}`}
+                alt="bmes logo"
+              ></motion.img>
+            </motion.a>
+            <motion.a href="https://acmucr.org">
               <motion.img
                 whileHover={{
                   scale: 1.1,
@@ -28,6 +42,7 @@ export default function Sponsors() {
                 alt="acm logo"
               ></motion.img>
             </motion.a>
+
             <motion.a href="https://www.kgi.edu">
               <motion.img
                 whileHover={{

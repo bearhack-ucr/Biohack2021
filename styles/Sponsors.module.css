@@ -59,12 +59,18 @@
   margin: auto;
 }
 
-.acm, .linode, .xyz, .wolfram, .twilio, .echoAR, .digitalocean, .launchpad {
+.bmes{
+  width: min(500px, 80vw);
+  height: auto;
+  padding: 10px;
+}
+
+ .linode, .wolfram, .twilio, .digitalocean, .launchpad {
   width: min(400px, 80vw);
   height: auto;
   padding: 10px;
 }
-.wolfram, .balsamiq, .sketch, .acm  {
+.wolfram, .balsamiq, .sketch, .acm {
   width: min(320px, 80vw);
   padding: 10px;
 }
