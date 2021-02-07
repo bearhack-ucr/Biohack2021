@@ -33,7 +33,7 @@ export default function Team() {
       <div className={Teamstyles.wrapper}>
         <div className={Teamstyles.grid}>
           <Profile
-            image="/team_pictures/dwarak.JPG"
+            image="/team_pictures/dwarak.jpg"
             link="https://www.linkedin.com/in/dwarak-ravi/"
             name="Dwaraknath Ravichandran"
             position="Director"
