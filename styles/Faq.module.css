@@ -14,7 +14,8 @@
 }
 
 .wrapper {
-  margin: 0 auto;
+  margin-left: 2%;
+  margin-right: 2%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,6 +24,7 @@
 }
 
 .strips{
+  display: none;
   flex: 1;
 }
 .image{
@@ -33,7 +35,7 @@
   width: 600px;
   height: 1200px;
 }
-
+/*
 @media (min-width: 640px) {
   .wrapper {
     width: 90%;
@@ -45,19 +47,20 @@
     width: 75%;
   }
 }
-
+*/
 @media (min-width: 1024px) {
+  .strips{
+    display: flex;
+  }
   .wrapper {
-    width: 55%;
-    margin-left: 12%;
+    /*width: 55%;*/
+    margin-left: 5%;
   }
 }
-
+/*
 @media (min-width: 1280px) {
   .wrapper {
     width: 50%;
-    margin-left: 15%;
   }
-  
 }
-
+*/

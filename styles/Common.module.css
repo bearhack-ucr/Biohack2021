@@ -87,6 +87,9 @@
   line-height: 1;
   font-size: 44px;
   color: var(--title-color);
+  -webkit-text-fill-color: var(--title-color);
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: var(--title-color);
   font-family: var(--heading-font);
   font-weight: bold;
 }
@@ -98,9 +101,11 @@
 /* Description Styles */
 .description {
   line-height: 30px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
-  background-color: rgba(226, 226, 226, 0.9);
+  background-color: var(--description-bg-color);  
+  color: var(--description-text-color);  
+  border-radius: 3px;
   background-image: var(--accordion-panel-bg);
   padding: 2rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
@@ -133,7 +138,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  color: var(--theme-red-light);
+  color: var(--theme-offwhite);
   font-family: var(--button-font);
 }
 
