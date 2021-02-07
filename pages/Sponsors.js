@@ -27,7 +27,29 @@ export default function Sponsors() {
                 }}
                 transition={hoverTrans}
                 src="/sponsors/bmes.png"
-                className={`${Sponsorstyles.bmes}`}
+                className={`${Sponsorstyles.large}`}
+                alt="bmes logo"
+              ></motion.img>
+            </motion.a>
+            <motion.a href="https://www.cert.ucr.edu/">
+              <motion.img
+                whileHover={{
+                  scale: 1.1,
+                }}
+                transition={hoverTrans}
+                src="/sponsors/cecert.png"
+                className={`${Sponsorstyles.large}`}
+                alt="cecert logo"
+              ></motion.img>
+            </motion.a>
+            <motion.a href="https://techpartnerships.ucr.edu/">
+              <motion.img
+                whileHover={{
+                  scale: 1.1,
+                }}
+                transition={hoverTrans}
+                src="/sponsors/officeoftech.png"
+                className={`${Sponsorstyles.large}`}
                 alt="bmes logo"
               ></motion.img>
             </motion.a>
@@ -38,7 +60,7 @@ export default function Sponsors() {
                 }}
                 transition={hoverTrans}
                 src="/sponsors/acm_ucr.png"
-                className={`${Sponsorstyles.acm}`}
+                className={`${Sponsorstyles.standard2}`}
                 alt="acm logo"
               ></motion.img>
             </motion.a>
@@ -63,7 +85,7 @@ export default function Sponsors() {
             >
               <img
                 src="/sponsors/digitalocean.png"
-                className={`${Sponsorstyles.digitalocean}`}
+                className={`${Sponsorstyles.standard}`}
                 alt="digitalocean logo"
               ></img>
             </motion.a>
@@ -76,7 +98,7 @@ export default function Sponsors() {
             >
               <img
                 src="/sponsors/balsamiq.png"
-                className={`${Sponsorstyles.balsamiq}`}
+                className={`${Sponsorstyles.standard2}`}
                 alt="balsamiq logo"
               ></img>
             </motion.a>
@@ -89,7 +111,7 @@ export default function Sponsors() {
             >
               <img
                 src="/sponsors/launchpad.png"
-                className={`${Sponsorstyles.launchpad}`}
+                className={`${Sponsorstyles.standard}`}
                 alt="launchpad logo"
               ></img>
             </motion.a>
@@ -102,7 +124,7 @@ export default function Sponsors() {
             >
               <img
                 src="/sponsors/googlecloud.png"
-                className={`${Sponsorstyles.acm}`}
+                className={`${Sponsorstyles.standard}`}
                 alt="gcp logo"
               ></img>
             </motion.a>
@@ -115,7 +137,7 @@ export default function Sponsors() {
             >
               <img
                 src="/sponsors/linode.png"
-                className={`${Sponsorstyles.linode}`}
+                className={`${Sponsorstyles.standard}`}
                 alt="linode logo"
               ></img>
             </motion.a>
@@ -128,7 +150,7 @@ export default function Sponsors() {
             >
               <img
                 src="/sponsors/twilio.png"
-                className={`${Sponsorstyles.twilio}`}
+                className={`${Sponsorstyles.standard}`}
                 alt="twilio logo"
               ></img>
             </motion.a>
@@ -140,7 +162,7 @@ export default function Sponsors() {
               href="https://www.sketch.com/"
             >
               <img
-                className={`${Sponsorstyles.sketch}`}
+                className={`${Sponsorstyles.standard2}`}
                 src="/sponsors/sketch.png"
                 alt="sketch logo"
               ></img>
@@ -154,7 +176,7 @@ export default function Sponsors() {
             >
               <img
                 src="/sponsors/wolfram.png"
-                className={`${Sponsorstyles.wolfram}`}
+                className={`${Sponsorstyles.standard2}`}
                 alt="wolfram logo"
               ></img>
             </motion.a>

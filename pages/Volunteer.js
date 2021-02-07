@@ -28,14 +28,14 @@ export default function Volunteer() {
               href="https://nextjs.org/docs"
               className={`${styles.card} ${Volunteerstyles.card}`}
             >
-              <h3>Join Here &rarr;</h3>
+              <h3>Mentors &rarr;</h3>
             </a>
 
             <a
               href="https://nextjs.org/docs"
               className={`${styles.card} ${Volunteerstyles.card}`}
             >
-              <h3>Join Here &rarr;</h3>
+              <h3>Volunteers &rarr;</h3>
             </a>
           </div>
         </div>
