@@ -1,22 +1,23 @@
+/* CSS for navigation bar */
 .navwrapper{
+  z-index: 5;
   position: fixed;
   top: 0;
-  z-index: 5;
   width: 100%;
+  background-image: var(--nav-bg);
+  background-position: bottom;
+  background-size: cover;
   --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  background-image: var(--nav-bg);
-  background-size: cover;
-  background-position: bottom;
   font-family: var(--nav-font);
 }
 
 .navigation {
   display: flex;
+  justify-content: space-between;
   margin: 0.8rem 1rem;
   padding: 0.7rem 1rem;
-  justify-content: space-between;
 }
 
 .navlistcontainer {
@@ -28,30 +29,30 @@
 }
 
 .navlistlink {
-  list-style: none;
-  cursor: pointer;
-  font-size: 1.2rem;
+  display: none;
   margin: auto;
   padding: 0;
+  list-style: none;
+  font-size: 1.2rem;
   text-align: center;
-  display: none;
+  cursor: pointer;
 }  
 
 .navlogo {
-  list-style: none;
-  cursor: pointer;
   margin: 0;
   padding: 0;
+  list-style: none;
   text-decoration: none !important;
+  cursor: pointer;
 }
 
 .navsignup {
-  list-style: none;
-  cursor: pointer;
-  font-size: 1.2rem;
+  display: block;
   margin: auto;
   padding: 0;
-  display: block;
+  list-style: none;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 /* CSS for responsive layout */

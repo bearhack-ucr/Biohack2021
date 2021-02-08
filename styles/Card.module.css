@@ -1,8 +1,8 @@
+/* CSS for polaroids in PastWinners */
 -color.flipContainer {
-  margin: 1rem;
   perspective: 400px;
   position: relative;
-  
+  margin: 1rem;
 }
 
 .flipContainer:hover .flipper,
@@ -19,33 +19,31 @@
 .front,
 .back {
   backface-visibility: hidden;
-  border: 1px solid var(--card-border-color);
-  background-color: var(--card-bg-color);
   position: absolute;
   top: 0;
   left: 0;
   padding: 20px;
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
   box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.1);
 }
 .flipper {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-
   position: relative;
+  transform-style: preserve-3d;
+  transition: 0.6s;
 }
 
 .front {
   z-index: 2;
-  /* for firefox 31 */
-  transform: rotateY(0deg);
+  transform: rotateY(0deg); /* for Firefox 31 */
 }
 
 .back {
-  transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  transform: rotateY(180deg);
 }
 
 .frontTitle {
@@ -56,23 +54,24 @@
 }
 .caption {
   margin-top: -16px;
-  font-family: var(--card-caption-font);
   font-size: 16px;
+  font-family: var(--card-caption-font);
 }
 .doodle{
   height: 50px;
   width: 50px;
 }
 .backTitle {
-  font-family: var(--card-back-font);
   font-size: 16px;
+  font-family: var(--card-back-font);
 }
 .description {
   margin-top: 0;
-  font-family: var(--card-description-font);
   font-size: 12px;
+  font-family: var(--card-description-font);
 }
 
+/* For responsive layouts */
 @media (min-width: 360px) {
   .flipContainer,
   .front,
@@ -92,7 +91,6 @@
     height: 340px;
     width: 360px;
   }
-
   .frontTitle {
     font-size: 36px;
   }
@@ -116,7 +114,6 @@
     height: 530px;
     width: 580px;
   }
-
   .frontTitle {
     font-size: 48px;
   }
@@ -139,7 +136,6 @@
     height: 310px;
     width: 330px;
   }
-
   .frontTitle {
     font-size: 34px;
   }
@@ -189,7 +185,6 @@
     height: 380px;
     width: 420px;
   }
-
   .frontTitle {
     font-size: 40px;
   }
@@ -212,7 +207,6 @@
     height: 270px;
     width: 320px;
   }
-
   .frontTitle {
     margin-top: 4px;
     font-size: 20px;
@@ -237,7 +231,6 @@
     height: 320px;
     width: 360px;
   }
-
   .frontTitle {
     margin-top: 8px;
     font-size: 26px;
@@ -280,7 +273,6 @@
     height: 460px;
     width: 520px;
   }
-  
   .frontTitle {
     margin-top: 12px;
     font-size: 38px;

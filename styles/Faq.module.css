@@ -1,66 +1,49 @@
+/* CSS for FAQ section */
 .main {
   z-index: 0;
-  min-height: 100vh;
-  width: 100vw;
-  padding-top: 10rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: left;
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 10rem;
   background-image: var(--faq-bg);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .wrapper {
-  margin-left: 2%;
-  margin-right: 2%;
+  flex: 1;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  flex: 1;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
+/* Image to the side of accordion */
 .strips{
-  display: none;
   flex: 1;
+  display: none;
 }
 .image{
+  height: 1200px;
+  width: 600px;
   background-image: url("../public/assets/strips.png");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
-  width: 600px;
-  height: 1200px;
-}
-/*
-@media (min-width: 640px) {
-  .wrapper {
-    width: 90%;
-  }
 }
 
-@media (min-width: 768px) {
-  .wrapper {
-    width: 75%;
-  }
-}
-*/
+/* For responsive layouts */
 @media (min-width: 1024px) {
+  .wrapper {
+    margin-left: 5%;
+  }
   .strips{
     display: flex;
   }
-  .wrapper {
-    /*width: 55%;*/
-    margin-left: 5%;
-  }
 }
-/*
-@media (min-width: 1280px) {
-  .wrapper {
-    width: 50%;
-  }
-}
-*/
