@@ -1,38 +1,38 @@
+/* CSS for accordion in FAQ */
 .accordion {
-  margin: 1rem 0;
   display: flex;
   flex-direction: column;
   min-width: 100%;
+  margin: 1rem 0;
 }
 
 .accordionItem {
+  min-width: 100%;
   margin-bottom: 1rem;
   text-align: left;
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  min-width: 100%;
   color: var(--theme-button-text);
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 .accordionItemButton {
-  filter: brightness(1.4) drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.37));
-  position: relative;
   z-index: 2;
-  padding: 1.5rem 4rem 1.5rem 4rem;
+  position: relative;
   min-width: 100%;
-  border: none;
-  box-shadow: transparent;
-  cursor: pointer;
+  padding: 1.5rem 4rem 1.5rem 4rem;
   background-size: 90% 100%;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-position: center center; 
+  border: none;
+  box-shadow: transparent; 
+  filter: brightness(1.4) drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.37));
   text-align: center;
   font-size: 16px;
   font-weight: bold;
   font-family: var(--faq-question-font);
+  cursor: pointer;
 }
 
+/* Alternating colors for AccordionItemButtons */
 .accordionItem:nth-of-type(3n-2) .accordionItemButton {
   background-image: var(--accordion-header-red-bg);
 }
@@ -47,30 +47,29 @@
 }
 
 .accordionItemPanel {
-  max-height: 0;
   overflow-y: hidden;
-  font-weight: 600;
+  max-height: 0;
   padding: 0 1.5rem;
-  font-family: var(--faq-answer-font);
   background-color: rgba(226, 226, 226, 0.9);
   background-image: var(--accordion-panel-bg);
   box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+  font-weight: 600;
+  font-size: 14px;
+  font-family: var(--faq-answer-font);
   transform: translateY(-40px);
   transition: 0.25s ease;
-  font-size: 14px;
 }
 
 .open .accordionItemPanel {
   max-height: 100rem;
-  padding: 3rem 1.5rem 1.5rem 1.5rem;
-  font-weight: 600;
   margin-bottom: -1.5rem;
-  font-family: var(--faq-answer-font);
-  background-color: var(--description-bg-color);  
-  color: var(--description-text-color);  
-
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
+  background-color: var(--description-bg-color); 
   background-image: var(--accordion-panel-bg);
   box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+  font-weight: 600;
+  font-family: var(--faq-answer-font);
+  color: var(--description-text-color); 
   transform: translateY(-40px);
 	transition: 0.3s ease;
 }

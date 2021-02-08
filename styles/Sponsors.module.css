@@ -1,23 +1,24 @@
+/* CSS for Sponsors section */
 .main {
   z-index: 0;
-  min-height: 100vh;
-  min-width: 100vw;
-  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding-top: 10rem;
   background-image: var(--sponsors-bg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .wrapper {
-  max-width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 90%;
 }
 
 .title {
@@ -25,11 +26,11 @@
 }
 
 .card {
-  margin: 0 0.5rem;
-  width: 15rem;
-  height: 6rem;
-  line-height: 6rem;
   align-self: center;
+  height: 6rem;
+  width: 15rem;
+  margin: 0 0.5rem;
+  line-height: 6rem;
 }
 
 .card h3 {
@@ -40,49 +41,50 @@
   background-image: var(--button-pink-bg);
   color: var(--theme-pink-dark);
 }
-.images{
-  width: 100%;
+.images {
   min-height: 500px;
-  background-color: rgba(255,255,255,0.7);
-  border-radius: 7px;
+  width: 100%;
   padding: 20px;
+  border-radius: 7px;
+  background-color: rgba(255,255,255,0.7);
 }
 
-.logoflex{
+.logoflex {
   flex: none;
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
   align-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: auto;
 }
 
-.large{
-  width: min(500px, 80vw);
+.large {
   height: auto;
+  width: min(500px, 80vw);
   padding: 10px;
 }
 
- .standard{
-  width: min(400px, 80vw);
+.standard {
   height: auto;
+  width: min(400px, 80vw);
   padding: 10px;
 }
 .standard2 {
   width: min(320px, 80vw);
   padding: 10px;
 }
-.kgi{
+.kgi {
   width: min(150px, 80vw);
   padding: 10px;
 }
 
+/* For responsive layouts */
 @media (min-width: 370px) {
   .card {
-    width: 15rem;
     height: 7rem;
+    width: 15rem;
     line-height: 7rem;
   }
   .card h3 {
@@ -92,8 +94,8 @@
 
 @media (min-width: 420px) {
   .card {
-    width: 20rem;
     height: 10rem;
+    width: 20rem;
     line-height: 10rem;
   }
   .card h3 {
@@ -103,8 +105,8 @@
 
 @media (min-width: 640px) {
   .card {
-    width: 15rem;
     height: 7rem;
+    width: 15rem;
     line-height: 7rem;
   }
   .card h3 {
@@ -114,8 +116,8 @@
 
 @media (min-width: 720px) {
   .card {
-    width: 20rem;
     height: 10rem;
+    width: 20rem;
     line-height: 10rem;
   }
   .card h3 {
@@ -125,8 +127,8 @@
 
 @media (min-width: 1024px) {
   .card {
-    width: 20rem;
     height: 10rem;
+    width: 20rem;
     line-height: 10rem;
   }
   .card h3 {
@@ -139,18 +141,18 @@
     max-width: 100%;
   }
   .card {
-    width: 20rem;
-    height: 12rem;
-    line-height: 12rem;
     align-self: center;
+    height: 12rem;
+    width: 20rem;
+    line-height: 12rem;
   }
 
 }
 
 @media (min-width: 1440px) {
   .card {
-    width: 25rem;
     height: 10rem;
+    width: 25rem;
     line-height: 10rem;
   }
   .card h3 {

@@ -2,22 +2,18 @@
   font-family: 'Caveat';
   src: url('../fonts/Caveat/Caveat-Regular.ttf') format('truetype');
 }
-
 @font-face{
   font-family: 'Anon';
   src: url("../fonts/Anonymous_Pro/AnonymousPro-Bold.ttf") format('truetype');
 }
-
 @font-face{
   font-family: 'Montesserat';
   src: url("../fonts/Montserrat/Montserrat-Medium.ttf") format('truetype');
 }
-
 @font-face{
   font-family: 'Montesserat-Bold';
   src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format('truetype');
 }
-
 @font-face{
   font-family: 'Dawning';
   src: url("../fonts/Dawning_of_a_New_Day/DawningofaNewDay-Regular.ttf") format('truetype');
@@ -25,12 +21,12 @@
 
 html,
 body {
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
+  background-color: var(--html-body-bg);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: var(--html-body-bg);
-  overflow-x: hidden;
 }
 p{
   font-family: var(--p-font);
@@ -39,31 +35,30 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
 * {
   box-sizing: border-box;
 }
 
-/* From package what-input to remove default focus border because its ugly */
+/* From package what-input to remove default focus border because it's ugly */
 [data-whatinput="mouse"] :focus,
 [data-whatinput="touch"] :focus {
   outline: none;
 }
 
 .sticky-nav {
-  position: sticky !important;
   z-index: 10 !important;
+  position: sticky !important;
   top: 0 !important;
 }
 
-/*react-scroll classes applied to navbar*/
+/* react-scroll classes applied to navbar */
 .active {
   border-bottom: 2px solid #000 !important;
 }
 
 .link {
-  padding: 1rem 0.5rem;
   margin: 0 0.75rem;
+  padding: 1rem 0.5rem;
   border-bottom: 2px solid transparent;
 }
 
@@ -72,6 +67,6 @@ a {
 }
 
 .logo{
-  padding: 0;
   margin: 0 0.75rem;
+  padding: 0;
 }

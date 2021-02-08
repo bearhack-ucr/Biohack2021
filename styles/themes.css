@@ -1,5 +1,5 @@
 :root {
-    /* main theme colors */
+    /* Main theme colors */
     --theme-red: #AB3030;
     --theme-red-light: #ee8f8f;
     --theme-red-dark: #2e0000;
@@ -18,10 +18,11 @@
     --theme-button-text: rgb(14, 14, 14);
     --theme-brown: #ccb87f;
     
+    /* Background colors */
     --description-bg-color:  #74b5b5cc;
     --description-text-color:  #1e1e1e;
 
-    /* background images */
+    /* Background images */
     --nav-bg: url(../public/assets/wrinkled.png);
     --container-bg: url("../public/assets/natural-paper.png");
     --footer-bg: url("../public/assets/wrinkled.png");
@@ -33,23 +34,26 @@
     --sponsors-bg: url("../public/assets/sponsors.png");
     --team-bg: url("../public/assets/people.png");
 
+    /* Images for accordion buttons */
     --accordion-header-red-bg: url("../public/assets/Faq\ tapes/red\ thick.png");
     --accordion-header-blue-bg: url("../public/assets/Faq\ tapes/blue\ thick.png");
     --accordion-header-yellow-bg: url("../public/assets/Faq\ tapes/yellow\ thick.png");
     --accordion-header-green-bg: url("../public/assets/Faq\ tapes/green\ thick.png");
     --accordion-panel-bg: url("../public/assets/natural-paper.png");
     
+    /* Images for buttons */
     --button-blue-bg: url(../public/assets/button\ backgrounds/square_filled_blue.png);
     --button-pink-bg: url(../public/assets/button\ backgrounds/square_filled_pink.png);
     --button-red-bg: url(../public/assets/button\ backgrounds/square_filled_red.png);
     --button-yellow-bg: url(../public/assets/button\ backgrounds/square_filled_yellow.png);
 
+    /* Images for team name backgrounds */
     --team-red-bg: url(../public/assets/redwashitape-2.png);
     --team-blue-bg: url(../public/assets/bluewashitape-2.png);
     --team-yellow-bg: url(../public/assets/yellowwashitape-2.png);
     --team-black-bg: url(../public/assets/blackwashitape-2.png);
 
-    /* font families */
+    /* Font families */
     --p-font: "Montesserat";
     --nav-font: "Anon";
     --button-font: "Anon";
@@ -80,14 +84,14 @@
     --globals-link-color: white;
     --globals-link-hover-color: white;
 
-    /* accordion module */
+    /* Accordion module */
     --accordion-hover-color: #0070f3;
 
-    /* card module */
+    /* Card module */
     --card-border-color: lightgray;
     --card-bg-color: white;
 
-    /* common module */
+    /* Common module */
     --container-bg-color: var(--theme-offwhite);
     --footer-bg-color: var(--theme-offwhite);
 

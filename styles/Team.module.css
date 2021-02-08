@@ -1,10 +1,11 @@
+/* CSS for Team section */
 .main {
-  min-height: 100vh;
-  max-width: 100%;
-  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
+  max-width: 100%;
+  padding: 3rem 0;
   background-image: var(--team-bg);
   background-size: cover;
   background-position: center center;
@@ -19,8 +20,8 @@
 
 .grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .profile {
@@ -29,15 +30,15 @@
 }
 
 .image {
-  border-radius: 50%;
   border: 3px solid white;
+  border-radius: 50%;
   box-shadow: 0 3px 8px rgba(0,0,0,0.6);
   transition-duration: 0.2s;
 }
 
 .image:hover {
-  transform: translateY(-12px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.5);
+  transform: translateY(-12px);
   transition-duration: 0.2s;
 }
 
@@ -45,44 +46,42 @@
   width: 130px;
   padding: 0.5rem 1rem;
   background-image: var(--team-blue-bg);
-  background-size: cover;
+  background-size: 100% 80%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 80%;
   text-align: center;
-  color: var(--theme-white);
   word-wrap: break-word;
+  color: var(--theme-white);
 }
 
+/* Different-colored backgrounds for names */
 .red {
   background-image: var(--team-red-bg);
 }
-
 .blue {
   background-image: var(--team-blue-bg);
 }
-
 .yellow {
   background-image: var(--team-yellow-bg);
   color: var(--theme-black);
 }
 
 .nameText {
-  font-family: var(--team-name-font);
-  font-size: 10px;
   margin-bottom: -8px;
+  font-size: 10px;
+  font-family: var(--team-name-font);
 }
 
 .positionText {
-  font-family: var(--team-position-font);
   font-size: 9px;
+  font-family: var(--team-position-font);
 }
 
 /* CSS for committee lists */
 .credits {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   cursor: default;
 }
 
@@ -94,18 +93,18 @@
 }
 
 .col ul {
-  list-style: none;
   padding: 0;
   text-align: left;
+  list-style: none;
   line-height: 1.5;
 }
 
 .col ul li {
-  font-family: var(--committee-member-font);
+  padding: 0 2rem;
   background-color: rgba(226, 226, 226, 0.9);
   background-image: var(--accordion-panel-bg);
-  padding: 0 2rem;
   box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+  font-family: var(--committee-member-font);
 }
 
 .col ul li:nth-of-type(1) {
@@ -120,27 +119,26 @@
 .committeeTitle {
   position: relative;
   padding: 1.5rem 2rem;
-  font-family: var(--committee-title-font);
-  font-size: 24px;
-  color: var(--theme-white);
   background-image: var(--team-black-bg);
-  background-size: cover;
+  background-size: 90% 80%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 90% 80%;
+  font-size: 24px;
+  font-family: var(--committee-title-font);
+  color: var(--theme-white);
 }
 
 .committeeList {
   width: 270px;
   margin-top: -4rem;
-  font-family: var(--committee-member-font);
+  padding: 0 2rem;
   background-color: rgba(226, 226, 226, 0.9);
   background-image: var(--accordion-panel-bg);
-  padding: 0 2rem;
   box-shadow: 0 8px 15px rgba(0,0,0,0.4);
   text-align: left;
   line-height: 1;
   font-size: 10px;
+  font-family: var(--committee-member-font);
 }
 
 .committeeList p:first-of-type {
@@ -150,17 +148,18 @@
   padding-bottom: 1rem;
 }
 
+/* For responsive layouts */
 @media (min-width: 375px) {
   .text {
     width: 140px;
   }
   .image {
-    width: 130px;
     height: 130px;
+    width: 130px;
   }
   .nameText {
-    font-size: 12px;
     margin-bottom: -10px;
+    font-size: 12px;
   }
   .positionText {
     font-size: 11px;
@@ -175,8 +174,8 @@
     width: 130px;
   }
   .image {
-    width: 110px;
     height: 110px;
+    width: 110px;
   }
 }
 
@@ -188,12 +187,12 @@
     width: 150px;
   }
   .image {
-    width: 140px;
     height: 140px;
+    width: 140px;
   }
   .nameText {
-    font-size: 13px;
     margin-bottom: -11px;
+    font-size: 13px;
   }
   .positionText {
     font-size: 12px;
@@ -211,12 +210,12 @@
     width: 160px;
   }
   .image {
-    width: 150px;
     height: 150px;
+    width: 150px;
   }
   .nameText {
-    font-size: 14px;
     margin-bottom: -12px;
+    font-size: 14px;
   }
   .positionText {
     font-size: 13px;
@@ -231,8 +230,8 @@
     width: 250px;
   }
   .image {
-    width: 230px;
     height: 220px;
+    width: 230px;
   }
 }
 

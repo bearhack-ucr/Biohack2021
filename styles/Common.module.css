@@ -4,35 +4,36 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--theme-brown);
+  background-color: var(--theme-brown);
   background-image: var(--container-bg);
 }
+
 /* Container for each section */
 .main {
-  min-height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  width: 100vw;
 }
 
 /* Footer CSS */
 .footer {
-  width: 100%;
   display: flex;
-  padding: 2rem 1.5rem;
   flex-direction: column;
-  background: var(--theme-white);
-  background-image: var(--footer-bg);
-  background-size: cover;
-  background-position: left;
   justify-content: center;
   align-items: center;
-  font-family: var(--footer-font);
-  cursor: default;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  background-size: cover;
+  background-position: left;
+  background-color: var(--theme-white);
+  background-image: var(--footer-bg);
   text-align: center;
   font-size: 16px;
+  font-family: var(--footer-font);
+  cursor: default;
 }
 
 .footer div {
@@ -61,8 +62,8 @@
 }
 
 .contactlink a {
-  font-family: var(--footer-font);
   padding-bottom: 1rem;
+  font-family: var(--footer-font);
 }
 
 .contactlink a:hover {
@@ -72,8 +73,8 @@
 
 /* Title styles */
 .title a {
-  color: var(--title-a-color);
   text-decoration: none;
+  color: var(--title-a-color);
 }
 
 .title a:hover,
@@ -85,40 +86,43 @@
 .title {
   margin: 0;
   line-height: 1;
+  font-family: var(--heading-font);
+  font-weight: bold;
   font-size: 44px;
   color: var(--title-color);
   -webkit-text-fill-color: var(--title-color);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--title-color);
-  font-family: var(--heading-font);
-  font-weight: bold;
+  
 }
 
 .title,
 .description {
   text-align: left;
 }
-/* Description Styles */
+
+/* Description styles */
 .description {
+  padding: 2rem;
+  border-radius: 3px;
   line-height: 30px;
   font-weight: 600;
   font-size: 14px;
-  background-color: var(--description-bg-color);  
   color: var(--description-text-color);  
-  border-radius: 3px;
+  background-color: var(--description-bg-color);  
   background-image: var(--accordion-panel-bg);
-  padding: 2rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
 }
 
 .code {
-  background: var(--code-color);
-  border-radius: 5px;
   padding: 0.75rem;
+  border-radius: 5px;
+  background: var(--code-color);
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
+
 /* Cards that are not part of information section */
 .grid {
   display: flex;
@@ -127,29 +131,29 @@
 }
 
 .card {
-  padding: auto 0;
-  width: 21rem;
-  height: 7rem;
-  line-height: 7rem;
-  text-align: center;
   vertical-align: middle;
-  text-decoration: none;
+  height: 7rem;
+  width: 21rem;
+  padding: auto 0;
   background-image: var(--button-red-bg);
   background-size: contain;
-  background-repeat: no-repeat;
   background-position: center center;
-  color: var(--theme-offwhite);
+  background-repeat: no-repeat;
+  text-align: center;
+  text-decoration: none;
+  line-height: 7rem;
   font-family: var(--button-font);
+  color: var(--theme-offwhite);
 }
 
 .card:nth-of-type(2) {
-  background-image: var(--button-blue-bg);
   color: var(--theme-blue-light);
+  background-image: var(--button-blue-bg);
 }
 
 .card:nth-of-type(3) {
-  background-image: var(--button-yellow-bg);
   color: var(--theme-yellow-dark);
+  background-image: var(--button-yellow-bg);
 }
 
 .card h3 {
@@ -159,8 +163,8 @@
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
   line-height: 1.5;
+  font-size: 1.25rem;
 }
 
 .logo {
@@ -168,7 +172,6 @@
 }
 
 /* Animations */
-
 @keyframes wiggle {
   0% { transform: rotate(0deg); }
  80% { transform: rotate(0deg); }
@@ -183,14 +186,14 @@
   animation:none;
 }
 
-/* Mobile stuff */
+/* For responsive layouts */
 @media (min-width: 420px) {
   .title {
     font-size: 54px;
   }
   .card {
-    width: 22rem;
     height: 8rem;
+    width: 22rem;
     line-height: 8rem;
   }
   .card h3 {
@@ -212,8 +215,8 @@
     font-size: 84px;
   }
   .card {
-    width: 25rem;
     height: 10rem;
+    width: 25rem;
     line-height: 10rem;
   }
   .card h3 {
@@ -230,16 +233,16 @@
 @media (max-width: 1280px) {
   .main {
     max-width: 100%;
-    padding: 0 30px;
     margin: 0;
+    padding: 0 30px;
   }
   .introduction {
     flex-direction: column;
     align-items: unset;
   }
   .grid {
-    min-width: 100%;
     flex-direction: column;
+    min-width: 100%;
   }
   .card {
     width: 100%;

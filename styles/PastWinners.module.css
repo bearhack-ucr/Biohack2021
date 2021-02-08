@@ -1,13 +1,14 @@
+/* CSS for PastWinners section */
 .main {
   z-index: 0;
-  min-height: 100vh;
-  margin: 0rem 0rem 6rem 0rem;
-  padding: 10rem 5rem 0rem 5rem;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  min-height: 100vh;
+  max-width: 100%;
+  margin: 0rem 0rem 6rem 0rem;
+  padding: 10rem 5rem 0rem 5rem;
   background-image: var(--winners-bg);
   background-size: cover;
   background-position: center center;
@@ -24,7 +25,8 @@
 .cell {
   padding: 2rem 1.5rem;
 }
-/* First image */
+
+/* First image (paper scrap) */
 .cell:nth-of-type(1){
   max-width: 80%;
   background-image: url("../public/assets/paper.png");
@@ -33,25 +35,27 @@
   background-repeat: no-repeat;
   transform: rotate(-12deg);
 }
+
+/* Last image (phage) */
 .cell:nth-of-type(8){
-  width: 300px;
   height: 300px;
+  width: 300px;
   background-image: url("../public/assets/website\ phage.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   transform: rotate(12deg);
 }
+
 .text {
   padding: 10% 10%;
-  font-family: "Caveat";
-  font-size: 16px;
-  overflow-wrap: break-word;
   word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 16px;
+  font-family: "Caveat";
 }
 
-/* Last image (filler) */
-
+/* Individual angling for each polaroid */
 .cell:nth-of-type(2){
   transform: rotate(4deg);
 }
@@ -71,6 +75,7 @@
   transform: rotate(-5deg);
 }
 
+/* For responsive layouts */
 @media (min-width: 480px) {
   .text {
     padding: 25% 15%;
@@ -150,9 +155,6 @@
   }
   .cell:nth-of-type(1){
     max-width: 15%;
-  }
-  .cell:nth-of-type(8){
-    display: block;
   }
   .cell:nth-of-type(1){
     max-width: 27%;
