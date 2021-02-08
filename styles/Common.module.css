@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--theme-brown);
+  background-color: var(--theme-offwhite);
   background-image: var(--container-bg);
 }
 

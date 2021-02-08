@@ -31,10 +31,10 @@
 }
 .image{
   height: 1200px;
-  width: 600px;
+  width: 800px;
   background-image: url("../public/assets/strips.png");
-  background-size: cover;
-  background-position: left;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
 }
 

@@ -8,10 +8,10 @@ export default function Volunteer() {
       <div className={Volunteerstyles.wrapper}>
         <div className={Volunteerstyles.images}>
           <Image
-            src="/assets/website-elements.png"
-            alt="Miscellaneous elements"
-            width={2080}
-            height={2700}
+            src="/assets/stackedpictures.png"
+            alt="Stacked Pictures"
+            width={1000}
+            height={1000}
           />
         </div>
         <div className={Volunteerstyles.text}>
@@ -24,15 +24,14 @@ export default function Volunteer() {
             to the sign-up forms.
           </p>
           <div className={`${styles.grid} ${Volunteerstyles.grid}`}>
-            <a
+            {/* <a
               href="https://nextjs.org/docs"
               className={`${styles.card} ${Volunteerstyles.card}`}
             >
               <h3>Mentors &rarr;</h3>
-            </a>
-
+            </a> */}
             <a
-              href="https://nextjs.org/docs"
+              href="https://docs.google.com/forms/d/1aniD1QKdc0xJqJv_rhjLbtdWCeVxEZMTyYfxQTsVLXM/edit"
               className={`${styles.card} ${Volunteerstyles.card}`}
             >
               <h3>Volunteers &rarr;</h3>

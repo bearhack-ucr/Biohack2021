@@ -11,7 +11,6 @@
   margin-bottom: 1rem;
   text-align: left;
   color: var(--theme-button-text);
-  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 .accordionItemButton {
@@ -23,8 +22,6 @@
   background-position: center center;
   background-repeat: no-repeat;
   border: none;
-  box-shadow: transparent; 
-  filter: brightness(1.4) drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.37));
   text-align: center;
   font-size: 16px;
   font-weight: bold;
@@ -50,14 +47,14 @@
   overflow-y: hidden;
   max-height: 0;
   padding: 0 1.5rem;
-  background-color: rgba(226, 226, 226, 0.9);
-  background-image: var(--accordion-panel-bg);
+  background-color: var(--description-bg-color); 
+
   box-shadow: 0 3px 12px rgba(0,0,0,0.2);
   font-weight: 600;
   font-size: 14px;
   font-family: var(--faq-answer-font);
   transform: translateY(-40px);
-  transition: 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .open .accordionItemPanel {
@@ -65,23 +62,21 @@
   margin-bottom: -1.5rem;
   padding: 3rem 1.5rem 1.5rem 1.5rem;
   background-color: var(--description-bg-color); 
-  background-image: var(--accordion-panel-bg);
+
   box-shadow: 0 8px 15px rgba(0,0,0,0.4);
   font-weight: 600;
   font-family: var(--faq-answer-font);
   color: var(--description-text-color); 
   transform: translateY(-40px);
-	transition: 0.3s ease;
+	transition: all 0.25s ease;
 }
 
 .answer {
   opacity: 0;
-  transition: 0.1s linear;
 }
 
 .open .answer {
   opacity: 1;
-  transition: 0.1s linear;
 }
 
 @media (min-width: 480px) {
