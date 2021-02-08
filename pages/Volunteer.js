@@ -32,7 +32,7 @@ export default function Volunteer() {
             </a> */}
             <a
               href="https://docs.google.com/forms/d/1aniD1QKdc0xJqJv_rhjLbtdWCeVxEZMTyYfxQTsVLXM/edit"
-              className={`${styles.card} ${Volunteerstyles.card}`}
+              className={`${styles.card} ${styles.wiggle} ${Volunteerstyles.card}`}
             >
               <h3>Volunteers &rarr;</h3>
             </a>
