@@ -14,7 +14,7 @@ export default function Sponsors() {
         </h1>
         <a
           href="https://tinyurl.com/biohack2021-Sponsorship-Packet"
-          className={`${styles.card} ${Sponsorstyles.card}`}
+          className={`${styles.card} ${Sponsorstyles.card} ${styles.wiggle}`}
         >
           <h3>Sponsor us!&rarr;</h3>
         </a>

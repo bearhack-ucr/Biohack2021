@@ -16,6 +16,7 @@
 }
 
 .accordionItemButton {
+  filter: brightness(1.4) drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.37));
   position: relative;
   z-index: 2;
   padding: 1.5rem 4rem 1.5rem 4rem;

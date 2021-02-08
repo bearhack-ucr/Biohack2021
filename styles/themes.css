@@ -15,7 +15,9 @@
     --phage-color: #9CC8C0;
     --theme-beige: #f1d2ab;
     --theme-beige-light: #deb88a;
-    --theme-button-text: black;
+    --theme-button-text: rgb(14, 14, 14);
+    --theme-brown: #ccb87f;
+    
     --description-bg-color:  #74b5b5cc;
     --description-text-color:  #1e1e1e;
 

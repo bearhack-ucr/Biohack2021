@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--theme-offwhite);
+  background: var(--theme-brown);
   background-image: var(--container-bg);
 }
 /* Container for each section */
@@ -88,7 +88,7 @@
   font-size: 44px;
   color: var(--title-color);
   -webkit-text-fill-color: var(--title-color);
-  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--title-color);
   font-family: var(--heading-font);
   font-weight: bold;
@@ -166,6 +166,23 @@
 .logo {
   height: 1em;
 }
+
+/* Animations */
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+ 80% { transform: rotate(0deg); }
+ 85% { transform: rotate(3deg); }
+ 95% { transform: rotate(-3deg); }
+100% { transform: rotate(0deg); }
+}
+.wiggle{
+  animation: wiggle 2s infinite;
+}
+.wiggle:hover {
+  animation:none;
+}
+
 /* Mobile stuff */
 @media (min-width: 420px) {
   .title {

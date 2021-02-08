@@ -34,7 +34,7 @@ export default function Landing() {
           smooth={true}
           duration={500}
           activeClass="active"
-          className={`${styles.card} ${Landingstyles.card}`}
+          className={`${styles.card} ${styles.wiggle}  ${Landingstyles.card}`}
         >
           <h3>Learn More &rarr;</h3>
         </Link>

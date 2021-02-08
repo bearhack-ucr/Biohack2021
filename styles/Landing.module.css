@@ -29,6 +29,7 @@
   line-height: 6rem;
   align-self: center;
   cursor: pointer;
+  filter: drop-shadow(0 0 0.2rem rgb(51, 51, 51));
 }
 
 .card h3 {
@@ -58,7 +59,7 @@
   font-family: var(--landing-subtitle-font);
   color: var(--title-color);
   -webkit-text-fill-color: var(--title-color);
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--title-color);
 }
 

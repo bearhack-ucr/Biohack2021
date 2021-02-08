@@ -142,11 +142,9 @@
     width: 20rem;
     height: 12rem;
     line-height: 12rem;
-    align-self: flex-end;
+    align-self: center;
   }
-  .card:nth-of-type(1) {
-    margin-right: -10rem;
-  }
+
 }
 
 @media (min-width: 1440px) {
