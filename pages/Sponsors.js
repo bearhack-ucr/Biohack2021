@@ -53,6 +53,17 @@ export default function Sponsors() {
                 alt="bmes logo"
               ></motion.img>
             </motion.a>
+            <motion.a href="https://www1.cs.ucr.edu/">
+              <motion.img
+                whileHover={{
+                  scale: 1.1,
+                }}
+                transition={hoverTrans}
+                src="/sponsors/cse.png"
+                className={`${Sponsorstyles.standard2}`}
+                alt="cse logo"
+              ></motion.img>
+            </motion.a>
             <motion.a href="https://acmucr.org">
               <motion.img
                 whileHover={{
@@ -64,7 +75,6 @@ export default function Sponsors() {
                 alt="acm logo"
               ></motion.img>
             </motion.a>
-
             <motion.a href="https://www.kgi.edu">
               <motion.img
                 whileHover={{
