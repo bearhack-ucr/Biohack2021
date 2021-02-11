@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
 }
 
-.grid{
+.grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -27,8 +27,8 @@
 }
 
 /* First image (paper scrap) */
-.cell:nth-of-type(1){
-  max-width: 80%;
+.cell:nth-of-type(1) {
+  max-width: 260px;
   background-image: url("../public/assets/paper.png");
   background-size: contain;
   background-position: center center;
@@ -37,7 +37,7 @@
 }
 
 /* Last image (phage) */
-.cell:nth-of-type(8){
+.cell:nth-of-type(8) {
   height: 300px;
   width: 300px;
   background-image: url("../public/assets/website\ phage.png");
@@ -51,7 +51,7 @@
   padding: 10% 10%;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Caveat";
 }
 
@@ -78,172 +78,59 @@
 /* For responsive layouts */
 @media (min-width: 480px) {
   .text {
-    padding: 25% 15%;
-    font-size: 24px;
-  }
-  .cell:nth-of-type(1){
-    max-width: 80%;
-  }
-}
-
-@media (min-width: 720px) {
-  .text {
-    padding: 25% 15%;
+    padding: 15% 15%;
     font-size: 28px;
   }
   .cell:nth-of-type(1){
-    max-width: 75%;
+    max-width: 420px;
   }
 }
 
-@media (min-width: 840px) {
+@media (min-width: 768px) {
   .text {
     padding: 25% 15%;
-    font-size: 36px;
+    font-size: 32px;
   }
   .cell:nth-of-type(1){
-    max-width: 75%;
+    max-width: 520px;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .text {
-    padding: 25% 15%;
-    font-size: 34px;
-  }
-  .cell {
-    padding: 2rem;
-  }
-  .cell:nth-of-type(1){
-    max-width: 65%;
-  }
-}
-
-@media (min-width: 1080px) {
-  .text {
-    padding: 35% 15%;
-    font-size: 30px;
-  }
-  .cell {
-    padding: 2rem;
-  }
-  .cell:nth-of-type(1){
-    max-width: 50%;
-  }
-}
-
-@media (min-width: 1140px) {
-  .text {
-    padding: 40% 15%;
+    padding: 20% 15%;
     font-size: 28px;
   }
   .cell {
     padding: 2rem;
   }
   .cell:nth-of-type(1){
-    max-width: 45%;
-  }
-}
-
-@media (min-width: 1280px) {
-  .text {
-    padding: 30% 15%;
-    font-size: 18px;
-  }
-  .cell {
-    padding: 1.5rem;
-  }
-  .cell:nth-of-type(1){
-    max-width: 15%;
-  }
-  .cell:nth-of-type(1){
-    max-width: 27%;
-  }
-  .cell:nth-of-type(2){
-    transform: rotate(4deg);
-  }
-  .cell:nth-of-type(3){
-    transform: rotate(-6deg) translateY(10px);
-  }
-  .cell:nth-of-type(4){
-    transform: rotate(2deg);
-  }
-  .cell:nth-of-type(5){
-    transform: rotate(4deg);
-  }
-  .cell:nth-of-type(6){
-    transform: rotate(-5deg) translateY(-10px);
-  }
-  .cell:nth-of-type(7){
-    transform: rotate(2deg);
+    max-width: 440px;
   }
 }
 
 @media (min-width: 1440px) {
   .text {
-    padding: 30% 15%;
-    font-size: 22px;
+    padding: 20% 15%;
+    font-size: 24px;
   }
   .cell {
     padding: 2rem;
   }
   .cell:nth-of-type(1){
-    max-width: 25%;
-  }
-}
-
-@media (min-width: 1680px) {
-  .text {
-    padding: 35% 15%;
-    font-size: 22px;
-  }
-  .cell {
-    padding: 2rem;
-  }
-  .cell:nth-of-type(1){
-    max-width: 25%;
-  }
-}
-
-@media (min-width: 1800px) {
-  .text {
-    padding: 30% 15%;
-    font-size: 26px;
+    max-width: 400px;
   }
 }
 
 @media (min-width: 1920px) {
   .text {
-    padding: 30% 15%;
+    padding: 20% 15%;
     font-size: 32px;
   }
   .cell {
     padding: 2rem;
   }
   .cell:nth-of-type(1){
-    max-width: 28%;
-  }
-}
-
-@media (min-width: 2100px) {
-  .text {
-    padding: 40% 10%;
-    font-size: 30px;
-  }
-  .cell {
-    padding: 2.5rem;
-  }
-  .cell:nth-of-type(1){
-    max-width: 25%;
-  }
-}
-
-@media (min-width: 2560px) {
-  .text {
-    padding: 30% 10%;
-    font-size: 36px;
-  }
-  .cell {
-    padding: 2rem 2.5rem;
+    max-width: 480px;
   }
 }

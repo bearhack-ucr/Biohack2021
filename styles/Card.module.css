@@ -13,8 +13,8 @@
 .flipContainer,
 .front,
 .back {
-  height: 280px;
-  width: 300px;
+  height: 240px;
+  width: 260px;
 }
 .front,
 .back {
@@ -47,7 +47,7 @@
 }
 
 .frontTitle {
-  margin-top: 10px;
+  margin-top: 4px;
   line-height: 1;
   font-size: 24px;
   font-family: var(--card-front-font);
@@ -58,32 +58,20 @@
   font-family: var(--card-caption-font);
 }
 .doodle{
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 .backTitle {
-  font-size: 16px;
+  font-size: 14px;
   font-family: var(--card-back-font);
 }
 .description {
   margin-top: 0;
-  font-size: 12px;
+  font-size: 10px;
   font-family: var(--card-description-font);
 }
 
 /* For responsive layouts */
-@media (min-width: 360px) {
-  .flipContainer,
-  .front,
-  .back {
-    height: 290px;
-    width: 310px;
-  }
-  .frontTitle {
-    font-size: 26px;
-  }
-}
-
 @media (min-width: 480px) {
   .flipContainer,
   .front,
@@ -107,120 +95,51 @@
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   .flipContainer,
   .front,
   .back {
-    height: 530px;
-    width: 580px;
+    height: 430px;
+    width: 480px;
   }
   .frontTitle {
-    font-size: 48px;
+    font-size: 44px;
   }
   .caption {
     margin-top: -32px;
-    font-size: 28px;
-  }
-  .backTitle {
-    font-size: 32px;
-  }
-  .description {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 920px) {
-  .flipContainer,
-  .front,
-  .back {
-    height: 310px;
-    width: 330px;
-  }
-  .frontTitle {
-    font-size: 34px;
-  }
-  .caption {
-    margin-top: -24px;
-    font-size: 22px;
-  }
-  .backTitle {
-    font-size: 22px;
-  }
-  .description {
-    margin-top: -14px;
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 1080px) {
-  .flipContainer,
-  .front,
-  .back {
-    height: 360px;
-    width: 390px;
+    font-size: 24px;
   }
   .doodle{
     height: 75px;
     width: 75px;
   }
-  .frontTitle {
-    font-size: 38px;
-  }
-  .caption {
-    margin-top: -30px;
-    font-size: 24px;
-  }
   .backTitle {
     font-size: 24px;
   }
   .description {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 1024px) {
   .flipContainer,
   .front,
   .back {
-    height: 380px;
-    width: 420px;
+    height: 340px;
+    width: 360px;
   }
   .frontTitle {
     font-size: 40px;
   }
   .caption {
-    margin-top: -36px;
-    font-size: 24px;
+    margin-top: -32px;
+    font-size: 22px;
   }
   .backTitle {
-    font-size: 24px;
+    font-size: 22px;
   }
   .description {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .flipContainer,
-  .front,
-  .back {
-    height: 270px;
-    width: 320px;
-  }
-  .frontTitle {
-    margin-top: 4px;
-    font-size: 20px;
-  }
-  .caption {
-    margin-top: -14px;
     font-size: 14px;
-  }
-  .backTitle {
-    font-size: 16px;
-  }
-  .description {
-    margin-top: -6px;
-    font-size: 11px;
   }
 }
 
@@ -233,36 +152,17 @@
   }
   .frontTitle {
     margin-top: 8px;
-    font-size: 26px;
+    font-size: 32px;
   }
   .caption {
-    margin-top: -16px;
-    font-size: 16px;
+    margin-top: -24px;
+    font-size: 18px;
   }
   .backTitle {
     font-size: 18px;
   }
   .description {
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 1680px) {
-  .flipContainer,
-  .front,
-  .back {
-    height: 370px;
-    width: 430px;
-  }
-  .doodle{
-    height: 100px;
-    width: 100px;
-  }
-  .backTitle {
-    font-size: 22px;
-  }
-  .description {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -270,21 +170,21 @@
   .flipContainer,
   .front,
   .back {
-    height: 460px;
-    width: 520px;
+    height: 380px;
+    width: 420px;
   }
   .frontTitle {
-    margin-top: 12px;
-    font-size: 38px;
+    margin-top: 8px;
+    font-size: 40px;
   }
   .caption {
-    margin-top: -24px;
-    font-size: 22px;
+    margin-top: -32px;
+    font-size: 24px;
   }
   .backTitle {
-    font-size: 26px;
+    font-size: 24px;
   }
   .description {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
