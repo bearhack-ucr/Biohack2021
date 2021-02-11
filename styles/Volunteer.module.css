@@ -105,9 +105,6 @@
 }
 
 @media (min-width: 720px) {
-  .images{
-    display: flex;
-  }
   .card {
     height: 10rem;
     width: 20rem;
@@ -119,6 +116,10 @@
 }
 
 @media (min-width: 1024px) {
+  .images {
+    display: flex;
+    margin-left: -15%;
+  }
   .text {
     width: 50%;
     margin-left: auto;
@@ -147,6 +148,9 @@
   .main {
     background-position: right 50% top 10%;
   }
+  .images {
+    margin-left: -10%;
+  }
   .title {
     margin-bottom: 50px;
   }
@@ -164,6 +168,9 @@
 }
 
 @media (min-width: 1440px) {
+  .images {
+    margin-left: 0;
+  }
   .card {
     height: 10rem;
     width: 25rem;
