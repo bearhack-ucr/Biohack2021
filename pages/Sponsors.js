@@ -75,16 +75,18 @@ export default function Sponsors() {
                 alt="acm logo"
               ></motion.img>
             </motion.a>
-            <motion.a href="https://www.kgi.edu">
-              <motion.img
-                whileHover={{
-                  scale: 1.1,
-                }}
-                transition={hoverTrans}
-                src="/sponsors/kgi.png"
-                className={`${Sponsorstyles.kgi}`}
-                alt="kgi logo"
-              ></motion.img>
+            <motion.a
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={hoverTrans}
+              href="https://cloud.google.com"
+            >
+              <img
+                src="/sponsors/googlecloud.png"
+                className={`${Sponsorstyles.standard}`}
+                alt="gcp logo"
+              ></img>
             </motion.a>
             <motion.a
               whileHover={{
@@ -125,18 +127,20 @@ export default function Sponsors() {
                 alt="launchpad logo"
               ></img>
             </motion.a>
-            <motion.a
-              whileHover={{
-                scale: 1.1,
-              }}
+            <motion.a whileHover={{
+              scale: 1.1,
+            }}
               transition={hoverTrans}
-              href="https://cloud.google.com"
-            >
-              <img
-                src="/sponsors/googlecloud.png"
-                className={`${Sponsorstyles.standard}`}
-                alt="gcp logo"
-              ></img>
+              href="https://www.kgi.edu">
+              <motion.img
+                whileHover={{
+                  scale: 1.1,
+                }}
+                transition={hoverTrans}
+                src="/sponsors/kgi.png"
+                className={`${Sponsorstyles.kgi}`}
+                alt="kgi logo"
+              ></motion.img>
             </motion.a>
             <motion.a
               whileHover={{

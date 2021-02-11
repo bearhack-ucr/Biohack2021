@@ -44,7 +44,7 @@ export function Nav() {
             </Link>
           </li>
           <li className={Navstyles.navlogo}>
-          <Link
+            <Link
               to="Home"
               spy={true}
               smooth={true}
@@ -52,12 +52,12 @@ export function Nav() {
               activeClass="logo"
               className="logo"
             >
-            <Image
-              src="/logos/black-1-trans.png"
-              alt="Biohack logo"
-              width={50}
-              height={50}
-            />
+              <Image
+                src="/logos/black-1-trans.png"
+                alt="Biohack logo"
+                width={50}
+                height={50}
+              />
             </Link>
           </li>
           <li className={Navstyles.navlistlink}>
@@ -72,7 +72,7 @@ export function Nav() {
               Faq
             </Link>
           </li>
-          <li className={Navstyles.navlistlink}>
+          {/* <li className={Navstyles.navlistlink}>
             <Link
               to="Help"
               spy={true}
@@ -83,7 +83,7 @@ export function Nav() {
             >
               Help
             </Link>
-          </li>
+          </li> */}
           <li className={Navstyles.navlistlink}>
             <Link
               to="Sponsors"
@@ -94,6 +94,18 @@ export function Nav() {
               className="link"
             >
               Sponsors
+            </Link>
+          </li>
+          <li className={Navstyles.navlistlink}>
+            <Link
+              to="Team"
+              spy={true}
+              smooth={true}
+              duration={500}
+              activeClass="active"
+              className="link"
+            >
+              Team
             </Link>
           </li>
         </ul>

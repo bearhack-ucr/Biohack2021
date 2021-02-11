@@ -46,7 +46,7 @@
   width: 100%;
   padding: 20px;
   border-radius: 7px;
-  background-color: rgba(255,255,255,0.7);
+  /* background-color: rgba(255,255,255,0.3); */
 }
 
 .logoflex {
@@ -78,6 +78,7 @@
 .kgi {
   width: min(150px, 80vw);
   padding: 10px;
+  margin: 10px;
 }
 
 /* For responsive layouts */

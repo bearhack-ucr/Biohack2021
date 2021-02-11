@@ -1,5 +1,6 @@
 import styles from "../styles/Common.module.css";
 import Teamstyles from "../styles/Team.module.css";
+import Volunteerstyles from "../styles/Volunteer.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -141,6 +142,14 @@ export default function Team() {
           </div>
         </div>
       </div>
+      <p></p>
+      <p className={`${styles.description} ${Volunteerstyles.description}`}>Do you want to help with planning or be a volunteer on the day of BioHack? Sign up here!</p>
+      <a
+        href="https://docs.google.com/forms/d/1aniD1QKdc0xJqJv_rhjLbtdWCeVxEZMTyYfxQTsVLXM/edit"
+        className={`${styles.card} ${styles.wiggle} ${Volunteerstyles.card}`}
+      >
+        <h3>Volunteers &rarr;</h3>
+      </a>
     </main>
   );
 }

@@ -7,7 +7,7 @@ import Hero from "./Hero";
 import PastWinners from "./PastWinners";
 import Faq from "./Faq";
 import Sponsors from "./Sponsors";
-import Volunteer from "./Volunteer";
+// import Volunteer from "./Volunteer";
 import Team from "./Team";
 
 import Footer from "../components/Footer";
@@ -35,9 +35,9 @@ export default function Home() {
         <Element name="Questions">
           <Faq />
         </Element>
-        <Element name="Help">
+        {/* <Element name="Help">
           <Volunteer />
-        </Element>
+        </Element> */}
         <Element name="Sponsors">
           <Sponsors />
         </Element>
