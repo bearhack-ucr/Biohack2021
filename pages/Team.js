@@ -124,6 +124,7 @@ export default function Team() {
               <p>Rachel Itow</p>
               <p>Paula Lau</p>
               <p>Poala Ong</p>
+              <p>Mitha Senthilkumar</p>
               <p>Khadijeh Sudqi</p>
               <p>Nicky Xu</p>
             </div>
