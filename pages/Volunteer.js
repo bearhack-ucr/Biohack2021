@@ -8,7 +8,7 @@ export default function Volunteer() {
       <div className={Volunteerstyles.wrapper}>
         <div className={Volunteerstyles.images}>
           <Image
-            src="/assets/stackedpictures.png"
+            src="/assets/stackedpictures.webp"
             alt="Stacked Pictures"
             width={1000}
             height={1000}

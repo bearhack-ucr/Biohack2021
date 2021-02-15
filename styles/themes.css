@@ -23,16 +23,16 @@
     --description-text-color:  #1e1e1e;
 
     /* Background images */
-    --nav-bg: url(../public/assets/wrinkled.png);
+    --nav-bg: url(../public/assets/wrinkled.webp);
     --container-bg: url("../public/assets/natural-paper.png");
     --footer-bg: url("../public/assets/wrinkled.png");
-    --landing-bg: url("../public/assets/landing.png");
+    --landing-bg: url("../public/assets/landing.webp");
     --hero-bg: url("../public/assets/4.png");
-    --winners-bg: url("../public/assets/winners.png");
+    --winners-bg: url("../public/assets/winners.webp");
     --faq-bg: url("../public/assets/faq.png");
     --volunteer-bg: url("../public/assets/get\ involved.png");
     --sponsors-bg: url("../public/assets/sponsors.png");
-    --team-bg: url("../public/assets/people.png");
+    --team-bg: url("../public/assets/people.webp");
 
     /* Images for accordion buttons */
     --accordion-header-red-bg: url("../public/assets/Faq\ tapes/red\ thick.png");

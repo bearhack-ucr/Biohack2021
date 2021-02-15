@@ -32,7 +32,7 @@
 .image{
   height: 1200px;
   width: 800px;
-  background-image: url("../public/assets/strips.png");
+  background-image: url("../public/assets/strips.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

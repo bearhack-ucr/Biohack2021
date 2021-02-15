@@ -20,7 +20,7 @@ export default function Hero() {
       <div className={Herostyles.wrapper}>
         <div className={Herostyles.calendar}>
           <Image
-            src="/assets/calendar.png"
+            src="/assets/calendar.webp"
             alt="Calendar for Biohack"
             width={1000}
             height={1000}
