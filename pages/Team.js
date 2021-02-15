@@ -33,70 +33,70 @@ export default function Team() {
       <div className={Teamstyles.wrapper}>
         <div className={Teamstyles.grid}>
           <Profile
-            image="/team_pictures/dwarak.JPG"
+            image="/team_pictures/dwarak.webp"
             link="https://www.linkedin.com/in/dwarak-ravi/"
             name="Dwaraknath Ravichandran"
             position="Director"
             textClass={`${Teamstyles.text} ${Teamstyles.red}`}
           />
           <Profile
-            image="/team_pictures/david.JPG"
+            image="/team_pictures/david.webp"
             link="https://www.linkedin.com/in/davidpaulmvillafuerte/"
             name="David Villafuerte"
             position="Director"
             textClass={`${Teamstyles.text} ${Teamstyles.blue}`}
           />
           <Profile
-            image="/team_pictures/joshua.JPG"
+            image="/team_pictures/joshua.webp"
             link="http://linkedin.com/in/joshua-thomas-bermudez"
             name="Joshua Bermudez"
             position="Operations Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.yellow}`}
           />
           <Profile
-            image="/team_pictures/aneesh.jpg"
+            image="/team_pictures/aneesh.webp"
             link="https://www.linkedin.com/in/aneesh-sharma/"
             name="Aneesh Sharma"
             position="Operations Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.red}`}
           />
           <Profile
-            image="/team_pictures/carissa.JPG"
+            image="/team_pictures/carissa.webp"
             link="https://www.linkedin.com/in/carissa-lo/"
             name="Carissa Lo"
             position="Marketing Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.blue}`}
           />
           <Profile
-            image="/team_pictures/queenie.JPG"
+            image="/team_pictures/queenie.webp"
             link="https://www.linkedin.com/in/queeniexu/"
             name="Queenie Xu"
             position="Marketing Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.yellow}`}
           />
           <Profile
-            image="/team_pictures/brandon.JPG"
+            image="/team_pictures/brandon.webp"
             link="https://www.linkedin.com/in/to-brandon/"
             name="Brandon To"
             position="Sponsorship Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.red}`}
           />
           <Profile
-            image="/team_pictures/cammy.JPG"
+            image="/team_pictures/cammy.webp"
             link="https://www.linkedin.com/in/cammy-ngo/"
             name="Cammy Ngo"
             position="Sponsorship Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.blue}`}
           />
           <Profile
-            image="/team_pictures/ajeet.JPG"
+            image="/team_pictures/ajeet.webp"
             link="https://www.linkedin.com/in/ajeet-kokatay-25470b195/"
             name="Ajeet Kokatay"
             position="Web Dev Lead"
             textClass={`${Teamstyles.text} ${Teamstyles.yellow}`}
           />
           <Profile
-            image="/team_pictures/rajbir.JPG"
+            image="/team_pictures/rajbir.webp"
             link="https://www.linkedin.com/in/rajbirjohar/"
             name="Rajbir Johar"
             position="Web Dev Lead"
