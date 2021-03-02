@@ -82,3 +82,11 @@ Once you've done that:
 - what-input - removes default border when elements are selected such as buttons.
 - react-scroll - used to scroll to different sections via navbar
 - react-accessible-accordion - used for accordion component
+
+## Live Site Tentative Step Process
+1. Build scaffolding, barebones HTML for what content will be displayed on the site for the day of event including countdown clock.
+2. Meet with marketing or have marketing draft up a figma/canva for how the final version will look like.
+3. Build layout including how it will look like on different break points.
+4. Build CSS for the basic styling (fonts/colors/etc).
+5. Polish and test.
+
