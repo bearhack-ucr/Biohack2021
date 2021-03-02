@@ -85,8 +85,13 @@ Once you've done that:
 
 ## Live Site Tentative Step Process
 1. Build scaffolding, barebones HTML for what content will be displayed on the site for the day of event including countdown clock.
-2. Meet with marketing or have marketing draft up a figma/canva for how the final version will look like.
-3. Build layout including how it will look like on different break points.
-4. Build CSS for the basic styling (fonts/colors/etc).
-5. Polish and test.
+    - Must haves:
+      - Countdown
+      - Resources
+      - Judges
+      - Sponsors
+3. Meet with marketing or have marketing draft up a figma/canva for how the final version will look like.
+4. Build layout including how it will look like on different break points.
+5. Build CSS for the basic styling (fonts/colors/etc).
+6. Polish and test.
 
