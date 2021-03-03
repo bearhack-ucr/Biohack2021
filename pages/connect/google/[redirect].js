@@ -6,7 +6,7 @@ import { fetch } from "whatwg-fetch";
 import Container, { siteTitle } from "../../../components/Container";
 import styles from "../../../styles/Common.module.css";
 
-const backendUrl = "http://cms.biohackucr.com";
+const backendUrl = "https://cms.biohackucr.com";
 
 export default function Redirect() {
   const router = useRouter();
@@ -21,6 +21,7 @@ export default function Redirect() {
     fetch(`${backendUrl}/auth/google/callback?${queryString}`)
       .then((res) => {
         if (res.status !== 200) {
+          setText("Whoops! Try logging in with another email - we're having some issues.");
           console.log(res);
           throw new Error(`Couldn't login to Strapi. Status: ${res.status}`);
         }
