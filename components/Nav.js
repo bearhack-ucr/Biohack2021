@@ -38,7 +38,7 @@ export function Nav() {
             <li className={Navstyles.navlistlink}>
             {!isAuthenticated() && (
                   <a
-                    href={`https://cms.citrushack.com/connect/google`}
+                    href={`https://cms.biohack.com/connect/google`}
                   >
                     Sign Up &rarr;
                   </a>
@@ -169,7 +169,7 @@ export function Nav() {
             {!isAuthenticated() && (
               <div className={"link"}>
                 <a
-                  href={`https://cms.citrushack.com/connect/google`}
+                  href={`https://cms.biohack.com/connect/google`}
                   className="signup"
                 >
                   Sign Up
