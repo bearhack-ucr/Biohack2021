@@ -2,9 +2,7 @@ import styles from "../styles/Common.module.css";
 import Herostyles from "../styles/Hero.module.css";
 import Image from "next/image";
 
-
 export default function Hero() {
-
   return (
     <main className={Herostyles.main}>
       <div className={Herostyles.wrapper}>

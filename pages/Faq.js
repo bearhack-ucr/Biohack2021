@@ -14,7 +14,7 @@ export default function Faq() {
       </div>
       <div className={Faqstyles.strips}>
         <div className={Faqstyles.image}></div>
-      {/* <Image src="/assets/strips.png" alt="Strips" height={800} width={600}/> */}
+        {/* <Image src="/assets/strips.png" alt="Strips" height={800} width={600}/> */}
       </div>
     </main>
   );

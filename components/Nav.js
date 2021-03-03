@@ -17,6 +17,60 @@ export function Nav() {
     setIsHome(router.pathname == "/");
   }, [router.pathname]);
 
+  if (!isHome) {
+    return (
+      <nav className={Navstyles.navwrapper}>
+        <div className={Navstyles.navigation}>
+          <ul className={Navstyles.navlistcontainer}>
+            <li className={Navstyles.navlistlink}>
+              <a href="/">Home</a>
+            </li>
+            <li className={Navstyles.navlogo}>
+              <a href="/" className="logo">
+                <Image
+                  src="/logos/black-1-trans.png"
+                  alt="Biohack logo"
+                  width={50}
+                  height={50}
+                />
+              </a>
+            </li>
+            <li className={Navstyles.navlistlink}>
+            {!isAuthenticated() && (
+                  <a
+                    href={`https://cms.citrushack.com/connect/google`}
+                  >
+                    Sign Up &rarr;
+                  </a>
+              )}
+              {isAuthenticated() && (
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault;
+                      signIn({
+                        token: "",
+                        expiresIn: 0,
+                        tokenType: "",
+                        authState: "",
+                      });
+                    }}
+                    className="signup"
+                  >
+                    Sign Out &rarr;
+                  </a>
+                )}
+            </li>
+          </ul>
+
+          <ul className={Navstyles.navlistcontainer}>
+            <li className={Navstyles.navsignup}></li>
+          </ul>
+        </div>
+      </nav>
+    );
+  }
+
   return (
     <nav className={Navstyles.navwrapper}>
       <div className={Navstyles.navigation}>
@@ -58,7 +112,7 @@ export function Nav() {
             </Link>
           </li>
           <li className={Navstyles.navlogo}>
-          <Link
+            <Link
               to="Home"
               spy={true}
               smooth={true}
@@ -66,12 +120,12 @@ export function Nav() {
               activeClass="logo"
               className="logo"
             >
-            <Image
-              src="/logos/black-1-trans.png"
-              alt="Biohack logo"
-              width={50}
-              height={50}
-            />
+              <Image
+                src="/logos/black-1-trans.png"
+                alt="Biohack logo"
+                width={50}
+                height={50}
+              />
             </Link>
           </li>
           <li className={Navstyles.navlistlink}>
@@ -113,7 +167,7 @@ export function Nav() {
         </ul>
         <ul className={Navstyles.navlistcontainer}>
           <li className={Navstyles.navsignup}>
-          {!isAuthenticated() && (
+            {!isAuthenticated() && (
               <div className={"link"}>
                 <a
                   href={`https://cms.citrushack.com/connect/google`}
@@ -140,7 +194,8 @@ export function Nav() {
                 >
                   Sign Out
                 </a>
-              </div>)}
+              </div>
+            )}
           </li>
         </ul>
       </div>

@@ -43,11 +43,17 @@ export default class Accordion extends Component {
           answer={[
             "Support for navigating Discord/Hop In will be readily available during the Hackathon, but it is recommended that you familiarize yourself with these services prior to the event.",
             "You can learn more about ",
-            <a style={{textDecoration:"underline"}} href="https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord">
-              Discord here, 
+            <a
+              style={{ textDecoration: "underline" }}
+              href="https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord"
+            >
+              Discord here,
             </a>,
             " and ",
-            <a style={{textDecoration:"underline"}} href="https://support.hopin.to/en/articles/3803879-1-master-the-attendee-experience">
+            <a
+              style={{ textDecoration: "underline" }}
+              href="https://support.hopin.to/en/articles/3803879-1-master-the-attendee-experience"
+            >
               Hop In here.
             </a>,
           ]}

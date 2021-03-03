@@ -15,21 +15,31 @@ import {
   TextField as TextFieldNative,
 } from "@material-ui/core";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
-import 'date-fns';
-import DateFnsUtils from '@date-io/date-fns';
+import "date-fns";
+import DateFnsUtils from "@date-io/date-fns";
 import { Alert, AlertTitle, createFilterOptions } from "@material-ui/lab";
-import { TextField, Autocomplete, DatePicker, Select, Checkboxes } from "mui-rff";
+import {
+  TextField,
+  Autocomplete,
+  DatePicker,
+  Select,
+  Checkboxes,
+} from "mui-rff";
 import { countries, genders, majors, unis } from "../data/data";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Dropzone from "../components/Dropzone";
 import { useDispatch, useSelector } from "react-redux";
-import { submitAsync, selectError, selectFetch } from "../lib/slices/applySlice";
+import {
+  submitAsync,
+  selectError,
+  selectFetch,
+} from "../lib/slices/applySlice";
 import { useRouter } from "next/router";
 import { useSignIn, useAuthUser } from "react-auth-kit";
 import css from "../styles/Apply.module.css";
 const checkboxData = [
-  {label: 'Yes', value: true},
-  {label: 'No', value: false},
+  { label: "Yes", value: true },
+  { label: "No", value: false },
 ];
 
 const filter = createFilterOptions();
@@ -75,8 +85,16 @@ const checkIn = [
             &nbsp; {option.label} ({option.code})
           </React.Fragment>
         )}
-        renderInput={(params) => <TextFieldNative  required={true} {...params} name="ignore" label="Couոtry" variant="outlined" />}
-        />
+        renderInput={(params) => (
+          <TextFieldNative
+            required={true}
+            {...params}
+            name="ignore"
+            label="Couոtry"
+            variant="outlined"
+          />
+        )}
+      />
     ),
   },
   {
@@ -94,12 +112,7 @@ const checkIn = [
   {
     size: 12,
     field: (
-      <TextField
-        variant="outlined"
-        label="State"
-        name="state"
-        margin="none"
-      />
+      <TextField variant="outlined" label="State" name="state" margin="none" />
     ),
   },
   {
@@ -189,9 +202,15 @@ const demoInfo = [
     size: 12,
     field: (
       <Select name="race" label="Race / ethnicity">
-        <MenuItem value="American Indian / Alaskan Native">American Indian / Alaskan Native</MenuItem>
-        <MenuItem value="Asian / Pacific Islander">Asian / Pacific Islander</MenuItem>
-        <MenuItem value="Black / African American">Black / African American</MenuItem>
+        <MenuItem value="American Indian / Alaskan Native">
+          American Indian / Alaskan Native
+        </MenuItem>
+        <MenuItem value="Asian / Pacific Islander">
+          Asian / Pacific Islander
+        </MenuItem>
+        <MenuItem value="Black / African American">
+          Black / African American
+        </MenuItem>
         <MenuItem value="Hispanic">Hispanic</MenuItem>
         <MenuItem value="White / Caucasian">White / Caucasian</MenuItem>
         <MenuItem value="Prefer Not to Answer">Prefer Not to Answer</MenuItem>
@@ -206,16 +225,14 @@ const demoInfo = [
         name="school"
         options={unis}
         freeSolo
-        getOptionValue={option => `${option}`}
-        getOptionLabel={option => `${option}`}
-        renderOption={option => option}
+        getOptionValue={(option) => `${option}`}
+        getOptionLabel={(option) => `${option}`}
+        renderOption={(option) => option}
         disableCloseOnSelect={false}
         onChange={(_event, newValue, reason, details) => {
-          if (newValue && reason === 'select-option' && details?.option) {
+          if (newValue && reason === "select-option" && details?.option) {
             // Create a new value from the user input
-            unis.push(
-              details?.option.uni,
-            );
+            unis.push(details?.option.uni);
           }
         }}
         filterOptions={(options, params) => {
@@ -223,9 +240,7 @@ const demoInfo = [
           //console.log(filtered);
           // Suggest the creation of a new value
           if (params.inputValue.trim().length) {
-            filtered.push(
-            params.inputValue,
-            );
+            filtered.push(params.inputValue);
           }
           return filtered;
         }}
@@ -241,50 +256,64 @@ const demoInfo = [
     size: 12,
     field: (
       <Autocomplete
-      label="Major"
-      name="major"
-      required={true}
-      options={majors}
-      getOptionValue={(option) => option.major}
-      getOptionLabel={(option) => option.major}
-      renderOption={(option) => (
-        <React.Fragment>{option.major}</React.Fragment>
-      )}
-      selectOnFocus
-      autoHighlight
-      autoSelect
-      handleHomeEndKeys/>
+        label="Major"
+        name="major"
+        required={true}
+        options={majors}
+        getOptionValue={(option) => option.major}
+        getOptionLabel={(option) => option.major}
+        renderOption={(option) => (
+          <React.Fragment>{option.major}</React.Fragment>
+        )}
+        selectOnFocus
+        autoHighlight
+        autoSelect
+        handleHomeEndKeys
+      />
     ),
   },
   {
     size: 12,
     field: (
-        <DatePicker
-          variant="inline"
-          openTo="year"
-          views={["year", "month"]}
-          label="Expected Graduation"
-          helperText="Start from year selection"
-          name="year"
-          dateFunsUtils={DateFnsUtils}
-          required={true} 
-        />
+      <DatePicker
+        variant="inline"
+        openTo="year"
+        views={["year", "month"]}
+        label="Expected Graduation"
+        helperText="Start from year selection"
+        name="year"
+        dateFunsUtils={DateFnsUtils}
+        required={true}
+      />
     ),
   },
   {
     size: 12,
     field: (
-      <Select name="firsthackathon" required={true} label="Is this your first hackathon?">
-        <MenuItem value="Created project at previous hackathon">I have created a project at a previous Hackathon. </MenuItem>
-        <MenuItem value="Attended but never created">I have attended a previous Hackathon, but not created a project. </MenuItem>
-        <MenuItem value="Never attended">I have not attended a Hackathon before!</MenuItem>
+      <Select
+        name="firsthackathon"
+        required={true}
+        label="Is this your first hackathon?"
+      >
+        <MenuItem value="Created project at previous hackathon">
+          I have created a project at a previous Hackathon.{" "}
+        </MenuItem>
+        <MenuItem value="Attended but never created">
+          I have attended a previous Hackathon, but not created a project.{" "}
+        </MenuItem>
+        <MenuItem value="Never attended">
+          I have not attended a Hackathon before!
+        </MenuItem>
       </Select>
     ),
   },
-    {
+  {
     size: 12,
     field: (
-      <Select name="discordhopin" label="Do you have experience using Discord and/or Hop In?">
+      <Select
+        name="discordhopin"
+        label="Do you have experience using Discord and/or Hop In?"
+      >
         <MenuItem value="Both">Both</MenuItem>
         <MenuItem value="Discord">Discord</MenuItem>
         <MenuItem value="Hopin">Hopin</MenuItem>
@@ -294,7 +323,11 @@ const demoInfo = [
   {
     size: 12,
     field: (
-      <Select required={true} name="referrer" label="How did you hear about BioHack?">
+      <Select
+        required={true}
+        name="referrer"
+        label="How did you hear about BioHack?"
+      >
         <MenuItem value="University">Outreach at my university</MenuItem>
         <MenuItem value="Social Media">From social media </MenuItem>
         <MenuItem value="A friend">Directly from a friend</MenuItem>
@@ -302,10 +335,13 @@ const demoInfo = [
       </Select>
     ),
   },
-    {
+  {
     size: 12,
     field: (
-      <Select name="teamstatus" label="Will you be attending the hackathon alone, or with a team?">
+      <Select
+        name="teamstatus"
+        label="Will you be attending the hackathon alone, or with a team?"
+      >
         <MenuItem value="Alone">Alone</MenuItem>
         <MenuItem value="Team">With a team </MenuItem>
         <MenuItem value="Looking">Looking for a teammate</MenuItem>
@@ -363,7 +399,7 @@ const hackerInfo = [
       />
     ),
   },
-    {
+  {
     size: 12,
     field: (
       <TextField
@@ -412,7 +448,7 @@ const validate = (values) => {
   }
   if (!values.year) {
     errors.year = "Required";
-  } 
+  }
   if (values.phone && !validateNumber(values.phone)) {
     errors.phone = "Invalid Number";
   }
@@ -435,7 +471,7 @@ const validate = (values) => {
   if (!values.gender) errors.gender = "Required";
   return errors;
 };
-function validateNumber(url){
+function validateNumber(url) {
   const re = /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/;
   return re.test(url);
 }
@@ -482,45 +518,44 @@ export default function Apply() {
     );
   };
 
-  // Redirect non authenticated or already finished users
-  useEffect(() => {
-    if (user) {
-      if (user.appComplete) {
-        router.push("/account");
-      }
-    } else {
-      router.push("/");
-    }
-  }, [user]);
+  // // Redirect non authenticated or already finished users
+  // useEffect(() => {
+  //   if (user) {
+  //     if (user.appComplete) {
+  //       router.push("/account");
+  //     }
+  //   } else {
+  //     router.push("/");
+  //   }
+  // }, [user]);
 
+  // if(!user){
+  //   return (
+  //     <Container main>
+  //       <main
+  //       className={`${css.main}`}
+  //       id="accountContainer"
+  //       >
+  //        <h1>Loading...</h1>
+  //       </main>
+  //     </Container>
+  //   );
+  // }
 
-  if(!user){
-    return (
-      <Container main>
-        <main
-        className={`${css.main}`}
-        id="accountContainer"
-        >
-         <h1>Loading...</h1>
-        </main>
-      </Container>
-    );
-  }
-
-  if(user.username!='ajeetkokatay'){
-    if (new Date() < new Date("Sun Mar 03 2021 00:00:00 GMT-0800 (Pacific Standard Time)")) {
-      return (
-        <Container main>
-          <main
-          className={`${css.main}`}
-          id="accountContainer"
-          >
-           <h1>Applications are currently closed. Check back on the 3rd of March.</h1>
-          </main>
-        </Container>
-      );
-    }
-  }
+  // if(user.username!='ajeetkokatay'){
+  //   if (new Date() < new Date("Sun Mar 03 2021 00:00:00 GMT-0800 (Pacific Standard Time)")) {
+  //     return (
+  //       <Container main>
+  //         <main
+  //         className={`${css.main}`}
+  //         id="accountContainer"
+  //         >
+  //          <h1>Applications are currently closed. Check back on the 3rd of March.</h1>
+  //         </main>
+  //       </Container>
+  //     );
+  //   }
+  // }
 
   return (
     <Container main>
@@ -552,7 +587,7 @@ export default function Apply() {
                   </Box>
                 </Grid>
                 <Grid item xs={12}>
-                {submitFailed && errors.count && (
+                  {submitFailed && errors.count && (
                     <>
                       <br></br>
                       <Alert severity="error">
@@ -622,10 +657,25 @@ export default function Apply() {
                     )}
 
                     <Typography>
-                      By clicking submit, you certify that you have read and agree to the <Link href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" onClick={(e) => {e.preventDefault()}}>
-                      MLH Code of Conduct</Link>. 
-                      <br/>
-                      You also authorize us to share your application/registration information for event administration, ranking, MLH administration, pre- and post-event informational e-mails, and occasional messages about hackathons in-line with the MLH Privacy Policy. You further agree to the terms of both the MLH Contest Terms and Conditions and the MLH Privacy Policy.
+                      By clicking submit, you certify that you have read and
+                      agree to the{" "}
+                      <Link
+                        href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                        onClick={(e) => {
+                          e.preventDefault();
+                        }}
+                      >
+                        MLH Code of Conduct
+                      </Link>
+                      .
+                      <br />
+                      You also authorize us to share your
+                      application/registration information for event
+                      administration, ranking, MLH administration, pre- and
+                      post-event informational e-mails, and occasional messages
+                      about hackathons in-line with the MLH Privacy Policy. You
+                      further agree to the terms of both the MLH Contest Terms
+                      and Conditions and the MLH Privacy Policy.
                     </Typography>
                     <Button
                       variant="contained"

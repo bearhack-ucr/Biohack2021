@@ -13,8 +13,8 @@ export default function Card({ picture, caption, title, description, doodle }) {
         </div>
         <div className={Cardstyles.back}>
           <div className={Cardstyles.doodle}>
-        <Image src={doodle} alt={caption} width={200} height={200} />
-        </div>
+            <Image src={doodle} alt={caption} width={200} height={200} />
+          </div>
           <h3 className={Cardstyles.backTitle}>{title}</h3>
           <p className={Cardstyles.description}>{description}</p>
         </div>

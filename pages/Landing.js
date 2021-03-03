@@ -4,7 +4,6 @@ import Landingstyles from "../styles/Landing.module.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import dynamic from "next/dynamic";
 
-
 const SignUpButton = dynamic(
   () =>
     import("../components/SignUpButton").catch((err) => {
@@ -37,7 +36,7 @@ export default function Landing() {
         {/* <a href="https://nextjs.org/docs" className={`${styles.card} ${Landingstyles.card}`}>
           <h3>Sign Up! &rarr;</h3>
         </a> */}
-        <SignUpButton/>
+        <SignUpButton />
 
         <Link
           to="Hero"
