@@ -131,14 +131,14 @@ export default function Account() {
           >
             <h1 style={{ textAlign: "center" }}>
               <span role="img" aria-label="flag">
-                🍊
+              🧬
               </span>{" "}
               Application status:{" "}
               {statusPayload.payload
                 ? getStatus(statusPayload.payload.status)
                 : "Loading..."}
               <span role="img" aria-label="flag">
-                🍊
+               🧫
               </span>{" "}
             </h1>
           </motion.div>
