@@ -82,10 +82,10 @@ export default function Account() {
         router.push("/apply");
       }
     } else {
-      router.push("http://cms.biohackucr.com/connect/google");
+      router.push("/");
     }
   }, [user]);
-
+  
   if (!user) {
     return (
       <Container main>

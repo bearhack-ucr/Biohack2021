@@ -55,7 +55,6 @@ export function Nav() {
                         authState: "",
                       });
                     }}
-                    className="signup"
                   >
                     Sign Out &rarr;
                   </a>
