@@ -2,6 +2,16 @@ import Image from "next/image";
 import styles from "../styles/Common.module.css";
 import Landingstyles from "../styles/Landing.module.css";
 import { Link, animateScroll as scroll } from "react-scroll";
+import dynamic from "next/dynamic";
+
+
+const SignUpButton = dynamic(
+  () =>
+    import("../components/SignUpButton").catch((err) => {
+      return () => <p>oops... this failed to load</p>;
+    }),
+  { ssr: false }
+);
 
 export default function Landing() {
   return (
@@ -27,6 +37,7 @@ export default function Landing() {
         {/* <a href="https://nextjs.org/docs" className={`${styles.card} ${Landingstyles.card}`}>
           <h3>Sign Up! &rarr;</h3>
         </a> */}
+        <SignUpButton/>
 
         <Link
           to="Hero"

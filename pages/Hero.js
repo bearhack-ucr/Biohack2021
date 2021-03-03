@@ -1,19 +1,9 @@
 import styles from "../styles/Common.module.css";
 import Herostyles from "../styles/Hero.module.css";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import { useIsAuthenticated, useSignOut } from "react-auth-kit";
 import Image from "next/image";
 
-export default function Hero() {
-  const isAuthenticated = useIsAuthenticated();
-  const signOut = useSignOut();
-  const router = useRouter();
-  const [authHookValue, setHookValue] = useState(false);
 
-  useEffect(() => {
-    setHookValue(isAuthenticated());
-  }, []);
+export default function Hero() {
 
   return (
     <main className={Herostyles.main}>
