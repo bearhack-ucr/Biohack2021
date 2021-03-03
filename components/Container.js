@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
 
 export const siteTitle = "Biohack";
 const Nav = dynamic(
