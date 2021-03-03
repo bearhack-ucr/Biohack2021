@@ -482,45 +482,45 @@ export default function Apply() {
     );
   };
 
-  // // Redirect non authenticated or already finished users
-  // useEffect(() => {
-  //   if (user) {
-  //     if (user.appComplete) {
-  //       router.push("/account");
-  //     }
-  //   } else {
-  //     router.push("/");
-  //   }
-  // }, [user]);
+  // Redirect non authenticated or already finished users
+  useEffect(() => {
+    if (user) {
+      if (user.appComplete) {
+        router.push("/account");
+      }
+    } else {
+      router.push("/");
+    }
+  }, [user]);
 
 
-  // if(!user){
-  //   return (
-  //     <Container main>
-  //       <main
-  //       className={`${css.main}`}
-  //       id="accountContainer"
-  //       >
-  //        <h1>Loading...</h1>
-  //       </main>
-  //     </Container>
-  //   );
-  // }
+  if(!user){
+    return (
+      <Container main>
+        <main
+        className={`${css.main}`}
+        id="accountContainer"
+        >
+         <h1>Loading...</h1>
+        </main>
+      </Container>
+    );
+  }
 
-  // if(user.username!='ajeetkokatay'){
-  //   if (new Date() < new Date("Sun Feb 01 2021 00:50:30 GMT-0800 (Pacific Standard Time)")) {
-  //     return (
-  //       <Container main>
-  //         <main
-  //         className={`${css.main}`}
-  //         id="accountContainer"
-  //         >
-  //          <h1>Applications are currently closed. Check back on the 1st of February, at 3pm.</h1>
-  //         </main>
-  //       </Container>
-  //     );
-  //   }
-  // }
+  if(user.username!='ajeetkokatay'){
+    if (new Date() < new Date("Sun Mar 03 2021 00:00:00 GMT-0800 (Pacific Standard Time)")) {
+      return (
+        <Container main>
+          <main
+          className={`${css.main}`}
+          id="accountContainer"
+          >
+           <h1>Applications are currently closed. Check back on the 3rd of March.</h1>
+          </main>
+        </Container>
+      );
+    }
+  }
 
   return (
     <Container main>
