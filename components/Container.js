@@ -1,7 +1,13 @@
 import { useRouter } from "next/router";
-import { Nav } from "./Nav";
 
 export const siteTitle = "Biohack";
+const Nav = dynamic(
+  () =>
+    import("./Nav").catch((err) => {
+      return () => <p>oops... this failed to load</p>;
+    }),
+  { ssr: false }
+);
 
 export default function Container({ children, main }) {
   const router = useRouter();
