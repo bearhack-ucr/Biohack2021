@@ -48,7 +48,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <AuthProvider
         authStorageType={"cookie"}
-        cookieDomain="biohackucr"
+        cookieDomain="biohackucr.com"
         cookieSecure="false"
       >
         <Component {...pageProps} />
