@@ -71,7 +71,7 @@ export function Nav() {
                   href={`https://cms.biohackucr.com/connect/google`}
                   className="signup"
                 >
-                  Sign Up
+                  Sign Up &rarr;
                 </a>
               </div>
             )}
@@ -90,7 +90,7 @@ export function Nav() {
                   }}
                   className="signup"
                 >
-                  Sign Out
+                  Sign Out &rarr;
                 </a>
               </div>
             )}
