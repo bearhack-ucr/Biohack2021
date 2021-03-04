@@ -12,16 +12,14 @@ export default function Nav() {
   const router = useRouter();
   const isMobile = useMediaQuery("(max-width:768px)");
   const [isHome, setIsHome] = useState(0);
-  const [isAccount, setIsAccount] = useState(0);
 
   useEffect(() => {
     setIsHome(router.pathname == "/");
-    setIsAccount(router.pathname == "/account");
   }, [router.pathname]);
 
   if (!isHome) {
     return (
-      <nav className={`${Navstyles.navwrapper} ${isAccount && Navstyles.fixed}`}>
+      <nav className={`${Navstyles.navwrapper} ${!isHome && Navstyles.fixed}`}>
         <div className={Navstyles.navigation}>
           <ul className={Navstyles.navlistcontainer}>
             <li className={Navstyles.navlistlink}>

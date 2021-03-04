@@ -20,7 +20,7 @@
 .navigation {
   display: flex;
   justify-content: space-between;
-  margin: 0.8rem 1rem;
+  margin: 0 1rem;
   padding: 0.7rem 1rem;
 }
 
