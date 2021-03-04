@@ -39,7 +39,7 @@
 
 .card:nth-of-type(1) {
   background-image: var(--button-pink-bg);
-  color: var(--theme-pink-dark);
+  color: black;
 }
 .images {
   min-height: 500px;
