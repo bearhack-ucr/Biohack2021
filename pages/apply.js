@@ -312,7 +312,7 @@ const demoInfo = [
     field: (
       <Select
         name="discordhopin"
-        label="Do you have experience using Discord and/or Hop In?"
+        label="Do you like Discord or Hop In?"
       >
         <MenuItem value="Both">Both</MenuItem>
         <MenuItem value="Discord">Discord</MenuItem>
@@ -340,7 +340,7 @@ const demoInfo = [
     field: (
       <Select
         name="teamstatus"
-        label="Will you be attending the hackathon alone, or with a team?"
+        label="Are you alone or with a team?"
       >
         <MenuItem value="Alone">Alone</MenuItem>
         <MenuItem value="Team">With a team </MenuItem>

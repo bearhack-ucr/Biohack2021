@@ -80,8 +80,3 @@ a {
 .MuiOutlinedInput-root.Mui-error, .MuiFormLabel-root.Mui-error {
   color: #b52b21 !important;
 }
-@media (min-width: 640px){
-  .MuiSelect-select.MuiSelect-select {
-    padding-top: 20px;
-    }
-}
