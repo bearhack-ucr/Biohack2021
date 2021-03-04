@@ -12,7 +12,9 @@
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   font-family: var(--nav-font);
 }
-
+.fixed{
+  position: static;
+}
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -65,9 +67,7 @@
     display: block;
     font-size: 14px;
   }  
-  .navwrapper{
-    position: static!important;
-  }
+
   .navsignup {
     display: none;
   }
@@ -77,17 +77,10 @@
   .navigation {
     justify-content: center;
   }
-  .navwrapper{
-    position: static!important;
-  }
+
   .navlistlink {
     font-size: 18px;
   }  
 }
 
-@media only screen and (max-width: 650px) {
-  .navwrapper{
-    position: static!important;
-  }
-}
 

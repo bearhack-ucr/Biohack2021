@@ -12,14 +12,16 @@ export function Nav() {
   const router = useRouter();
   const isMobile = useMediaQuery("(max-width:768px)");
   const [isHome, setIsHome] = useState(0);
+  const [isAccount, setIsAccount] = useState(0);
 
   useEffect(() => {
     setIsHome(router.pathname == "/");
+    setIsHome(router.pathname == "/account");
   }, [router.pathname]);
 
   if (!isHome) {
     return (
-      <nav className={Navstyles.navwrapper}>
+      <nav className={`${Navstyles.navwrapper} ${isAccount && Navstyles.fixed}`}>
         <div className={Navstyles.navigation}>
           <ul className={Navstyles.navlistcontainer}>
             <li className={Navstyles.navlistlink}>
@@ -61,10 +63,39 @@ export function Nav() {
                 )}
             </li>
           </ul>
-
           <ul className={Navstyles.navlistcontainer}>
-            <li className={Navstyles.navsignup}></li>
-          </ul>
+          <li className={Navstyles.navsignup}>
+            {!isAuthenticated() && (
+              <div className={"link"}>
+                <a
+                  href={`https://cms.biohackucr.com/connect/google`}
+                  className="signup"
+                >
+                  Sign Up
+                </a>
+              </div>
+            )}
+            {isAuthenticated() && (
+              <div className={"link"}>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault;
+                    signIn({
+                      token: "",
+                      expiresIn: 0,
+                      tokenType: "",
+                      authState: "",
+                    });
+                  }}
+                  className="signup"
+                >
+                  Sign Out
+                </a>
+              </div>
+            )}
+          </li>
+        </ul>
         </div>
       </nav>
     );
