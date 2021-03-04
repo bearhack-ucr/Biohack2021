@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
-export function Nav() {
+export default function Nav() {
   const isAuthenticated = useIsAuthenticated();
   const signIn = useSignIn();
   const router = useRouter();
