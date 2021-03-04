@@ -72,10 +72,10 @@ a {
 }
 
 .MuiFormLabel-root {
-    color: rgb(47 47 47) !important;
+    color: rgb(12 12 12) !important;
 }
 .MuiOutlinedInput-notchedOutline {
-  border-color:   rgb(140 140 140) !important;
+  border-color:   rgb(103 103 103) !important;
 }
 .MuiOutlinedInput-root.Mui-error, .MuiFormLabel-root.Mui-error {
   color: #b52b21 !important;

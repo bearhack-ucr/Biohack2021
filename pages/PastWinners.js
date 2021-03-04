@@ -18,7 +18,7 @@ export default function PastWinners() {
           </div>
           <div className={Winnerstyles.cell}>
             <Card
-              picture="/pastwinners/1.JPG"
+              picture="/pastwinners/1.webp"
               title="Remembrall"
               caption="Overall 1st Place"
               doodle="/pastwinners/website_brain_cropped_trans.png"
@@ -27,7 +27,7 @@ export default function PastWinners() {
           </div>
           <div className={Winnerstyles.cell}>
             <Card
-              picture="/pastwinners/2.JPG"
+              picture="/pastwinners/2.webp"
               title="Skancare"
               caption="Best Google Hack"
               doodle="/pastwinners/website_hand_cropped_trans.png"
@@ -36,7 +36,7 @@ export default function PastWinners() {
           </div>
           <div className={Winnerstyles.cell}>
             <Card
-              picture="/pastwinners/3.JPG"
+              picture="/pastwinners/3.webp"
               title="Sleep-Stone Bridge"
               caption="Best Beginner Hack"
               doodle="/pastwinners/website_sun_cropped_trans.png"
@@ -45,7 +45,7 @@ export default function PastWinners() {
           </div>
           <div className={Winnerstyles.cell}>
             <Card
-              picture="/pastwinners/4.JPG"
+              picture="/pastwinners/4.webp"
               title="EpiTech"
               caption="Best Hardware Hack"
               doodle="/pastwinners/website_check_cropped_trans.png"
@@ -54,7 +54,7 @@ export default function PastWinners() {
           </div>
           <div className={Winnerstyles.cell}>
             <Card
-              picture="/pastwinners/5.JPG"
+              picture="/pastwinners/5.webp"
               title="Air Quality Index Map"
               caption="Best Humanitarian Hack"
               doodle="/pastwinners/website_cloud_cropped_trans.png"
@@ -63,7 +63,7 @@ export default function PastWinners() {
           </div>
           <div className={Winnerstyles.cell}>
             <Card
-              picture="/pastwinners/6.JPG"
+              picture="/pastwinners/6.webp"
               title="Drowsy Drivers"
               caption="Best Startup"
               doodle="/pastwinners/website_car_cropped_trans.png"
