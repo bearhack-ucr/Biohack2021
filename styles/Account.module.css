@@ -1,14 +1,14 @@
-/* CSS for Sponsors */
 
 .container{
   min-height: 100vh;
     margin-top:  5vh;
+    border-top: 1px solid grey;
+
 
 }
 @media (max-width: 900px){
 .container{
   margin-top:  0;
-  border-top: 1px solid grey;
  }
 
 }
