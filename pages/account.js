@@ -113,9 +113,8 @@ export default function Account() {
           style={{
             marginBottom: "2em",
             width: "min(100vw, 1200px)",
+            border: "1px solid grey",
             backgroundColor: "#d8edbb",
-            backgroundImage:
-              'url("https://www.transparenttextures.com/patterns/wavecut.png");',
           }}
           variants={pageVariants}
           transition={{
@@ -125,9 +124,7 @@ export default function Account() {
           }}
         >
           <motion.div
-            whileHover={{
-              x: 5,
-            }}
+
             transition={{ duration: 4, ease: [0.43, 0.13, 0.23, 0.96] }}
             className="scaleDiv"
           >
@@ -135,7 +132,7 @@ export default function Account() {
               <span role="img" aria-label="flag">
               🧬
               </span>{" "}
-              Application status:{" "}
+              Application status: <br/>{" "}
               {statusPayload.payload
                 ? getStatus(statusPayload.payload.status)
                 : "Loading..."}
@@ -146,9 +143,6 @@ export default function Account() {
           </motion.div>
           <motion.div
             initial="initial"
-            whileHover={{
-              x: 1,
-            }}
             animate="in"
             exit="out"
             variants={pageVariants}
@@ -186,9 +180,7 @@ export default function Account() {
             animate="in"
             exit="out"
             variants={pageVariants}
-            whileHover={{
-              x: 4,
-            }}
+
             transition={{ duration: 4, ease: [0.43, 0.13, 0.23, 0.96] }}
             className="groupCard"
             style={{ padding: "2em", backgroundColor: "lightgrey" }}
@@ -340,9 +332,7 @@ export default function Account() {
               variants={pageVariants}
               transition={{ duration: 1.5, ease: [0.43, 0.13, 0.23, 0.96] }}
               className="joinGroup"
-              whileHover={{
-                x: 2,
-              }}
+
               style={{ padding: "2em", backgroundColor: "#d8edbb" }}
             >
               <Grid container alignItems="center" justify="center" spacing={2}>
