@@ -162,7 +162,7 @@ export default function Account() {
                 style={{
                   fontSize: "1.5em",
                   fontWeight: 800,
-                  padding: "4rem",
+                  padding: "2rem",
                 }}
                 align="left"
                 variant="h5"
