@@ -16,7 +16,7 @@ export function Nav() {
 
   useEffect(() => {
     setIsHome(router.pathname == "/");
-    setIsHome(router.pathname == "/account");
+    setIsAccount(router.pathname == "/account");
   }, [router.pathname]);
 
   if (!isHome) {
