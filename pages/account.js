@@ -128,17 +128,18 @@ export default function Account() {
             transition={{ duration: 4, ease: [0.43, 0.13, 0.23, 0.96] }}
             className="scaleDiv"
           >
-            <h1 style={{ textAlign: "center" }}>
+            <h1 style={{ textAlign: "center", fontSize: '1.7em' }}>
+              {" "} Application status: {" "} 
+              <br/>
               <span role="img" aria-label="flag">
-              🧬
+               🧫
               </span>{" "}
-              Application status: <br/>{" "}
               {statusPayload.payload
                 ? getStatus(statusPayload.payload.status)
                 : "Loading..."}
               <span role="img" aria-label="flag">
-               🧫
-              </span>{" "}
+              {" "} 🧫
+              </span>
             </h1>
           </motion.div>
           <motion.div

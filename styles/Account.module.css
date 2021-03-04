@@ -1,7 +1,8 @@
 
 .container{
   min-height: 100vh;
-
+  background-color: var(--theme-offwhite);
+  background-image: var(--container-bg);
 
 }
 @media (max-width: 900px){
