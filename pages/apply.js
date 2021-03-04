@@ -73,7 +73,7 @@ const checkIn = [
     size: 12,
     field: (
       <Autocomplete
-        label="Couոtry"
+        label="Cоuntry"
         name="count"
         required={true}
         options={countries}

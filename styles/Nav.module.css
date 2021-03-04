@@ -75,7 +75,10 @@
   .navigation {
     justify-content: center;
   }
-
+/* CSS for navigation bar */
+.navwrapper{
+  position: static;
+}
   .navlistlink {
     font-size: 18px;
   }  

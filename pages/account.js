@@ -70,6 +70,7 @@ export default function Account() {
   const groupExists = !!groupInfo.payload;
   const router = useRouter();
   const user = authU();
+  // const user = {firstname: "ajeet", appComplete: true};
 
   useEffect(() => {
     dispatch(refreshGroup());
@@ -111,6 +112,7 @@ export default function Account() {
           exit="out"
           style={{
             marginBottom: "2em",
+            width: "min(100vw, 1200px)",
             backgroundColor: "#d8edbb",
             backgroundImage:
               'url("https://www.transparenttextures.com/patterns/wavecut.png");',
@@ -191,11 +193,10 @@ export default function Account() {
             className="groupCard"
             style={{ padding: "2em", backgroundColor: "lightgrey" }}
           >
-            <Box textAlign="center">
-              <Typography variant="h6" component="h1" gutterBottom>
-                Remember, the max group size is 4.
-              </Typography>
-              <Typography variant="h6" component="h1" gutterBottom>
+            <Grid container alignItems="center" justify="center">
+
+              <Typography align="center" variant="h6" component="h1"                   style={{ marginBottom: "2em",width: '100%' }}
+ gutterBottom>
                 {!groupExists
                   ? "Looks like you're not in a group"
                   : "Your group code"}{" "}
@@ -247,10 +248,11 @@ export default function Account() {
               )}
               {!groupExists && (
                 <Typography
-                  style={{ marginTop: "1em" }}
+                  style={{ marginTop: "1em", width: '100%' }}
                   variant="h4"
                   component="h1"
                   gutterBottom
+                  align="center"
                 >
                   OR
                 </Typography>
@@ -327,7 +329,7 @@ export default function Account() {
                   )}
                 />
               )}
-            </Box>
+            </Grid>
           </motion.div>
           {groupExists && (
             <motion.div
