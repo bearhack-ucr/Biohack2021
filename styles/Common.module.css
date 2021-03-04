@@ -181,6 +181,7 @@
 }
 .wiggle{
   animation: wiggle 2s infinite;
+      color: #ffffff;
 }
 .wiggle:hover {
   animation:none;
