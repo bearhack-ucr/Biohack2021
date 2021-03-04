@@ -65,7 +65,9 @@
     display: block;
     font-size: 14px;
   }  
-
+  .navwrapper{
+    position: static;
+  }
   .navsignup {
     display: none;
   }
@@ -75,9 +77,9 @@
   .navigation {
     justify-content: center;
   }
-.navwrapper{
-  position: static;
-}
+  .navwrapper{
+    position: static;
+  }
   .navlistlink {
     font-size: 18px;
   }  
