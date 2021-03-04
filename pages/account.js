@@ -204,7 +204,7 @@ export default function Account() {
               <Typography
                 variant="h3"
                 align="center"
-                style={{                        marginBottom: "2em",width: '100%'              }}
+                style={{                        marginBottom: "1em",width: '100%'              }}
                 component="h1"
                 gutterBottom
               >
