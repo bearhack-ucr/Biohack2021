@@ -14,7 +14,6 @@
 }
 .fixed{
   position: static;
-  margin:0;
 }
 .navigation {
   display: flex;
@@ -77,6 +76,7 @@
 @media (min-width: 720px) {
   .navigation {
     justify-content: center;
+      margin:0;
   }
 
   .navlistlink {
