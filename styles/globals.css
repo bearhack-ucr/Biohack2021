@@ -70,3 +70,13 @@ a {
   margin: 0 0.75rem;
   padding: 0;
 }
+
+.MuiFormLabel-root {
+    color: rgb(47 47 47) !important;
+}
+.MuiOutlinedInput-notchedOutline {
+  border-color:   rgb(140 140 140) !important;
+}
+.MuiOutlinedInput-root.Mui-error, .MuiFormLabel-root.Mui-error {
+  color: #b52b21 !important;
+}

@@ -1,7 +1,9 @@
 .main{
   overflow: visible;
-  width: 80vw;
-  margin:auto;
-  padding-bottom: min(12vh, 200px);
-  padding-top: min(12vh, 200px);
+  width: 100%;
+  margin: 0 20px;
+  padding-bottom: min(12vh, 300px);
+  padding-top: min(12vh, 300px);
+  background-color: var(--theme-offwhite);
+  background-image: var(--container-bg);
 }
