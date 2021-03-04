@@ -5,8 +5,10 @@
     margin-top:  5vh;
 
 }
-@media (max-width: 1280px){
+@media (max-width: 900px){
 .container{
+  margin-top:  0;
+  border-top: 1px solid grey;
  }
 
 }

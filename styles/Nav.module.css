@@ -14,6 +14,7 @@
 }
 .fixed{
   position: static;
+  margin:0;
 }
 .navigation {
   display: flex;
