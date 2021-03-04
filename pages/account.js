@@ -115,10 +115,11 @@ export default function Account() {
             width: "min(100vw, 1200px)",
             border: "1px solid grey",
             backgroundColor: "#d8edbb",
+            backgroundImage: 'var(--container-bg)',
           }}
           variants={pageVariants}
           transition={{
-            duration: 4,
+            duration: 2,
             ease: [0.43, 0.13, 0.23, 0.96],
             staggerChildren: 0.5,
           }}
