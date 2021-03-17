@@ -229,6 +229,7 @@ const demoInfo = [
         getOptionLabel={(option) => `${option}`}
         renderOption={(option) => option}
         disableCloseOnSelect={false}
+        required={true}
         onChange={(_event, newValue, reason, details) => {
           if (newValue && reason === "select-option" && details?.option) {
             // Create a new value from the user input
