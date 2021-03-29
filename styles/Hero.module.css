@@ -12,29 +12,61 @@
 
 .wrapper {
   padding: 0 2rem;
-  display: flex;
-  flex-direction: column-reverse;
+  /* display: flex; */
+  /* flex-direction: column-reverse; */
   align-items: center;
   justify-content: center;
+  min-width: 100%;
+  /* background-color: lime; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "countdown countdown"
+    "calendar text";
 }
+
+
 
 .calendar {
-  min-width: 55%;
-  margin-left: -15%;
+grid-area: calendar;
+min-width: 55%;
+margin-left: -15%;
 }
 
+.countdown
+{
+min-width:100%;
+grid-area: countdown;
+text-align: center;
+font-weight: bold;
+background-color: var(--accordion-panel-bg);
+font-size: 30px;
+font-family: var(--team-name-font);
+
+}
 .text{
-  margin: auto;
+grid-area: text;
+margin: auto;
 }
 
 /* For responsive layouts */
 @media (min-width: 1024px) {
-  .wrapper {
-    flex-direction: row;
-    margin-top: 0;
-  }
+.wrapper {
+  flex-direction: row;
+  margin-top: 0;
+}
 }
 
+@media (max-width: 1280px) {
+  .wrapper {
+    
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 90%;
+  }
+}
 @media (min-width: 1280px) {
   .wrapper {
     max-width: 90%;
@@ -42,9 +74,9 @@
 }
 
 @media (min-width: 1536px) {
-  .calendar {
-    min-width: 45%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.calendar {
+  min-width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
 }

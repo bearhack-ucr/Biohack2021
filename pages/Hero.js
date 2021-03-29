@@ -1,11 +1,15 @@
 import styles from "../styles/Common.module.css";
 import Herostyles from "../styles/Hero.module.css";
 import Image from "next/image";
+import Countdown from "../components/Countdown";
 
 export default function Hero() {
   return (
     <main className={Herostyles.main}>
       <div className={Herostyles.wrapper}>
+        <div className={Herostyles.countdown}>
+          <Countdown date="05/15/2021"/>
+        </div>
         <div className={Herostyles.calendar}>
           <Image
             src="/assets/calendar.webp"
