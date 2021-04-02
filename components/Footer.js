@@ -22,7 +22,7 @@ export default function Footer() {
       <div className={styles.contactlink}>
         <a href="mailto:biohack.ucr@gmail.com">biohack.ucr@gmail.com</a>
       </div>
-      Scrapbooked with ❤️ and ☕ from the Biohack team.
+      Scrapbooked with ❤️ and ☕ from the BioHack team.
     </div>
   );
 }

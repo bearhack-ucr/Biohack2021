@@ -15,7 +15,7 @@ export default function Hero() {
           />
         </div>
         <div className={Herostyles.text}>
-          <h1 className={styles.title}>What is Biohack?</h1>
+          <h1 className={styles.title}>What is BioHack?</h1>
           <p className={styles.description}>
             BioHack is a 24-hour bioengineering focused, health and medicine
             themed, virtual hackathon at the University of California,
