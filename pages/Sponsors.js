@@ -190,6 +190,32 @@ export default function Sponsors() {
                 alt="wolfram logo"
               ></img>
             </motion.a>
+            <motion.a
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={hoverTrans}
+              href="https://aspb.ucr.edu"
+            >
+              <img
+                src="/sponsors/aspb.png"
+                className={`${Sponsorstyles.standard}`}
+                alt="aspb logo"
+              ></img>
+            </motion.a>
+            <motion.a
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={hoverTrans}
+              href="https://iqhibattery.com"
+            >
+              <img
+                src="/sponsors/iqhi.png"
+                className={`${Sponsorstyles.standard2}`}
+                alt="iqhi logo"
+              ></img>
+            </motion.a>
           </div>
         </div>
       </div>
