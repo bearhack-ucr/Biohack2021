@@ -1,0 +1,39 @@
+/* CSS for live page */
+.title {
+  margin: 0;
+  padding: 10rem 2rem 0 2rem;
+  text-align: center;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  font-size: 100px;
+  color: var(--title-color);
+  -webkit-text-fill-color: var(--title-color);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--title-color);
+}
+
+.wrapper {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.judgeWrapper {
+  padding: 2rem 2rem 0 2rem;
+  text-align: center;
+}
+.judge {
+  margin: 0.5rem 2rem;
+  display: inline-block;
+  text-align: center;
+}
+.caption {
+  line-height: 0.5rem;
+}
+
+.link {
+  font-size: 24px;
+}
+
+.sponsorsWrapper {
+  padding-bottom: 5rem;
+}

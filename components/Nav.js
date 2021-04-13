@@ -192,6 +192,13 @@ export default function Nav() {
               Sponsors
             </Link>
           </li>
+          {/* HIDDEN UNTIL THE DAY OF
+          <li className={Navstyles.navlistlink}>
+            <a href="/live" className="link">
+              Live &rarr;
+            </a>
+          </li>
+          */}
         </ul>
         <ul className={Navstyles.navlistcontainer}>
           <li className={Navstyles.navsignup}>
