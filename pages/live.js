@@ -32,7 +32,10 @@ export default function Live() {
         <div className={Livestyles.wrapper}>
           <Countdown 
             date="05/15/2021"
-            className={Livestyles.title}
+            textClass={Livestyles.countdown}
+            timeClass={Livestyles.time}
+            numberClass={Livestyles.number}
+            unitClass={Livestyles.unit}
           />
         </div>
         <h2 className={Livestyles.title}>Judges</h2>

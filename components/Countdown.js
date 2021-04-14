@@ -35,8 +35,34 @@ class Countdown extends Component {
     const {days, hours, minutes, seconds, timeUp} = this.state;
     const dayString = days > 1 ? 'days' : 'day';
     return (
-      timeUp ? <p className={this.props.className}>Event in progress</p> 
-        : <p className={this.props.className}>{ `${days} ${dayString} ${hours} hours ${minutes}  minutes ${seconds} seconds` }</p>
+      timeUp ? <p className={this.props.textClass}>Event in progress</p> 
+        : <div className={this.props.textClass}>
+            <div className={this.props.timeClass}>
+              <p className={this.props.numberClass}>{days}</p>
+              <p className={this.props.unitClass}>{dayString}</p>
+            </div>
+            <div className={this.props.timeClass}>
+              <p className={this.props.numberClass}>:</p>
+            </div>
+            <div className={this.props.timeClass}>
+              <p className={this.props.numberClass}>{hours}</p>
+              <p className={this.props.unitClass}>hours</p>
+            </div>
+            <div className={this.props.timeClass}>
+              <p className={this.props.numberClass}>:</p>
+            </div>
+            <div className={this.props.timeClass}>
+              <p className={this.props.numberClass}>{minutes}</p>
+              <p className={this.props.unitClass}>minutes</p>
+            </div>
+            <div className={this.props.timeClass}>
+              <p className={this.props.numberClass}>:</p>
+            </div>
+            <div className={this.props.timeClass}>
+              <p className={this.props.numberClass}>{seconds}</p>
+              <p className={this.props.unitClass}>seconds</p>
+            </div>
+          </div>
     );
   }
 }
