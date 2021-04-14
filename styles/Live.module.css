@@ -5,7 +5,7 @@
   text-align: center;
   font-family: var(--heading-font);
   font-weight: bold;
-  font-size: 100px;
+  font-size: 44px;
   color: var(--title-color);
   -webkit-text-fill-color: var(--title-color);
   -webkit-text-stroke-width: 1px;
@@ -19,9 +19,10 @@
   text-align: center;
 }
 
+/* Judge section styling */
 .judgeWrapper {
-  margin: 0 5rem;
-  padding: 2rem 2rem 0 2rem;
+  margin: 0 2rem;
+  padding: 2rem 0;
   text-align: center;
 }
 .judgeGrid {
@@ -30,10 +31,11 @@
   flex-wrap: wrap;
 }
 .judge {
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 1rem;
   text-align: center;
 }
 .caption {
+  font-size: 12px;
   line-height: 0.5rem;
 }
 
@@ -45,14 +47,15 @@
   padding-bottom: 5rem;
 }
 
+/* Countdown styling */
 .countdown {
   display: flex;
   flex-direction: row;
 }
 .time {
-  padding: 5rem 1.5rem 0 1.5rem;
+  padding: 5rem 0.5rem 0 0.5rem;
   font-weight: bold;
-  font-size: 150px;
+  font-size: 50px;
   -webkit-text-fill-color: var(--title-color);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--title-color);
@@ -62,7 +65,89 @@
   font-family: var(--heading-font);
 }
 .unit {
+  display: none;
   margin: 0;
   font-family: var(--heading-font);
-  font-size: 80px;
+  font-size: 22px;
+}
+
+/* For responsive layouts */
+@media (min-width: 420px) {
+  .title {
+    font-size: 54px;
+  }
+  .time {
+    font-size: 150px;
+  }
+  .time {
+    font-size: 60px;
+  }
+  .unit {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 480px) {
+  .title {
+    font-size: 64px;
+  }
+  .caption {
+    font-size: 14px;
+  }
+  .judge {
+    margin: 0.5rem 1.5rem;
+  }
+  .time {
+    font-size: 70px;
+  }
+  .unit {
+    display: block;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 720px) {
+  .title {
+    font-size: 84px;
+  }
+  .time {
+    padding: 5rem 1rem 0 1rem;
+    font-size: 90px;
+  }
+  .unit {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 840px) {
+  .title {
+    font-size: 100px;
+  }
+  .time {
+    font-size: 110px;
+  }
+  .unit {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .time {
+    font-size: 120px;
+  }
+  .unit {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .time {
+    font-size: 150px;
+  }
+  .judgeWrapper {
+    margin: 0 10rem;
+  }
+  .unit {
+    font-size: 80px;
+  }
 }
