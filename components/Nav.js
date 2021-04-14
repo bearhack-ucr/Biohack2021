@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navstyles from "../styles/Nav.module.css";
 import { Link, animateScroll as scroll } from "react-scroll";
+import PageLink from "next/link";
 import { useIsAuthenticated, useSignIn } from "react-auth-kit";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
@@ -194,9 +195,12 @@ export default function Nav() {
           </li>
           {/* HIDDEN UNTIL THE DAY OF
           <li className={Navstyles.navlistlink}>
-            <a href="/live" className="link">
+            <PageLink
+              href="/live"
+              className="link"
+            >
               Live &rarr;
-            </a>
+            </PageLink>
           </li>
           */}
         </ul>

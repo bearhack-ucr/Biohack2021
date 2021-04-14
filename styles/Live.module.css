@@ -17,13 +17,19 @@
   text-align: center;
 }
 
+
 .judgeWrapper {
+  margin: 0 5rem;
   padding: 2rem 2rem 0 2rem;
   text-align: center;
 }
+.judgeGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .judge {
   margin: 0.5rem 2rem;
-  display: inline-block;
   text-align: center;
 }
 .caption {
