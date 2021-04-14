@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navstyles from "../styles/Nav.module.css";
 import { Link, animateScroll as scroll } from "react-scroll";
+import PageLink from "next/link";
 import { useIsAuthenticated, useSignIn } from "react-auth-kit";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
@@ -23,7 +24,12 @@ export default function Nav() {
         <div className={Navstyles.navigation}>
           <ul className={Navstyles.navlistcontainer}>
             <li className={Navstyles.navlistlink}>
-              <a href="/">Home</a>
+              <PageLink
+                href="/"
+                className="link"
+              >
+                Home
+              </PageLink>
             </li>
             <li className={Navstyles.navlogo}>
               <a href="/" className="logo">
@@ -192,6 +198,16 @@ export default function Nav() {
               Sponsors
             </Link>
           </li>
+          {/* HIDDEN UNTIL THE DAY OF
+          <li className={Navstyles.navlistlink}>
+            <PageLink
+              href="/live"
+              className="link"
+            >
+              Live &rarr;
+            </PageLink>
+          </li>
+          */}
         </ul>
         <ul className={Navstyles.navlistcontainer}>
           <li className={Navstyles.navsignup}>
