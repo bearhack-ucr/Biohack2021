@@ -24,7 +24,12 @@ export default function Nav() {
         <div className={Navstyles.navigation}>
           <ul className={Navstyles.navlistcontainer}>
             <li className={Navstyles.navlistlink}>
-              <a href="/">Home</a>
+              <PageLink
+                href="/"
+                className="link"
+              >
+                Home
+              </PageLink>
             </li>
             <li className={Navstyles.navlogo}>
               <a href="/" className="logo">
