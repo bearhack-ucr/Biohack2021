@@ -55,6 +55,7 @@
 .time {
   padding: 5rem 0.5rem 0 0.5rem;
   font-weight: bold;
+  font-family: var(--heading-font);
   font-size: 50px;
   -webkit-text-fill-color: var(--title-color);
   -webkit-text-stroke-width: 1px;

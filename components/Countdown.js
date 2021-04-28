@@ -38,7 +38,7 @@ class Countdown extends Component {
     const minuteString = minutes != 1 ? 'minutes' : 'minute';
     const secondString = seconds != 1 ? 'seconds' : 'second';
     return (
-      timeUp ? <p className={this.props.textClass}>Event in progress</p> 
+      timeUp ? <div className={this.props.timeClass}>Hacking has ended!</div> 
         : <div className={this.props.textClass}>
             <div className={this.props.timeClass}>
               <p className={this.props.numberClass}>{days}</p>
