@@ -190,6 +190,19 @@ export default function Sponsors() {
                 alt="wolfram logo"
               ></img>
             </motion.a>
+            <motion.a
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={hoverTrans}
+              href="https://asucr.ucr.edu/"
+            >
+              <img
+                src="/sponsors/asucr.png"
+                className={`${Sponsorstyles.standard}`}
+                alt="asucr logo"
+              ></img>
+            </motion.a>
           </div>
         </div>
       </div>
